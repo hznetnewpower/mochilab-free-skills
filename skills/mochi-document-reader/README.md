@@ -1,6 +1,6 @@
 # MochiLab 文件阅读与重点问答 · Document Reading and Questions
 
-`mochi-document-reader` · v1.0.0 · MIT-0
+`mochi-document-reader` · v1.0.1 · MIT-0
 
 从提供的文件中提取重点、日期和行动项，回答问题时附上可核对的出处。
 

@@ -1,6 +1,6 @@
 # MochiLab 工作日报与周报 · Daily and Weekly Work Reports
 
-`mochi-work-reports` · v1.0.0 · MIT-0
+`mochi-work-reports` · v1.0.1 · MIT-0
 
 根据真实工作记录整理进展、成果、阻碍与后续安排，保留事项来源和时间范围。
 
