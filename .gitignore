@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+credentials.json
+*.pem
+*.key
+.openclaw/
+.mochilab/
+.clawhub/
+__pycache__/
