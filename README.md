@@ -55,3 +55,11 @@ Most task scripts require Node.js 24+. The catalogue assistant requires Node.js 
 All files in this public release are provided under MIT-0 (MIT No Attribution). This permits modification, redistribution and commercial use without mandatory attribution. Links to MochiLab identify the source, not an additional license restriction.
 
 Website: https://mochilab.bz/ · Connection guide: https://mochilab.bz/Skills/Connect.aspx
+
+## File tools and web subscriptions / 文件工具与网页订阅
+
+| Skill | Version | What it does |
+|---|---|---|
+| [批量图片处理](skills/mochi-image-batch) | 1.0.0 | Batch resize, crop, pad, compress, convert and watermark images, with contact sheets and downloadable results. |
+| [PDF 文件工具箱](skills/mochi-pdf-toolbox) | 1.0.0 | Merge, split, select, reorder, rotate and compress PDFs; convert images, render previews and inspect blank pages. |
+| [网页变化订阅](skills/mochi-web-watch) | 1.0.0 | Watch selected webpage regions, retain baselines, filter noise, record differences and connect scheduled checks with chat delivery. |
