@@ -1,3 +1,5 @@
-# 1.0.1 — 2026-10-23
+# 1.1.0 — 2026-10-24
 
-Expanded the task-specific operating guide with executable request examples, evidence checks, output interpretation and recovery steps. Replaced the generic input contract and removed unrelated currency instructions. Runtime scripts are unchanged from 1.0.0.
+Import work records, update status with revision history, and export dated reports and evidence.
+
+Exports are actual workspace files with SHA256 receipts. Prior schema-1 data and older sealed releases are retained.

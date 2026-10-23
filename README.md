@@ -26,15 +26,15 @@ Nine additional free Skills, with local helpers, examples and executable tests.
 
 | Skill | Slug | Version |
 |---|---|---|
-| [提醒与定时任务 / Reminders and Scheduled Tasks](skills/mochi-reminders) | `mochi-reminders` | 1.0.0 |
-| [菜谱与买菜清单 / Meal Planner and Grocery List](skills/mochi-meal-planner) | `mochi-meal-planner` | 1.0.0 |
-| [随手记与待办 / Quick Notes and Tasks](skills/mochi-quick-notes) | `mochi-quick-notes` | 1.0.0 |
-| [每日计划与复盘 / Daily Planner and Review](skills/mochi-daily-planner) | `mochi-daily-planner` | 1.0.0 |
-| [日常记账与预算 / Expense Tracker and Budgets](skills/mochi-expense-tracker) | `mochi-expense-tracker` | 1.0.0 |
-| [学习陪练与错题复习 / Study Coach and Mistake Review](skills/mochi-study-coach) | `mochi-study-coach` | 1.0.0 |
-| [文件阅读与重点问答 / Document Reading and Questions](skills/mochi-document-reader) | `mochi-document-reader` | 1.0.1 |
-| [工作日报与周报 / Daily and Weekly Work Reports](skills/mochi-work-reports) | `mochi-work-reports` | 1.0.1 |
-| [购物比较助手 / Shopping Comparison](skills/mochi-shopping-compare) | `mochi-shopping-compare` | 1.0.0 |
+| [提醒与定时任务 / Reminders and Scheduled Tasks](skills/mochi-reminders) | `mochi-reminders` | 1.1.0 |
+| [菜谱与买菜清单 / Meal Planner and Grocery List](skills/mochi-meal-planner) | `mochi-meal-planner` | 1.1.0 |
+| [随手记与待办 / Quick Notes and Tasks](skills/mochi-quick-notes) | `mochi-quick-notes` | 1.1.0 |
+| [每日计划与复盘 / Daily Planner and Review](skills/mochi-daily-planner) | `mochi-daily-planner` | 1.1.0 |
+| [日常记账与预算 / Expense Tracker and Budgets](skills/mochi-expense-tracker) | `mochi-expense-tracker` | 1.1.0 |
+| [学习陪练与错题复习 / Study Coach and Mistake Review](skills/mochi-study-coach) | `mochi-study-coach` | 1.1.0 |
+| [文件阅读与重点问答 / Document Reading and Questions](skills/mochi-document-reader) | `mochi-document-reader` | 1.1.0 |
+| [工作日报与周报 / Daily and Weekly Work Reports](skills/mochi-work-reports) | `mochi-work-reports` | 1.1.0 |
+| [购物比较助手 / Shopping Comparison](skills/mochi-shopping-compare) | `mochi-shopping-compare` | 1.1.0 |
 
 ## Install and use
 

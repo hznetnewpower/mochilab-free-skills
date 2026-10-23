@@ -1,5 +1,13 @@
-# Input contract
+# Daily Planner and Review input contract
 
 plan: date, availableMinutes 1..1440, tasks [{title,minutes 1..1440,priority 1..3}]. show: date. complete: date, taskId. rollover: from, to (later date), availableMinutes if target day is new. Rollover marks original open tasks deferred and copies them once. Mutations require requestId.
 
-Currency fields support CNY, USD, EUR, GBP, HKD, SGD, AUD, CAD, CHF and NZD with two decimal places. The sample is fictional. Copy it into an authorized workspace and replace its facts and dates before real use. Current-agent state is stored separately for each workspace. A duplicate requestId with identical input returns the prior result; reusing it with changed data returns an error. A busy lock means another operation is active: wait rather than removing its lock.
+## Added in 1.1.0
+
+New: add-task {date,title,minutes,priority}; revise {date,taskId,title?,minutes?,priority?}; schedule/export {date,start:"09:00",breakMinutes?:0..120,availableMinutes?:1..1440}. Priority 1 first; schedule is a local plan, not a calendar job. Exports and edits require requestId.
+
+## Output files
+
+daily-plan.md / time-blocks.csv
+
+Exports create a new unique directory and return files [{path,bytes,sha256}]. Repeating the same requestId returns the same files; altered or missing saved exports raise an error. CSV output quotes fields and neutralizes spreadsheet formula prefixes. Keep other operations' active lock files in place. All files and records are scoped to the supplied active workspace.

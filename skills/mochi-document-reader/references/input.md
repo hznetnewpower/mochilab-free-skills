@@ -1,17 +1,13 @@
-# Document request and response contract
+# Document Reading and Questions input contract
 
-## Requests
+read/search: file (relative to current workspace), optional limit 1..200. read accepts start line. search requires query (literal normalized match). Supported text suffixes .txt .md .csv .tsv .json .log, UTF-8, up to 2 MiB. Output gives totalLines, matches, truncation and line-numbered text; long lines are flagged and truncated after 2000 characters.
 
-`read`: `file` is a relative path within the active workspace; optional `start` is a one-based line number (default 1); optional `limit` is 1..200 (default 60).
+## Added in 1.1.0
 
-`search`: the same `file` and `limit`, plus a non-empty literal `query` up to 1000 characters. Matches are NFKC-normalized and case-insensitive. This is not regex search. No requestId is needed for these read operations.
+New: DOCX main-text support, extract {file}, search-many {files:[],queries:[],limit?}, export {files:[],queries?:[],start?,limit?}. DOCX <=10 MiB and body XML <=2 MiB; text <=2 MiB. At most 10 files, 8 queries, 200 returned lines per section and 2000 characters per line. extract/export require requestId. Citations are extracted lines, not DOCX pages.
 
-Accepted files: UTF-8 .txt, .md, .csv, .tsv, .json and .log, maximum 2 MiB. File paths are at most 1000 characters. Absolute paths, parent traversal and symlinks are rejected. Convert PDF, Word or image content with a suitable host reader first, retaining original-page mapping.
+## Output files
 
-## Success JSON
+document.txt / source.json / evidence.md / citations.json
 
-`ok: true`, `file`, `totalLines`, `matches`, `returned`, `truncated`, `lines` and `citationFormat`. Each line has `line` (one-based), `text` (at most 2000 characters) and `lineTruncated`. For read, matches is the number of lines from start through EOF; for search it is the total literal matches before limiting. `truncated` indicates additional matching lines, while `lineTruncated` identifies an individually shortened line. A search with no match returns an empty lines array.
-
-## Errors and interpretation
-
-CLI errors return `ok: false` with `error` to stderr and exit code 1. Correct the file, encoding, size or request rather than treating an error as document evidence. The citationFormat field suggests `file:LINE`; every factual answer still needs its actual supporting line or mapped original page. The sample notice is fictional and has three content lines plus a trailing newline. Read/search does not change source bytes or save a final Markdown report.
+Exports create a new unique directory and return files [{path,bytes,sha256}]. Repeating the same requestId returns the same files; altered or missing saved exports raise an error. CSV output quotes fields and neutralizes spreadsheet formula prefixes. Keep other operations' active lock files in place. All files and records are scoped to the supplied active workspace.

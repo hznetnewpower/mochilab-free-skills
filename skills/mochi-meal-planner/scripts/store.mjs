@@ -33,9 +33,18 @@ export function transact(workspace,slug,input,handler){
   const state=fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):{schema:1,slug,records:[],operations:[]};
   assert(state.schema===1&&state.slug===slug&&Array.isArray(state.records)&&Array.isArray(state.operations),'Unexpected state format');
   const hash=createHash('sha256').update(JSON.stringify(input)).digest('hex');
-  if(input.requestId){text(input.requestId,'requestId',200);const prev=state.operations.find(x=>x.id===input.requestId);if(prev){assert(prev.hash===hash,'requestId was already used with different input');return {...prev.result,replayed:true};}}
+  if(input.requestId){text(input.requestId,'requestId',200);const prev=state.operations.find(x=>x.id===input.requestId);if(prev){assert(prev.hash===hash,'requestId was already used with different input');for(const f of prev.result.files||[]){const p=safePath(workspace,f.path,true);assert(createHash('sha256').update(fs.readFileSync(p)).digest('hex')===f.sha256,'Saved export changed or is missing; use a new requestId to export again');}return {...prev.result,replayed:true};}}
   const out=handler(input,state,{workspace,now:new Date().toISOString()});assert(out&&typeof out==='object','Invalid operation result');
-  const result={ok:true,...out.result};
+  const result={ok:true,...out.result};let exportDirectory;
+  try{
+  if(out.artifacts){
+   assert(out.changed&&input.requestId,'Exports require a unique requestId');
+   const files=Object.entries(out.artifacts);assert(files.length>0&&files.length<=6,'Export 1..6 files');
+   for(const [name,value] of files){assert(/^[a-zA-Z0-9_-]+\.(md|csv|json|ics|txt)$/.test(name),'Invalid export filename');assert(typeof value==='string'&&Buffer.byteLength(value)<=2*1024*1024,'Export exceeds 2 MiB');}
+   const relative=`.mochilab/${slug}/exports/${id()}`;exportDirectory=safePath(workspace,relative);fs.mkdirSync(exportDirectory,{recursive:true,mode:0o700});safePath(workspace,relative,true);
+   result.files=[];
+   for(const [name,value] of files){const p=safePath(workspace,relative+'/'+name),bytes=Buffer.from(value);fs.writeFileSync(p,bytes,{flag:'wx',mode:0o600});result.files.push({path:relative+'/'+name,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')});}
+  }
   if(out.changed){
    assert(input.requestId,'Mutating operations require a unique requestId');
    state.operations.push({id:input.requestId,hash,result});state.updatedAt=new Date().toISOString();
@@ -43,6 +52,7 @@ export function transact(workspace,slug,input,handler){
    const tmp=path.join(dir,`.pending-${id()}`);try{const out=fs.openSync(tmp,'wx',0o600);try{fs.writeFileSync(out,bytes);fs.fsyncSync(out);}finally{fs.closeSync(out);}fs.renameSync(tmp,file);}finally{if(fs.existsSync(tmp))fs.unlinkSync(tmp);}
   }
   return result;
+  }catch(error){if(exportDirectory&&fs.existsSync(exportDirectory))fs.rmSync(exportDirectory,{recursive:true,force:true});throw error;}
  }finally{fs.closeSync(fd);fs.unlinkSync(lock);}
 }
 export function cli(slug,handler){
