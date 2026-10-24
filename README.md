@@ -63,3 +63,11 @@ Website: https://mochilab.bz/ · Connection guide: https://mochilab.bz/Skills/Co
 | [批量图片处理](skills/mochi-image-batch) | 1.0.0 | Batch resize, crop, pad, compress, convert and watermark images, with contact sheets and downloadable results. |
 | [PDF 文件工具箱](skills/mochi-pdf-toolbox) | 1.0.0 | Merge, split, select, reorder, rotate and compress PDFs; convert images, render previews and inspect blank pages. |
 | [网页变化订阅](skills/mochi-web-watch) | 1.0.0 | Watch selected webpage regions, retain baselines, filter noise, record differences and connect scheduled checks with chat delivery. |
+
+## Workbenches / 综合工作台
+
+| Skill | Version | What it does |
+|---|---|---|
+| [Excel 业务分析工作台](skills/mochi-sheet-studio) | 1.0.0 | Combine XLSX/CSV sources, clean mapped fields, deduplicate, reconcile sales, refunds and expenses, and export currency-separated monthly reports with source rows. |
+| [音视频内容加工台](skills/mochi-media-workbench) | 1.0.0 | Inspect media, extract audio, cut clips and frames, and export SRT/VTT subtitles locally, with optional local speech recognition and resumable chunk caches. |
+| [龙虾维护与迁移管家](skills/mochi-claw-maintenance) | 1.0.0 | Inspect one selected OpenClaw instance and its agent bindings, create verified private snapshots, compare changes and rehearse restoration in a new directory. |
