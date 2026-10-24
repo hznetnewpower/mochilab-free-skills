@@ -71,3 +71,16 @@ Website: https://mochilab.bz/ · Connection guide: https://mochilab.bz/Skills/Co
 | [Excel 业务分析工作台](skills/mochi-sheet-studio) | 1.0.0 | Combine XLSX/CSV sources, clean mapped fields, deduplicate, reconcile sales, refunds and expenses, and export currency-separated monthly reports with source rows. |
 | [音视频内容加工台](skills/mochi-media-workbench) | 1.0.0 | Inspect media, extract audio, cut clips and frames, and export SRT/VTT subtitles locally, with optional local speech recognition and resumable chunk caches. |
 | [龙虾维护与迁移管家](skills/mochi-claw-maintenance) | 1.0.0 | Inspect one selected OpenClaw instance and its agent bindings, create verified private snapshots, compare changes and rehearse restoration in a new directory. |
+
+## Mail, dates and daily workflows / 邮箱、日子与日常工作台
+
+- [Multi-account Email Desk / 多邮箱邮件工作台](skills/mochi-email-desk): Connect IMAP/SMTP/POP3 accounts, sync and search mail, extract attachments, prepare and send messages, and track new-mail notifications.
+- [Important Dates and Holidays / 重要日子与节日管家](skills/mochi-important-dates): Track Gregorian and lunar birthdays, anniversaries and sourced annual holidays, with advance alerts, time zones, leap-day policies and calendar export.
+- [Calendar and Agenda Desk / 日程日历工作台](skills/mochi-calendar-desk): Import ICS calendars, expand recurring events, inspect conflicts, create meeting files and transfer CalDAV resources with version checks.
+- [WebDAV Cloud File Desk / WebDAV 网盘工作台](skills/mochi-cloud-files): Connect a WebDAV drive, list and compare a directory, upload or download files, check versions and produce integrity hashes.
+- [Contacts and Follow-up Desk / 联系人与跟进工作台](skills/mochi-contact-desk): Import CSV/vCard contacts, review email and phone duplicates, merge records, track follow-ups and export an address book.
+- [RSS Subscription and Reading Hub / RSS 订阅与阅读中心](skills/mochi-feed-hub): Subscribe to RSS/Atom, import and export OPML, retain read state, search saved entries and queue new-content notifications.
+- [Document Templates and Batch Output / 文档模板与批量出稿](skills/mochi-document-templates): Generate notices, certificates and business documents from DOCX, text or HTML templates, validate fields and retain Word run formatting.
+- [Subscription and Renewal Desk / 订阅续费与账单管家](skills/mochi-subscription-desk): Track software, memberships and service renewals, calculate cancellation deadlines, forecast costs by currency and queue due notices.
+- [Git Project Review and Snapshots / Git 项目检查与快照](skills/mochi-git-desk): Inspect a selected Git project and commit history, distinguish staged changes and create verified private working snapshots.
+- [Archive and Integrity Toolbox / 压缩归档与完整性工具箱](skills/mochi-archive-desk): Inspect ZIP/TAR contents, extract into new folders, create ZIPs from selected files and report per-file integrity hashes.
