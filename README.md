@@ -84,3 +84,38 @@ Website: https://mochilab.bz/ · Connection guide: https://mochilab.bz/Skills/Co
 - [Subscription and Renewal Desk / 订阅续费与账单管家](skills/mochi-subscription-desk): Track software, memberships and service renewals, calculate cancellation deadlines, forecast costs by currency and queue due notices.
 - [Git Project Review and Snapshots / Git 项目检查与快照](skills/mochi-git-desk): Inspect a selected Git project and commit history, distinguish staged changes and create verified private working snapshots.
 - [Archive and Integrity Toolbox / 压缩归档与完整性工具箱](skills/mochi-archive-desk): Inspect ZIP/TAR contents, extract into new folders, create ZIPs from selected files and report per-file integrity hashes.
+
+
+## Additional Skills — 2026-10-26
+
+25 additional folders: 14 new demand-informed tools, 10 previously released practical tools, and the unchanged Mochi Crypto Intelligence Skill. Each folder documents its actual runtime and boundaries. The new 14 Python tools include standalone offline tests and synthetic samples.
+
+- [mochi-agent-lessons](skills/mochi-agent-lessons)
+- [mochi-skill-inspector](skills/mochi-skill-inspector)
+- [mochi-entity-graph](skills/mochi-entity-graph)
+- [mochi-task-handoff](skills/mochi-task-handoff)
+- [mochi-weather-desk](skills/mochi-weather-desk)
+- [mochi-research-dossier](skills/mochi-research-dossier)
+- [mochi-ui-accessibility](skills/mochi-ui-accessibility)
+- [mochi-writing-clarity](skills/mochi-writing-clarity)
+- [mochi-obsidian-map](skills/mochi-obsidian-map)
+- [mochi-notion-export-desk](skills/mochi-notion-export-desk)
+- [mochi-github-triage](skills/mochi-github-triage)
+- [mochi-docx-composer](skills/mochi-docx-composer)
+- [mochi-slide-storyboard](skills/mochi-slide-storyboard)
+- [mochi-model-cost-desk](skills/mochi-model-cost-desk)
+- [mochi-knowledge-desk](skills/mochi-knowledge-desk)
+- [mochi-project-board](skills/mochi-project-board)
+- [mochi-log-diagnostics](skills/mochi-log-diagnostics)
+- [mochi-backup-vault](skills/mochi-backup-vault)
+- [mochi-privacy-redactor](skills/mochi-privacy-redactor)
+- [mochi-api-testbench](skills/mochi-api-testbench)
+- [mochi-link-audit](skills/mochi-link-audit)
+- [mochi-sqlite-desk](skills/mochi-sqlite-desk)
+- [mochi-inventory-desk](skills/mochi-inventory-desk)
+- [mochi-diff-review](skills/mochi-diff-review)
+- [mochi-crypto-intelligence](skills/mochi-crypto-intelligence)
+
+MochiPay Integration remains in its original repository: [integration Skill](https://github.com/hznetnewpower/mochipay-plugins/tree/main/skills/integrate-mochipay).
+
+All 62 Skills are listed at [MochiLab](https://mochilab.bz/Skills/). Download and installation paths have their own account requirements; runtime requirements are documented per Skill. API services used by individual Skills have separate terms.
