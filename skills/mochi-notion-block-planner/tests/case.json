@@ -1,0 +1,13 @@
+{
+  "mode": "notion_block_planner",
+  "sample": {
+    "file": "samples/note.md"
+  },
+  "expected": {
+    "blocks": 3,
+    "notionApiCalled": false
+  },
+  "invalid": {
+    "file": "missing.md"
+  }
+}

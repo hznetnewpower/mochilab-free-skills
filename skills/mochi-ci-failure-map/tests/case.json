@@ -1,0 +1,16 @@
+{
+  "mode": "ci_failure_map",
+  "sample": {
+    "file": "samples/ci.log"
+  },
+  "expected": {
+    "rootCauseConfirmed": false,
+    "categories": {
+      "dependencies": 1,
+      "tests": 1
+    }
+  },
+  "invalid": {
+    "file": "missing.log"
+  }
+}

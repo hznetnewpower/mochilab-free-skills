@@ -1,0 +1,10 @@
+{
+  "links": [
+    {
+      "url": "https://example.com/page?lang=en",
+      "utm_source": "newsletter",
+      "utm_medium": "email",
+      "utm_campaign": "demo launch"
+    }
+  ]
+}

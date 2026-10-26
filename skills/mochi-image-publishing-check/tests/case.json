@@ -1,0 +1,27 @@
+{
+  "mode": "image_publishing_check",
+  "sample": {
+    "assets": [
+      {
+        "file": "samples/demo.png",
+        "width": 1,
+        "height": 1,
+        "alt": "Fictional one-pixel sample"
+      }
+    ]
+  },
+  "expected": {
+    "assetCount": 1,
+    "issues": []
+  },
+  "invalid": {
+    "assets": [
+      {
+        "file": "missing.png",
+        "width": 1,
+        "height": 1,
+        "alt": "Demo"
+      }
+    ]
+  }
+}

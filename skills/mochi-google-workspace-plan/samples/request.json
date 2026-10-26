@@ -1,0 +1,14 @@
+{
+  "actions": [
+    {
+      "kind": "gmail.search",
+      "account": "demo@example.com",
+      "query": "subject:invoice"
+    },
+    {
+      "kind": "docs.update",
+      "account": "demo@example.com",
+      "resource": "fictional-document"
+    }
+  ]
+}

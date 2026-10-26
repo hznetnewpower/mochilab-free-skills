@@ -1,0 +1,19 @@
+{
+  "title": "Fictional day plan",
+  "stops": [
+    {
+      "name": "Museum",
+      "start": "2026-11-01T09:00:00+08:00",
+      "end": "2026-11-01T10:00:00+08:00",
+      "cost": "20",
+      "currency": "CNY"
+    },
+    {
+      "name": "Cafe",
+      "start": "2026-11-01T10:30:00+08:00",
+      "end": "2026-11-01T11:00:00+08:00",
+      "cost": "5",
+      "currency": "USD"
+    }
+  ]
+}

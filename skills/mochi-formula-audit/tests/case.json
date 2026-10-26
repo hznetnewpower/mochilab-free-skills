@@ -1,0 +1,13 @@
+{
+  "mode": "formula_audit",
+  "sample": {
+    "file": "samples/book.xlsx"
+  },
+  "expected": {
+    "formulaCount": 1,
+    "formulasRecalculated": false
+  },
+  "invalid": {
+    "file": "samples/plain.txt"
+  }
+}

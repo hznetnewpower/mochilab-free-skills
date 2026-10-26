@@ -1,0 +1,14 @@
+{
+  "mode": "email_header_inspector",
+  "sample": {
+    "file": "samples/message.eml"
+  },
+  "expected": {
+    "fromHeaderCount": 1,
+    "receivedHopCount": 1,
+    "headersCryptographicallyVerified": false
+  },
+  "invalid": {
+    "file": "absent.eml"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "mode": "utm_campaigns",
+  "sample": {
+    "links": [
+      {
+        "url": "https://example.com/page?lang=en",
+        "utm_source": "newsletter",
+        "utm_medium": "email",
+        "utm_campaign": "demo launch"
+      }
+    ]
+  },
+  "expected": {
+    "count": 1,
+    "linksOpened": false
+  },
+  "invalid": {
+    "links": [
+      {
+        "url": "https://example.com/?token=secret",
+        "utm_source": "x",
+        "utm_medium": "y",
+        "utm_campaign": "z"
+      }
+    ]
+  }
+}

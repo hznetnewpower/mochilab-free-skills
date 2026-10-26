@@ -1,0 +1,8 @@
+{
+  "files": [
+    "package.json",
+    "README.md",
+    "AGENTS.md",
+    "tests/basic.test.js"
+  ]
+}

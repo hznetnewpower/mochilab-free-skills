@@ -1,0 +1,3 @@
+setup complete
+ModuleNotFoundError: fictional_module
+FAILED tests/test_demo.py::test_example

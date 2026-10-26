@@ -1,0 +1,14 @@
+{
+  "requests": [
+    {
+      "id": "r1",
+      "quantity": 3,
+      "unitPrice": "0.10",
+      "currency": "USD",
+      "quoteSource": "Fictional quote"
+    }
+  ],
+  "approvalThresholds": {
+    "USD": "0.20"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "segments": [
+    {
+      "id": "s1",
+      "start": 0,
+      "end": 60
+    },
+    {
+      "id": "s2",
+      "start": 60,
+      "end": 120
+    }
+  ],
+  "chapters": [
+    {
+      "start": 0,
+      "title": "Opening",
+      "sourceIds": [
+        "s1"
+      ]
+    },
+    {
+      "start": 60,
+      "title": "Example",
+      "sourceIds": [
+        "s2"
+      ]
+    }
+  ]
+}

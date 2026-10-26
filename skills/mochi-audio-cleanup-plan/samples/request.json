@@ -1,0 +1,4 @@
+{
+  "probeFile": "samples/probe.json",
+  "targetLufs": -16
+}

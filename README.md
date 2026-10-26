@@ -76,3 +76,50 @@ Choose one Skill and follow its guide for the active agent workspace. Model, hos
 ## License
 
 MIT-0. https://mochilab.bz/
+
+## New Skills — 2026-10-27
+
+40 original task-specific Skills researched against the current ClawHub top100 and checked against existing names. Each package has a local helper and five offline tests. Live service actions, source truth and visual rendering are verified separately.
+
+| Skill | Version |
+|---|---|
+| [Search Query Planner](skills/mochi-search-planner/SKILL.md) | 1.0.0 |
+| [Browser Table Capture](skills/mochi-browser-table-extractor/SKILL.md) | 1.0.0 |
+| [Form Review and Submission Plan](skills/mochi-form-submission-plan/SKILL.md) | 1.0.0 |
+| [Source Freshness Review](skills/mochi-source-freshness/SKILL.md) | 1.0.0 |
+| [Agent Response Regression Kit](skills/mochi-agent-eval-kit/SKILL.md) | 1.0.0 |
+| [Provenance Memory Review](skills/mochi-memory-curator/SKILL.md) | 1.0.0 |
+| [Priority Context Pack](skills/mochi-context-pack/SKILL.md) | 1.0.0 |
+| [Automation Dependency Blueprint](skills/mochi-workflow-blueprints/SKILL.md) | 1.0.0 |
+| [Webhook Fixture Builder](skills/mochi-webhook-fixtures/SKILL.md) | 1.0.0 |
+| [Cron Timezone Preview](skills/mochi-cron-inspector/SKILL.md) | 1.0.0 |
+| [Release Evidence Gate](skills/mochi-release-readiness/SKILL.md) | 1.0.0 |
+| [OpenAPI Operation Review](skills/mochi-openapi-contract/SKILL.md) | 1.0.0 |
+| [JSON Contract Subset Check](skills/mochi-json-schema-check/SKILL.md) | 1.0.0 |
+| [CI Failure Signal Map](skills/mochi-ci-failure-map/SKILL.md) | 1.0.0 |
+| [Dependency Upgrade Delta](skills/mochi-dependency-diff/SKILL.md) | 1.0.0 |
+| [Pairwise Test Matrix](skills/mochi-test-matrix/SKILL.md) | 1.0.0 |
+| [Repository Onboarding Map](skills/mochi-repo-onboarding/SKILL.md) | 1.0.0 |
+| [Commit Release Notes](skills/mochi-release-notes/SKILL.md) | 1.0.0 |
+| [Google Workspace Action Plan](skills/mochi-google-workspace-plan/SKILL.md) | 1.0.0 |
+| [Email Header Evidence Review](skills/mochi-email-header-inspector/SKILL.md) | 1.0.0 |
+| [Shared Availability Finder](skills/mochi-calendar-availability/SKILL.md) | 1.0.0 |
+| [Decision-Focused Meeting Prep](skills/mochi-meeting-prep/SKILL.md) | 1.0.0 |
+| [Notion Block Draft Builder](skills/mochi-notion-block-planner/SKILL.md) | 1.0.0 |
+| [Spreadsheet Formula Evidence Audit](skills/mochi-formula-audit/SKILL.md) | 1.0.0 |
+| [DOCX Comments and Revisions Map](skills/mochi-docx-review-map/SKILL.md) | 1.0.0 |
+| [PPTX Text Density Review](skills/mochi-pptx-review/SKILL.md) | 1.0.0 |
+| [Citation Normalizer](skills/mochi-citation-manager/SKILL.md) | 1.0.0 |
+| [Subtitle Timing and Reading Rate](skills/mochi-subtitle-quality/SKILL.md) | 1.0.0 |
+| [Transcript Chapter Evidence](skills/mochi-transcript-chapters/SKILL.md) | 1.0.0 |
+| [Image Publishing Checklist](skills/mochi-image-publishing-check/SKILL.md) | 1.0.0 |
+| [Audio Loudness Preparation](skills/mochi-audio-cleanup-plan/SKILL.md) | 1.0.0 |
+| [Customer Feedback Topic Map](skills/mochi-feedback-clusters/SKILL.md) | 1.0.0 |
+| [UTM Campaign Link Builder](skills/mochi-utm-campaigns/SKILL.md) | 1.0.0 |
+| [Social Draft Batch Review](skills/mochi-social-batch-plan/SKILL.md) | 1.0.0 |
+| [Product Launch Evidence Checklist](skills/mochi-launch-checklist/SKILL.md) | 1.0.0 |
+| [Timezone Itinerary Organizer](skills/mochi-travel-itinerary/SKILL.md) | 1.0.0 |
+| [Event RSVP Capacity Desk](skills/mochi-event-rsvp/SKILL.md) | 1.0.0 |
+| [Personal Habit Completion Review](skills/mochi-habit-tracker/SKILL.md) | 1.0.0 |
+| [Purchase Request Evidence Desk](skills/mochi-purchase-requests/SKILL.md) | 1.0.0 |
+| [Incident Evidence Timeline](skills/mochi-incident-timeline/SKILL.md) | 1.0.0 |

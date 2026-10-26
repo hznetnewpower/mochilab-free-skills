@@ -1,0 +1,14 @@
+{
+  "mode": "subtitle_quality",
+  "sample": {
+    "file": "samples/subtitles.srt",
+    "maxCharsPerSecond": 20
+  },
+  "expected": {
+    "cueCount": 2,
+    "subtitleModified": false
+  },
+  "invalid": {
+    "file": "samples/plain.txt"
+  }
+}

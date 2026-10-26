@@ -1,0 +1,25 @@
+{
+  "topics": {
+    "speed": [
+      "slow",
+      "latency"
+    ],
+    "billing": [
+      "invoice"
+    ]
+  },
+  "feedback": [
+    {
+      "id": "f1",
+      "text": "slow response"
+    },
+    {
+      "id": "f2",
+      "text": "invoice question"
+    },
+    {
+      "id": "f3",
+      "text": "thanks"
+    }
+  ]
+}

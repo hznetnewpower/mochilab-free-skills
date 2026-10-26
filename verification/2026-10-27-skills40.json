@@ -1,0 +1,328 @@
+{
+  "skills": 40,
+  "passedSkills": 40,
+  "packagedTests": 200,
+  "allPassed": true,
+  "items": [
+    {
+      "slug": "mochi-search-planner",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "b75fd05b1b118bf4dbe30a1d098a3175a027a9c63d7b8bf49118057b40cb0b1e"
+    },
+    {
+      "slug": "mochi-browser-table-extractor",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "011cca9145b4ddc879576b0e30f8d27dbea7c70c1ec325e854062404ce5bb9fa"
+    },
+    {
+      "slug": "mochi-form-submission-plan",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "552ffc391e0af847f2a3ae2354d3b3abac40d90cc645740ab62cec4608a333cb"
+    },
+    {
+      "slug": "mochi-source-freshness",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "b6d64b2308af6648e5a71c395c37afca7d8fde72621adc5a75acc586eb0c6fb8"
+    },
+    {
+      "slug": "mochi-agent-eval-kit",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "74d8f019f2eea1dad97015ed358db4ee1ba958a125f7984e1c1fa3f16bb6459d"
+    },
+    {
+      "slug": "mochi-memory-curator",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "e1bfe5e241d2e6952ca0e1873a4f1049ad6fa11a16ba424cdd13cc23e292b50b"
+    },
+    {
+      "slug": "mochi-context-pack",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "80141d73e3783f5a0bcd471a917cb760d498d3123b662b36fa333797ed105f0d"
+    },
+    {
+      "slug": "mochi-workflow-blueprints",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "391489e90cdde34068c6edb3af2756e42f72d1511d302a66de1236b530b89e0a"
+    },
+    {
+      "slug": "mochi-webhook-fixtures",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "6d98e8042e7966d2ba5d54a0efc9827a0c1fa710fc32b7c57a4fd9453783bdd9"
+    },
+    {
+      "slug": "mochi-cron-inspector",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "235beb6b6cf29e1b89a9b1748a23492d88d498342108a89dca703a658271b7ed"
+    },
+    {
+      "slug": "mochi-release-readiness",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "43f8777e277d0e0158fef2edccca6bedde3cadbe7c88a2f60dca08e23b28da1a"
+    },
+    {
+      "slug": "mochi-openapi-contract",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "2f80e629bc501663af6ec5178f0829958614e3666757ab0c6ed59ab58b98a8e6"
+    },
+    {
+      "slug": "mochi-json-schema-check",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "b0a0885fa688bda320c507dd57fba148c8e5c98df2a2b4e0dd1edcbe18fd6b9e"
+    },
+    {
+      "slug": "mochi-ci-failure-map",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "059e5ddad1ed717a0d91a4fc0dd5672461225d4ed8aa6d962aa4be965c008c70"
+    },
+    {
+      "slug": "mochi-dependency-diff",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "536558a90867e2e1a4a464b73ea57e7440873b42efb58da0384a93d5c3f14cdd"
+    },
+    {
+      "slug": "mochi-test-matrix",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "34b541bd2194c56a71ce9350b641ca61d5a47eaeeb4c6795cc076d80a327e998"
+    },
+    {
+      "slug": "mochi-repo-onboarding",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "94e5d35fdcd274be09fc932f1e2ab66b449d7ea844c2558492c59b4e2d0beaac"
+    },
+    {
+      "slug": "mochi-release-notes",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "1f8a638b3eb6c42bd2c1567a9ff566d61e7f86aa0f8cbba0cf39e05b87e276ea"
+    },
+    {
+      "slug": "mochi-google-workspace-plan",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "368ca3f193804a42e636d9387605f1ef730464717e4d87c413b284be55e2f95e"
+    },
+    {
+      "slug": "mochi-email-header-inspector",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "dce44996b7d418b456a707d7a4c96bf35efb738dbe535aede1ba71aef3e8a617"
+    },
+    {
+      "slug": "mochi-calendar-availability",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "46ddafd020168082ab5167bea17f8bbb19fd8fb0d0f4fdff35458be0db7f1046"
+    },
+    {
+      "slug": "mochi-meeting-prep",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "cd9e38b8f8853462b6c4d9c2f97feb98865dc40910c148bf0819389075a33ea6"
+    },
+    {
+      "slug": "mochi-notion-block-planner",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "40bdfc731c438b3fff760cd3caa568497f7b92958d13cf33b2cb2f4a696ad9c4"
+    },
+    {
+      "slug": "mochi-formula-audit",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "63885f6a3450aee18332c4e2bfb36c8eb2b6b5c239292d2f4d1507cf2eeff3a9"
+    },
+    {
+      "slug": "mochi-docx-review-map",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "79bd2d27a9dc5d596ad14aaaa646c39dc5f869d517d6e5da33284d8b3baa9fbd"
+    },
+    {
+      "slug": "mochi-pptx-review",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "84a363403ae725d000e6a7d453b6b13976ad54e4b61abe5e57871052e83a7568"
+    },
+    {
+      "slug": "mochi-citation-manager",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "9a7f4467cc790874db6cdb120c13f29edd5a611949390f3e5a05e1750eb5473e"
+    },
+    {
+      "slug": "mochi-subtitle-quality",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "8866f132135fad582290b7455200006d1936e064f0fbb621a6d9183f379cc64a"
+    },
+    {
+      "slug": "mochi-transcript-chapters",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "a081f17651c6e454b2e9220c67d37897bf8568d4edcbded79b72e2b1507d1cfd"
+    },
+    {
+      "slug": "mochi-image-publishing-check",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "cc501847285cde26ec51f440177bb220af77a1e6a2b40b29846df0b349c9dc04"
+    },
+    {
+      "slug": "mochi-audio-cleanup-plan",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "1f64402c5bf49970bc929dafd85f890c176cd799d4feb4a8304e5eab95eda41d"
+    },
+    {
+      "slug": "mochi-feedback-clusters",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "aa36e0f2d5424e18f5d5c0c2fe07b4719c2921c4f00b1c97fce02d6003ee86cb"
+    },
+    {
+      "slug": "mochi-utm-campaigns",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "39113402a085164e745bfc9e0f6c465f30785118a3915a28419ab04589bf69ba"
+    },
+    {
+      "slug": "mochi-social-batch-plan",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "fa5a3a80fab0adc588655423087e4ccaf17b1522c5a00981105acc756aeb33bc"
+    },
+    {
+      "slug": "mochi-launch-checklist",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "4c95ad7ec4ed24288af431c6d6ecd80a9505f4a03ca7e4bd9876967064b8e84c"
+    },
+    {
+      "slug": "mochi-travel-itinerary",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "0d6a9eb28679bdbf575f8e3c8a6ab56ae7e80f050495526c96e6a96a6f536ac8"
+    },
+    {
+      "slug": "mochi-event-rsvp",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "8aa287e3f512bbc2670ad5990857573aefbb22dc2e78cf72d5e8ac81b0dbb143"
+    },
+    {
+      "slug": "mochi-habit-tracker",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "f128bad93c3138da7bf077fbb68929ede85b34f3dd15e1b3847299d91c5891d1"
+    },
+    {
+      "slug": "mochi-purchase-requests",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "4ffd92f1c50d1d688c56c5aea9afd22ea3f63bc1aa52582a2dca97eaf9af82d9"
+    },
+    {
+      "slug": "mochi-incident-timeline",
+      "formatValid": true,
+      "testsPassed": true,
+      "testCount": 5,
+      "zipIntegrity": true,
+      "sha256": "e61efea4caba4dacbb115db7c3d5f97fd4881fa50cd35eb93c804c5dac398cb2"
+    }
+  ]
+}

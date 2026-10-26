@@ -1,0 +1,16 @@
+{
+  "mode": "audio_cleanup_plan",
+  "sample": {
+    "probeFile": "samples/probe.json",
+    "targetLufs": -16
+  },
+  "expected": {
+    "audioStreams": 1,
+    "secondPassReady": false,
+    "audioModified": false
+  },
+  "invalid": {
+    "probeFile": "samples/probe.json",
+    "targetLufs": 3
+  }
+}

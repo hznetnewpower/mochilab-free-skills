@@ -1,0 +1,14 @@
+{
+  "mode": "docx_review_map",
+  "sample": {
+    "file": "samples/review.docx"
+  },
+  "expected": {
+    "commentCount": 1,
+    "revisionCount": 2,
+    "documentModified": false
+  },
+  "invalid": {
+    "file": "samples/plain.txt"
+  }
+}

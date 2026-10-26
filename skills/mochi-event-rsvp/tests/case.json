@@ -1,0 +1,37 @@
+{
+  "mode": "event_rsvp",
+  "sample": {
+    "capacity": 2,
+    "people": [
+      {
+        "id": "a",
+        "status": "yes",
+        "partySize": 2,
+        "meal": "standard"
+      },
+      {
+        "id": "b",
+        "status": "yes",
+        "meal": "vegetarian"
+      },
+      {
+        "id": "c",
+        "status": "maybe"
+      }
+    ]
+  },
+  "expected": {
+    "confirmedPeople": 3,
+    "capacityExceeded": true
+  },
+  "invalid": {
+    "capacity": 2,
+    "people": [
+      {
+        "id": "a",
+        "status": "yes",
+        "partySize": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "mode": "citation_manager",
+  "sample": {
+    "records": [
+      {
+        "id": "demo1",
+        "title": "Fictional report",
+        "authors": [
+          "Example Author"
+        ],
+        "year": 2026,
+        "doi": "https://doi.org/10.0000/demo"
+      },
+      {
+        "id": "demo2",
+        "title": "Same record",
+        "doi": "10.0000/demo"
+      }
+    ]
+  },
+  "expected": {
+    "uniqueReferences": 1,
+    "duplicateIds": [
+      "demo2"
+    ]
+  },
+  "invalid": {
+    "records": [
+      {
+        "id": "bad key",
+        "title": "Demo"
+      }
+    ]
+  }
+}

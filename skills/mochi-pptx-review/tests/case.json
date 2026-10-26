@@ -1,0 +1,14 @@
+{
+  "mode": "pptx_review",
+  "sample": {
+    "file": "samples/slides.pptx",
+    "maxCharsPerSlide": 100
+  },
+  "expected": {
+    "slideCount": 1,
+    "visualRenderingChecked": false
+  },
+  "invalid": {
+    "file": "samples/plain.txt"
+  }
+}

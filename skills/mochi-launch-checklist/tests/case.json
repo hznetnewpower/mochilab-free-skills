@@ -1,0 +1,30 @@
+{
+  "mode": "launch_checklist",
+  "sample": {
+    "tasks": [
+      {
+        "id": "smoke",
+        "status": "done",
+        "evidence": "Fictional test receipt"
+      },
+      {
+        "id": "rollback",
+        "status": "pending"
+      }
+    ]
+  },
+  "expected": {
+    "readyForHumanDecision": false,
+    "taskCount": 2
+  },
+  "invalid": {
+    "tasks": [
+      {
+        "id": "x"
+      },
+      {
+        "id": "x"
+      }
+    ]
+  }
+}

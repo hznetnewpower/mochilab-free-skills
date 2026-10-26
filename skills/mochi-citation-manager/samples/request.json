@@ -1,0 +1,18 @@
+{
+  "records": [
+    {
+      "id": "demo1",
+      "title": "Fictional report",
+      "authors": [
+        "Example Author"
+      ],
+      "year": 2026,
+      "doi": "https://doi.org/10.0000/demo"
+    },
+    {
+      "id": "demo2",
+      "title": "Same record",
+      "doi": "10.0000/demo"
+    }
+  ]
+}

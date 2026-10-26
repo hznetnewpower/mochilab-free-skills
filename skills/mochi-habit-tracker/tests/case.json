@@ -1,0 +1,23 @@
+{
+  "mode": "habit_tracker",
+  "sample": {
+    "dates": [
+      "2026-10-25",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-27"
+    ],
+    "asOf": "2026-10-27",
+    "windowDays": 7
+  },
+  "expected": {
+    "completedDays": 3,
+    "streakEndingAsOf": 3
+  },
+  "invalid": {
+    "dates": [
+      "2026-10-28"
+    ],
+    "asOf": "2026-10-27"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "mode": "incident_timeline",
+  "sample": {
+    "events": [
+      {
+        "id": "b",
+        "at": "2026-10-27T10:05:00Z",
+        "summary": "Recovered",
+        "source": "synthetic monitor"
+      },
+      {
+        "id": "a",
+        "at": "2026-10-27T10:00:00Z",
+        "summary": "Failure observed",
+        "source": "synthetic log"
+      }
+    ]
+  },
+  "expected": {
+    "eventCount": 2,
+    "rootCauseInferred": false
+  },
+  "invalid": {
+    "events": [
+      {
+        "id": "a",
+        "at": "2026-10-27T10:00:00Z",
+        "summary": "No source"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Fictional planning review",
+  "minutes": 30,
+  "agenda": [
+    {
+      "topic": "Choose next milestone",
+      "minutes": 20,
+      "decision": "Select one option"
+    },
+    {
+      "topic": "Open questions",
+      "minutes": 15
+    }
+  ]
+}

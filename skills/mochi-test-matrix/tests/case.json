@@ -1,0 +1,28 @@
+{
+  "mode": "test_matrix",
+  "sample": {
+    "factors": {
+      "os": [
+        "linux",
+        "windows"
+      ],
+      "lang": [
+        "en",
+        "zh"
+      ],
+      "role": [
+        "one",
+        "two"
+      ]
+    }
+  },
+  "expected": {
+    "pairCoverageComplete": true,
+    "cartesianCount": 8
+  },
+  "invalid": {
+    "factors": {
+      "os": []
+    }
+  }
+}

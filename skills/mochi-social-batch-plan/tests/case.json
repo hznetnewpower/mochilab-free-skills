@@ -1,0 +1,34 @@
+{
+  "mode": "social_batch_plan",
+  "sample": {
+    "platformLimits": {
+      "demo": 5
+    },
+    "posts": [
+      {
+        "id": "p1",
+        "platform": "demo",
+        "text": "hello"
+      },
+      {
+        "id": "p2",
+        "platform": "demo",
+        "text": "too long"
+      }
+    ]
+  },
+  "expected": {
+    "overLimitCount": 1,
+    "postsPublished": false
+  },
+  "invalid": {
+    "platformLimits": {},
+    "posts": [
+      {
+        "id": "p1",
+        "platform": "missing",
+        "text": "x"
+      }
+    ]
+  }
+}

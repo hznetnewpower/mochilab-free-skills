@@ -1,0 +1,23 @@
+{
+  "mode": "repo_onboarding",
+  "sample": {
+    "files": [
+      "package.json",
+      "README.md",
+      "AGENTS.md",
+      "tests/basic.test.js"
+    ]
+  },
+  "expected": {
+    "ecosystems": [
+      "node"
+    ],
+    "fileCount": 4,
+    "commandsExecuted": false
+  },
+  "invalid": {
+    "files": [
+      1
+    ]
+  }
+}

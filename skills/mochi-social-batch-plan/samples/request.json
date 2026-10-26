@@ -1,0 +1,17 @@
+{
+  "platformLimits": {
+    "demo": 5
+  },
+  "posts": [
+    {
+      "id": "p1",
+      "platform": "demo",
+      "text": "hello"
+    },
+    {
+      "id": "p2",
+      "platform": "demo",
+      "text": "too long"
+    }
+  ]
+}

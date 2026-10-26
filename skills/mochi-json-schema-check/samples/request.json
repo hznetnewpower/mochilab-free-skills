@@ -1,0 +1,18 @@
+{
+  "schema": {
+    "type": "object",
+    "required": [
+      "count"
+    ],
+    "properties": {
+      "count": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "additionalProperties": false
+  },
+  "value": {
+    "count": 2
+  }
+}

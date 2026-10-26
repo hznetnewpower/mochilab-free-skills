@@ -1,0 +1,40 @@
+{
+  "mode": "feedback_clusters",
+  "sample": {
+    "topics": {
+      "speed": [
+        "slow",
+        "latency"
+      ],
+      "billing": [
+        "invoice"
+      ]
+    },
+    "feedback": [
+      {
+        "id": "f1",
+        "text": "slow response"
+      },
+      {
+        "id": "f2",
+        "text": "invoice question"
+      },
+      {
+        "id": "f3",
+        "text": "thanks"
+      }
+    ]
+  },
+  "expected": {
+    "records": 3,
+    "topicCounts": {
+      "speed": 1,
+      "billing": 1,
+      "unclassified": 1
+    }
+  },
+  "invalid": {
+    "topics": {},
+    "feedback": []
+  }
+}

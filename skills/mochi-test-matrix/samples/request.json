@@ -1,0 +1,16 @@
+{
+  "factors": {
+    "os": [
+      "linux",
+      "windows"
+    ],
+    "lang": [
+      "en",
+      "zh"
+    ],
+    "role": [
+      "one",
+      "two"
+    ]
+  }
+}

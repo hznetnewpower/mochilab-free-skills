@@ -1,0 +1,13 @@
+{
+  "tasks": [
+    {
+      "id": "smoke",
+      "status": "done",
+      "evidence": "Fictional test receipt"
+    },
+    {
+      "id": "rollback",
+      "status": "pending"
+    }
+  ]
+}

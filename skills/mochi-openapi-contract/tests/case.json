@@ -1,0 +1,15 @@
+{
+  "mode": "openapi_contract",
+  "sample": {
+    "file": "samples/openapi.json"
+  },
+  "expected": {
+    "validForChecks": true,
+    "operations": [
+      "GET /items/{id}"
+    ]
+  },
+  "invalid": {
+    "file": "samples/not-openapi.json"
+  }
+}

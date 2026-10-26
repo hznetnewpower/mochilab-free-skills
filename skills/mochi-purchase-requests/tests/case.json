@@ -1,0 +1,33 @@
+{
+  "mode": "purchase_requests",
+  "sample": {
+    "requests": [
+      {
+        "id": "r1",
+        "quantity": 3,
+        "unitPrice": "0.10",
+        "currency": "USD",
+        "quoteSource": "Fictional quote"
+      }
+    ],
+    "approvalThresholds": {
+      "USD": "0.20"
+    }
+  },
+  "expected": {
+    "totalsByCurrency": {
+      "USD": "0.30"
+    },
+    "purchaseOrPaymentExecuted": false
+  },
+  "invalid": {
+    "requests": [
+      {
+        "id": "r1",
+        "quantity": 0,
+        "unitPrice": "1",
+        "currency": "USD"
+      }
+    ]
+  }
+}
