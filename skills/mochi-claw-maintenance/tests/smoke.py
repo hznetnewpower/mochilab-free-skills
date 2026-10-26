@@ -1,8 +1,8 @@
-import csv,hashlib,importlib.util,json,os,shutil,sqlite3,sys,tempfile,unittest,zipfile,uuid
+import csv,hashlib,json,os,shutil,sqlite3,sys,tempfile,unittest,zipfile,uuid
 from pathlib import Path
 DOMAINS=Path(__file__).resolve().parents[1]/"scripts"
 sys.path.insert(0,str(DOMAINS))
-spec=importlib.util.spec_from_file_location('claw_maintenance',DOMAINS/"run.py"); claw=importlib.util.module_from_spec(spec); spec.loader.exec_module(claw)
+import run as claw
 from io_utils import transaction,digest
 
 class Base(unittest.TestCase):

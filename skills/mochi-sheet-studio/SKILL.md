@@ -1,7 +1,7 @@
 ---
 name: mochi-sheet-studio
 description: "Combine XLSX/CSV sources, clean mapped fields, deduplicate, reconcile sales, refunds and expenses, and export currency-separated monthly reports with source rows. Use for Excel 业务分析工作台."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.0"}}
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
 # Excel 业务分析工作台 / Excel Business Analysis Studio

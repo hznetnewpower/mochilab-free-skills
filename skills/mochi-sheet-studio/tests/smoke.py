@@ -1,8 +1,8 @@
-import csv,hashlib,importlib.util,json,os,shutil,sqlite3,sys,tempfile,unittest,zipfile,uuid
+import csv,hashlib,json,os,shutil,sqlite3,sys,tempfile,unittest,zipfile,uuid
 from pathlib import Path
 DOMAINS=Path(__file__).resolve().parents[1]/"scripts"
 sys.path.insert(0,str(DOMAINS))
-spec=importlib.util.spec_from_file_location('sheet_studio',DOMAINS/"run.py"); sheet=importlib.util.module_from_spec(spec); spec.loader.exec_module(sheet)
+import run as sheet
 from io_utils import transaction,digest
 from openpyxl import Workbook,load_workbook
 

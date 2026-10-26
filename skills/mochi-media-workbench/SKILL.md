@@ -1,7 +1,7 @@
 ---
 name: mochi-media-workbench
 description: "Inspect media, extract audio, cut clips and frames, and export SRT/VTT subtitles locally, with optional local speech recognition and resumable chunk caches. Use for 音视频内容加工台."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.0"}}
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
 # 音视频内容加工台 / Audio and Video Workbench

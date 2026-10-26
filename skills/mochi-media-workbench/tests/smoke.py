@@ -1,8 +1,8 @@
-import csv,hashlib,importlib.util,json,os,shutil,sqlite3,sys,tempfile,unittest,zipfile,uuid
+import csv,hashlib,json,os,shutil,sqlite3,sys,tempfile,unittest,zipfile,uuid
 from pathlib import Path
 DOMAINS=Path(__file__).resolve().parents[1]/"scripts"
 sys.path.insert(0,str(DOMAINS))
-spec=importlib.util.spec_from_file_location('media_workbench',DOMAINS/"run.py"); media=importlib.util.module_from_spec(spec); spec.loader.exec_module(media)
+import run as media
 from io_utils import transaction,digest
 
 class Base(unittest.TestCase):
@@ -48,6 +48,6 @@ class MediaTests(Base):
  def test_playlist_disguised_as_media_rejected(self):
   (self.ws/'bad.mp4').write_text('#EXTM3U\n#EXT-X-TARGETDURATION:10\n#EXTINF:10,\nhttps://example.com/private.ts\n');self.assertRaises(Exception,self.execute,media,{'file':'bad.mp4'})
  def test_failure_leaves_original_and_no_result(self):
-  before=digest(self.video);self.assertRaises(ValueError,self.execute,media,{'file':'sample.mp4','action':'clips','clips':[{'start':2,'end':1}]});self.assertEqual(before,digest(self.video));home=self.ws/'.mochilab/test-media_workbench';self.assertFalse(list(home.glob('r*.json')))
+  before=digest(self.video);self.assertRaises(ValueError,self.execute,media,{'file':'sample.mp4','action':'clips','clips':[{'start':2,'end':1}]});self.assertEqual(before,digest(self.video));home=self.ws/'.mochilab'/('test-'+media.__name__);self.assertFalse(list(home.glob('r*.json')))
 
 if __name__=="__main__":unittest.main(verbosity=2)

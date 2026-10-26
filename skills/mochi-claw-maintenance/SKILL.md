@@ -1,7 +1,7 @@
 ---
 name: mochi-claw-maintenance
 description: "Inspect one selected OpenClaw instance and its agent bindings, create verified private snapshots, compare changes and rehearse restoration in a new directory. Use for 龙虾维护与迁移管家."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.0"}}
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
 # 龙虾维护与迁移管家 / OpenClaw Maintenance and Migration Desk
