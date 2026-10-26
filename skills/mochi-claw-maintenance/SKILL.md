@@ -1,10 +1,10 @@
 ---
-name: mochi-claw-maintenance
-description: "Inspect one selected OpenClaw instance and its agent bindings, create verified private snapshots, compare changes and rehearse restoration in a new directory. Use for 龙虾维护与迁移管家."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
+name: "mochi-claw-maintenance"
+description: "Inspect one selected OpenClaw instance and its agent bindings, create verified private snapshots, compare changes and rehearse restoration in a new directory. Use for OpenClaw Maintenance and Migration Desk."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.2"}}
 ---
 
-# 龙虾维护与迁移管家 / OpenClaw Maintenance and Migration Desk
+# OpenClaw Maintenance and Migration Desk
 
 ## Select exactly one instance
 
@@ -27,3 +27,5 @@ A snapshot contains credentials. For a user-requested private backup, set sensit
 verify rejects traversal, duplicate/case-colliding paths, links, extra/missing files and mismatched size/hash receipts. rehearse restores only into a NEW export directory and rechecks every file. It does not start a Gateway or activate restored credentials. compare lists added/changed/removed paths; DB byte changes are not a semantic data diff.
 
 Deliver inventory, verified ZIP and rehearsal/compare receipts as requested. A successful rehearsal proves file recovery, not live service behavior. For a real migration, use the installed version's help for update/backup/restore, preserve agent/account routing, then test the actual model and chat account. Do not invent a successful chat reply or replace one account's binding with another's.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

@@ -1,14 +1,12 @@
 ---
-name: mochi-task-handoff
-description: "Save task checkpoints and file hashes, then resume with a clear next-step list and stale-file warnings. Use for 长任务接续与检查点."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "version": "1.0.0", "homepage": "https://mochilab.bz"}}
+name: "mochi-task-handoff"
+description: "Save task checkpoints and file hashes, then resume with a clear next-step list and stale-file warnings. Use for Task Checkpoint and Handoff."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "version": "1.0.1", "homepage": "https://mochilab.bz"}}
 ---
 
-# 长任务接续与检查点 / Task Checkpoint and Handoff
+# Task Checkpoint and Handoff
 
 Save task checkpoints and file hashes, then resume with a clear next-step list and stale-file warnings.
-
-保存长任务目标、已完成内容、下一步与阻碍，记录文件哈希；恢复任务时提示源文件是否已变化。
 
 ## Workflow
 
@@ -24,13 +22,7 @@ Check ok=true and read the actual output files before reporting success. Outputs
 
 A checkpoint is context, not proof that unfinished work is complete. Recheck stale inputs. No autonomous scheduling, cross-agent access, prompt-file replacement or external messaging is performed.
 
-## Useful requests / 用法示例
-
-- 保存这个长任务的进度，写清楚下一步从哪里继续。
-
-- 恢复上次检查点，先确认引用文件有没有被改过。
-
-- 把当前目标、阻碍和下一步导出成任务交接说明。
+## Useful requests
 
 - Save a checkpoint with completed work and the next steps.
 
@@ -42,4 +34,6 @@ A checkpoint is context, not proof that unfinished work is complete. Recheck sta
 
 Run `python3 "{baseDir}/tests/smoke.py"` for bundled synthetic tests. This does not test the user’s real account, remote permissions, complete source accuracy or visual rendering. Report those separately when relevant.
 
-Author: MochiLab · https://mochilab.bz · Version 1.0.0
+Author: MochiLab · https://mochilab.bz · Version 1.0.1
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

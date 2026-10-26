@@ -1,10 +1,10 @@
 ---
-name: mochi-daily-planner
-description: "Build priority-based time blocks with breaks and backlog, revise plans and export schedules. Use for 每日计划与复盘."
-metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.0"}}
+name: "mochi-daily-planner"
+description: "Build priority-based time blocks with breaks and backlog, revise plans and export schedules. Use for Daily Planner and Review."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.1"}}
 ---
 
-# 每日计划与复盘 / Daily Planner and Review
+# Daily Planner and Review
 
 ## Turn priorities into a realistic daily plan
 
@@ -29,3 +29,5 @@ node "{baseDir}/scripts/run.mjs" --workspace "CURRENT_WORKSPACE" --input "reques
 ```
 
 Read [references/input.md](references/input.md) before preparing fields. Every mutation and export uses a stable unique requestId; an identical retry returns its saved result. Put user text in JSON, not shell code. Successful exports return actual file paths, sizes and SHA256 values under this workspace's `.mochilab/mochi-daily-planner/exports/` directory. Inspect the files before reporting completion. Previous exports are retained. No MochiLab key is needed by this standalone helper.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

@@ -1,10 +1,10 @@
 ---
-name: mochi-learning-cards
-description: Create evidence-backed Chinese or English flashcards from supplied local text, verify exact source quotes, and export safe Markdown, Anki TSV and a manual review checklist. Use for 学习卡片 or note-to-question practice; not inventing knowledge, scheduling or syncing an external learning account.
-metadata: {"openclaw":{"requires":{"bins":["node"]},"homepage":"https://mochilab.bz"}}
+name: "mochi-learning-cards"
+description: "Create evidence-backed Chinese or English flashcards from supplied local text, verify exact source quotes, and export safe Markdown, Anki TSV and a manual review checklist. Use for Study Cards with Source References or note-to-question practice; not inventing knowledge, scheduling or syncing an external learning account."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 学习卡片 / Learning Cards
+# Study Cards with Source References
 
 Use the model already connected to OpenClaw for question writing. Node 24+ scripts use core modules only and do not call a model API, network service, scheduler or learning platform. The user's existing model still has its own costs and data handling.
 
@@ -47,3 +47,5 @@ Invalid quotes, duplicate questions, excessive counts, unsupported fields or cha
 Markdown escapes source symbols rather than rendering HTML. TSV uses quoted fields, UTF-8, tabs and `#html:false`; formula-like fields get a leading text apostrophe, which may be visible in Anki. For manual Anki import choose a Basic note type, map Front and Back, leave HTML disabled and preview before importing. See [the text-format note](references/anki-import.md) only if importing. Do not open/sync an Anki account or automatically mark review checkboxes.
 
 The checklist is a local manual aid, not a spaced-repetition scheduler or progress database. Raw source/cards can be sensitive; only pass material the user allows to their configured model. The scripts neither fetch other knowledge nor send cards anywhere. Use the original `samples/source.en.md` or `source.zh-CN.md` for a first trial if the user asks for an example.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

@@ -1,10 +1,10 @@
 ---
-name: mochi-document-reader
-description: "Read DOCX and text, search across files and export extracted text and line-cited evidence. Use for 文件阅读与重点问答."
-metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.0"}}
+name: "mochi-document-reader"
+description: "Read DOCX and text, search across files and export extracted text and line-cited evidence. Use for Document Reading and Questions."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.1"}}
 ---
 
-# 文件阅读与重点问答 / Document Reading and Questions
+# Document Reading and Questions
 
 ## Read the actual file and preserve provenance
 
@@ -29,3 +29,5 @@ node "{baseDir}/scripts/run.mjs" --workspace "CURRENT_WORKSPACE" --input "reques
 ```
 
 Read [references/input.md](references/input.md) before preparing fields. Every mutation and export uses a stable unique requestId; an identical retry returns its saved result. Put user text in JSON, not shell code. Successful exports return actual file paths, sizes and SHA256 values under this workspace's `.mochilab/mochi-document-reader/exports/` directory. Inspect the files before reporting completion. Previous exports are retained. No MochiLab key is needed by this standalone helper.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

@@ -1,10 +1,10 @@
 ---
-name: mochi-meal-planner
-description: "Save dietary exclusions and pantry stock, scale servings and export menus and groceries. Use for 菜谱与买菜清单."
-metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.0"}}
+name: "mochi-meal-planner"
+description: "Save dietary exclusions and pantry stock, scale servings and export menus and groceries. Use for Meal Planner and Grocery List."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.1"}}
 ---
 
-# 菜谱与买菜清单 / Meal Planner and Grocery List
+# Meal Planner and Grocery List
 
 ## Keep meal preferences and calculate quantities
 
@@ -29,3 +29,5 @@ node "{baseDir}/scripts/run.mjs" --workspace "CURRENT_WORKSPACE" --input "reques
 ```
 
 Read [references/input.md](references/input.md) before preparing fields. Every mutation and export uses a stable unique requestId; an identical retry returns its saved result. Put user text in JSON, not shell code. Successful exports return actual file paths, sizes and SHA256 values under this workspace's `.mochilab/mochi-meal-planner/exports/` directory. Inspect the files before reporting completion. Previous exports are retained. No MochiLab key is needed by this standalone helper.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

@@ -1,10 +1,10 @@
 ---
-name: mochi-web-notes
-description: Turn one to three explicitly supplied public HTTPS pages into source-backed Chinese or English research notes saved locally. Use for 网页资料笔记, comparing a few linked articles, or a first cited reading note; not crawling, paywalls, logged-in pages or sending reports.
-metadata: {"openclaw":{"requires":{"bins":["node"]},"homepage":"https://mochilab.bz"}}
+name: "mochi-web-notes"
+description: "Turn one to three explicitly supplied public HTTPS pages into source-backed Chinese or English research notes saved locally. Use for Web Research Notes, comparing a few linked articles, or a first cited reading note; not crawling, paywalls, logged-in pages or sending reports."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 网页资料笔记 / Web Notes
+# Web Research Notes
 
 Use the model already configured in this OpenClaw session to read bounded static evidence and write a useful note in the requested language. The scripts use Node 24+ core only: no npm, extra API key, model API, scheduler or delivery.
 
@@ -41,3 +41,5 @@ Open and review the returned Markdown. Report actual sources collected, failures
 `samples/urls.json` is an optional public-page demonstration, not a configured default feed. Copy it into the workspace only for a user-authorized sample run. Evidence/drafts go in `.mochi-web-notes`; finished notes go in `web-notes`, with unique run IDs. Existing files and symlink/junction paths are refused. The reader caps actual descriptor reads and checks common file-change races; it is not a sandbox against a malicious local process.
 
 Website operators see GET requests and the server's IP. Evidence passed to the user's existing cloud model may leave this host under that provider's terms. The Skill itself does not call another model or send the completed note. No recurring task, external message or browser/login automation is created.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

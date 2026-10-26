@@ -1,14 +1,12 @@
 ---
-name: mochi-writing-clarity
-description: "Flag generic wording, long sentences and repeated paragraphs; compare numeric and URL tokens after editing. Use for 自然表达与事实保留检查."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "version": "1.0.0", "homepage": "https://mochilab.bz"}}
+name: "mochi-writing-clarity"
+description: "Flag generic wording, long sentences and repeated paragraphs; compare numeric and URL tokens after editing. Use for Writing Clarity and Fact Check."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "version": "1.0.1", "homepage": "https://mochilab.bz"}}
 ---
 
-# 自然表达与事实保留检查 / Writing Clarity and Fact Check
+# Writing Clarity and Fact Check
 
 Flag generic wording, long sentences and repeated paragraphs; compare numeric and URL tokens after editing.
-
-标记空泛套话、过长句子和重复段落，对比改写前后的数字与链接，辅助把文字改得自然且不丢事实。
 
 ## Workflow
 
@@ -24,13 +22,7 @@ Check ok=true and read the actual output files before reporting success. Outputs
 
 Do not label writing as AI-generated or promise to evade detectors. Use findings as editorial hints. Verify names, quotations and meaning separately; unchanged numeric tokens are not a semantic accuracy guarantee.
 
-## Useful requests / 用法示例
-
-- 检查这篇文案的套话和长句，保留我的语气。
-
-- 对比修改前后，看看价格、日期和链接有没有被改掉。
-
-- 找出这篇文章里的重复段落，再给出精简建议。
+## Useful requests
 
 - Check this draft for vague phrases and long sentences while preserving my voice.
 
@@ -42,4 +34,6 @@ Do not label writing as AI-generated or promise to evade detectors. Use findings
 
 Run `python3 "{baseDir}/tests/smoke.py"` for bundled synthetic tests. This does not test the user’s real account, remote permissions, complete source accuracy or visual rendering. Report those separately when relevant.
 
-Author: MochiLab · https://mochilab.bz · Version 1.0.0
+Author: MochiLab · https://mochilab.bz · Version 1.0.1
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

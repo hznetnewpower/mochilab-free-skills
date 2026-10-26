@@ -1,14 +1,12 @@
 ---
-name: mochi-agent-lessons
-description: "Record corrections with evidence, verify the fix and retrieve relevant lessons before another task. Use for 助手纠错与经验手册."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "version": "1.0.0", "homepage": "https://mochilab.bz"}}
+name: "mochi-agent-lessons"
+description: "Record corrections with evidence, verify the fix and retrieve relevant lessons before another task. Use for Agent Lessons Journal."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "version": "1.0.1", "homepage": "https://mochilab.bz"}}
 ---
 
-# 助手纠错与经验手册 / Agent Lessons Journal
+# Agent Lessons Journal
 
 Record corrections with evidence, verify the fix and retrieve relevant lessons before another task.
-
-记录明确的错误、纠正与证据，跟踪验证结果，在新任务前检索经验，避免反复犯同样的错。
 
 ## Workflow
 
@@ -24,13 +22,7 @@ Check ok=true and read the actual output files before reporting success. Outputs
 
 Only save corrections the user has asked to retain. Do not sweep chats or credentials, install hooks, rewrite system guidance, or claim one successful example proves a universal rule.
 
-## Useful requests / 用法示例
-
-- 把这次命令参数用错的原因和正确写法记下来，保留错误证据。
-
-- 找出以前关于 CSV 编码的纠错经验。
-
-- 这次修复已重新测试成功，请给这条经验补上验证记录。
+## Useful requests
 
 - Record this command failure, its correction and supporting evidence.
 
@@ -42,4 +34,6 @@ Only save corrections the user has asked to retain. Do not sweep chats or creden
 
 Run `python3 "{baseDir}/tests/smoke.py"` for bundled synthetic tests. This does not test the user’s real account, remote permissions, complete source accuracy or visual rendering. Report those separately when relevant.
 
-Author: MochiLab · https://mochilab.bz · Version 1.0.0
+Author: MochiLab · https://mochilab.bz · Version 1.0.1
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

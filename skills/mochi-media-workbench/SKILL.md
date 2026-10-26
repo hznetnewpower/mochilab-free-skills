@@ -1,10 +1,10 @@
 ---
-name: mochi-media-workbench
-description: "Inspect media, extract audio, cut clips and frames, and export SRT/VTT subtitles locally, with optional local speech recognition and resumable chunk caches. Use for 音视频内容加工台."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
+name: "mochi-media-workbench"
+description: "Inspect media, extract audio, cut clips and frames, and export SRT/VTT subtitles locally, with optional local speech recognition and resumable chunk caches. Use for Audio and Video Workbench."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.2"}}
 ---
 
-# 音视频内容加工台 / Audio and Video Workbench
+# Audio and Video Workbench
 
 ## Select the local media job
 
@@ -27,3 +27,5 @@ Transcription is segmented into 300-second chunks. Completed chunks are retained
 ## Review and delivery
 
 Open the actual clip, preview.jpg and subtitle files. Return manifest.json with source hashes, selected timestamps and measured output durations. Recognition output is labeled local-asr and needs transcript review; user-provided captions are labeled separately. A model-written summary is a later task and must not be inserted as if recognized speech. Preserve source files and do not send media to external services unless separately requested.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

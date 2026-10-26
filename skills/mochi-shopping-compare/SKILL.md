@@ -1,10 +1,10 @@
 ---
-name: mochi-shopping-compare
-description: "Calculate purchase costs, compare saved price snapshots, preserve referral URLs and export reports. Use for 购物比较助手."
-metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.0"}}
+name: "mochi-shopping-compare"
+description: "Calculate purchase costs, compare saved price snapshots, preserve referral URLs and export reports. Use for Shopping Comparison."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.1"}}
 ---
 
-# 购物比较助手 / Shopping Comparison
+# Shopping Comparison
 
 ## Compare sourced offers, not unsupported prices
 
@@ -31,3 +31,5 @@ node "{baseDir}/scripts/run.mjs" --workspace "CURRENT_WORKSPACE" --input "reques
 ```
 
 Read [references/input.md](references/input.md) before preparing fields. Every mutation and export uses a stable unique requestId; an identical retry returns its saved result. Put user text in JSON, not shell code. Successful exports return actual file paths, sizes and SHA256 values under this workspace's `.mochilab/mochi-shopping-compare/exports/` directory. Inspect the files before reporting completion. Previous exports are retained. No MochiLab key is needed by this standalone helper.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

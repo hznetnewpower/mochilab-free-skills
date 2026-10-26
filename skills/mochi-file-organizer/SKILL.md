@@ -1,10 +1,10 @@
 ---
-name: mochi-file-organizer
-description: Create a read-only file classification plan and SHA256 duplicate report for an explicitly named local folder. Use for 文件整理, reviewing Downloads, or finding duplicate files before deciding how to organize them. It does not move or delete files.
-metadata: {"openclaw":{"requires":{"bins":["node"]},"homepage":"https://mochilab.bz"}}
+name: "mochi-file-organizer"
+description: "Create a read-only file classification plan and SHA256 duplicate report for an explicitly named local folder. Use for file organization, reviewing Downloads, or finding duplicate files before deciding how to organize them. It does not move or delete files."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 文件整理规划 / File Organizer
+# File Organization Plan and Duplicate Report
 
 Inspect an explicitly chosen local directory and produce a reviewable plan. Use Node.js 24+ and the existing agent's command tool; no npm package, network request, new model key or installation is needed.
 
@@ -39,6 +39,8 @@ The script makes no network request and does not read file contents into the rep
 
 If a scan fails, report the error and which limits/path permissions need attention. Do not claim the folder was organized: success means a **read-only plan was created**.
 
-Try: “用文件整理规划查看这个下载目录，找出真正重复的文件，先给我方案，不要改文件。”
+Try: “Inspect this downloads directory and identify true duplicate files. Give me a plan first; do not change any files.”
 
 For a safe first run, point the script at `samples/sample-input` and write to a new folder in the agent workspace. Run `node --test tests/*.test.mjs` from this Skill directory for repeatable local tests. These are script tests, not an OpenClaw host installation acceptance.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

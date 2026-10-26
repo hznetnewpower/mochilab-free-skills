@@ -1,10 +1,10 @@
 ---
-name: mochi-expense-tracker
-description: "Import CSV transactions with deduplication, calculate exact totals and budgets, and export ledgers. Use for 日常记账与预算."
-metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.0"}}
+name: "mochi-expense-tracker"
+description: "Import CSV transactions with deduplication, calculate exact totals and budgets, and export ledgers. Use for Expense Tracker and Budgets."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.1"}}
 ---
 
-# 日常记账与预算 / Expense Tracker and Budgets
+# Expense Tracker and Budgets
 
 ## Build a verifiable household ledger
 
@@ -27,3 +27,5 @@ node "{baseDir}/scripts/run.mjs" --workspace "CURRENT_WORKSPACE" --input "reques
 ```
 
 Read [references/input.md](references/input.md) before preparing fields. Every mutation and export uses a stable unique requestId; an identical retry returns its saved result. Put user text in JSON, not shell code. Successful exports return actual file paths, sizes and SHA256 values under this workspace's `.mochilab/mochi-expense-tracker/exports/` directory. Inspect the files before reporting completion. Previous exports are retained. No MochiLab key is needed by this standalone helper.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

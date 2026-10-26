@@ -1,10 +1,10 @@
 ---
-name: mochi-content-workbench
-description: Adapt supplied material into channel-specific Chinese or English drafts using a source fact ledger, then check user-defined character budgets, citations, language hints and duplicate copy. Use for 内容改写 or multi-channel copy drafts; no posting or official platform-limit guarantees.
-metadata: {"openclaw":{"requires":{"bins":["node"]},"homepage":"https://mochilab.bz"}}
+name: "mochi-content-workbench"
+description: "Adapt supplied material into channel-specific Chinese or English drafts using a source fact ledger, then check user-defined character budgets, citations, language hints and duplicate copy. Use for content repurposing or multi-channel copy drafts; no posting or official platform-limit guarantees."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 内容改写工作台 / Content Workbench
+# Content Repurposing Workbench
 
 Turn the user's material into useful drafts for their chosen channels while preserving facts, tone and purpose. Use the model already connected to OpenClaw. Scripts need Node 24+ only; they have no networking, publishing, scheduling, npm dependencies or new model key.
 
@@ -26,6 +26,8 @@ Character counts are Unicode code points, including spaces/newlines. Emoji seque
 
 Every run creates a new UUID directory under an existing allowed workspace, without overwriting inputs or reports or following symlink/junction paths. Nothing is posted, uploaded or sent to others. Only prepare local drafts unless a separate task explicitly authorizes another tool/action.
 
-Example: “按我这份更新说明，做一个英文网站介绍和一条中文短帖。分别不超过 280 和 160 个字符，列出事实依据，不要发布。”
+Example: “Use these release notes to draft an English website introduction and a Chinese short post, limited to 280 and 160 characters respectively. List the supporting facts; do not publish.”
 
 The Skill is free; the user's model may charge and process supplied content under its own privacy terms. Avoid unnecessary personal information and follow existing execution/file permissions.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

@@ -1,9 +1,47 @@
-# Log Diagnostics Toolbox / 日志分析与故障诊断工具箱
+# Log Diagnostics Toolbox
+
+[Simplified Chinese guide](README.zh-CN.md)
 
 Analyze access, JSONL application and GZIP logs for errors, HTTP status, popular routes and time patterns.
 
-分析访问日志、JSONL 应用日志和 GZIP 日志，统计错误、状态码、热门路径及时间分布。
+## Features
 
-Version1.0.0 · Python3.10+ standard library · Author https://mochilab.bz
+Analyze access, JSONL application and GZIP logs for errors, HTTP status, popular routes and time patterns.
 
-Start with SKILL.md; action fields are in references/input.md. Run python tests/smoke.py for the packaged functional tests.
+Runs in the active agent workspace and saves results and reports while preserving source files.
+
+## Usage examples
+
+After installation, send an example to your AI with the relevant files or URLs.
+
+```text
+Analyze this access log and report the most frequent 404 and 500 routes.
+```
+
+```text
+Show errors by hour and the most common failure signatures.
+```
+
+```text
+Inspect these compressed logs, exclude likely bots and count routes and unique IPs.
+```
+
+## Requirements
+
+Python 3.10+; standard library
+
+## Installation and first use
+
+### MochiLab Skills assistant (recommended)
+
+[Set up and connect the assistant](https://mochilab.bz/Skills/Connect.aspx?lang=en), then send:
+
+```text
+Install mochi-log-diagnostics
+```
+
+Alternatively, get the ZIP on this page and place its Skill folder in the active workspace's `skills/` directory. Start a new conversation after installation.
+
+## Detailed operation contract
+
+Read [SKILL.md](SKILL.md) for the exact workflow, commands, permission boundaries and supporting references. Use the active agent workspace and verify actual outputs.

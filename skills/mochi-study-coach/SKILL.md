@@ -1,10 +1,10 @@
 ---
-name: mochi-study-coach
-description: "Import question decks, retain attempts and review dates, summarize practice and export answer-hidden queues. Use for 学习陪练与错题复习."
-metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.0"}}
+name: "mochi-study-coach"
+description: "Import question decks, retain attempts and review dates, summarize practice and export answer-hidden queues. Use for Study Coach and Mistake Review."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.1.1"}}
 ---
 
-# 学习陪练与错题复习 / Study Coach and Mistake Review
+# Study Coach and Mistake Review
 
 ## Prepare a sourced practice deck
 
@@ -27,3 +27,5 @@ node "{baseDir}/scripts/run.mjs" --workspace "CURRENT_WORKSPACE" --input "reques
 ```
 
 Read [references/input.md](references/input.md) before preparing fields. Every mutation and export uses a stable unique requestId; an identical retry returns its saved result. Put user text in JSON, not shell code. Successful exports return actual file paths, sizes and SHA256 values under this workspace's `.mochilab/mochi-study-coach/exports/` directory. Inspect the files before reporting completion. Previous exports are retained. No MochiLab key is needed by this standalone helper.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

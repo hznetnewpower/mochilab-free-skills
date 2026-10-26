@@ -1,10 +1,10 @@
 ---
-name: mochi-inventory-desk
-description: "Track SKUs and warehouse movements, calculate stock and moving-average cost, and export reorder reports by currency. Use for 库存进销存与补货管理."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.0"}}
+name: "mochi-inventory-desk"
+description: "Track SKUs and warehouse movements, calculate stock and moving-average cost, and export reorder reports by currency. Use for Inventory and Reorder Desk."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 库存进销存与补货管理 / Inventory and Reorder Desk
+# Inventory and Reorder Desk
 
 ## Run in the active agent workspace
 
@@ -19,13 +19,7 @@ Read references/input.md for the exact action fields. Source paths are workspace
 Check the returned ok field and actual result before reporting completion. Never describe an exception or a failed check as a completed job. Follow host approval rules for deletion, mutation requests or external transmissions. The helper does not grant authorization merely because a JSON field is set.
 
 Do not infer unit cost, SKU identity or currency from vague text. Adjustments preserve an explicit reason. A report reflects this local ledger, not a live shop or ERP connection.
-## User examples / 用法示例
-
-- 建立这些商品的库存档案，设置最低库存和目标补货数量。
-
-- 登记今天的入库和出库，检查库存够不够，同一流水重复提交不要重复计数。
-
-- 生成各仓库库存表和缺货清单，金额按币种分别汇总。
+## User examples
 
 - Create SKU records with minimum stock and target replenishment levels.
 
@@ -33,4 +27,6 @@ Do not infer unit cost, SKU identity or currency from vague text. Adjustments pr
 
 - Export warehouse stock and reorder lists with separate currency totals.
 
-Author / 作者：MochiLab · https://mochilab.bz
+Author:MochiLab · https://mochilab.bz
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

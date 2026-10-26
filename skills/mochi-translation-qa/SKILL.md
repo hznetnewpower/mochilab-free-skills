@@ -1,10 +1,10 @@
 ---
-name: mochi-translation-qa
-description: Translate or polish user-provided text with the current model, then check bilingual segment alignment, required terminology, numbers and links and export a comparison with review issues. Use for 翻译校对, translation reviews or bilingual delivery; mechanical checks do not certify meaning.
-metadata: {"openclaw":{"requires":{"bins":["node"]},"homepage":"https://mochilab.bz"}}
+name: "mochi-translation-qa"
+description: "Translate or polish user-provided text with the current model, then check bilingual segment alignment, required terminology, numbers and links and export a comparison with review issues. Use for Translation and Proofreading, translation reviews or bilingual delivery; mechanical checks do not certify meaning."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 翻译校对 / Translation QA
+# Translation and Proofreading
 
 Produce a faithful translation or review an existing one, preserving the user's facts, tone, terminology and intended audience. Use the model already connected to OpenClaw. This package needs Node 24+, no npm packages and no additional model key. The script has no networking, scheduling or external delivery.
 
@@ -23,6 +23,8 @@ Use real paths and quote arguments for the current shell, or use an argument-arr
 
 Outputs are `comparison.md`, `comparison.csv`, `report.json` and `run.json`. CSV cells are quoted and formula-like values receive a leading apostrophe for spreadsheet safety; the Markdown comparison retains the original text in literal blocks. Numeric checks compare literal spellings, so localized separators or written-out numbers need manual review.
 
-Example: “把这段产品说明译成英文，保留链接和数字，OpenClaw 不翻译，最后给我对照表和问题清单。”
+Example: “Translate this product description into English. Preserve links and numbers, keep OpenClaw unchanged, and provide a comparison table and issue list.”
 
 The Skill is free; the selected model may charge and may process the provided text under its own privacy terms. Avoid unnecessary personal data. Nothing is published or sent to other people. Honor existing execution/file permissions; do not bypass a denied tool.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

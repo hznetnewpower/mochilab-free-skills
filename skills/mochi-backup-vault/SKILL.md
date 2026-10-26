@@ -1,10 +1,10 @@
 ---
-name: mochi-backup-vault
-description: "Create content-addressed incremental snapshots, compare versions, verify hashes and restore files into a new directory. Use for 增量备份与恢复验证."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.0"}}
+name: "mochi-backup-vault"
+description: "Create content-addressed incremental snapshots, compare versions, verify hashes and restore files into a new directory. Use for Incremental Backup Vault."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 增量备份与恢复验证 / Incremental Backup Vault
+# Incremental Backup Vault
 
 ## Run in the active agent workspace
 
@@ -19,13 +19,7 @@ Read references/input.md for the exact action fields. Source paths are workspace
 Check the returned ok field and actual result before reporting completion. Never describe an exception or a failed check as a completed job. Follow host approval rules for deletion, mutation requests or external transmissions. The helper does not grant authorization merely because a JSON field is set.
 
 The source selection is explicit. Keep backup data out of Skill packages and public uploads. For successful verification, return actual verified/invalid fields; a failed verification must not be described as recoverable.
-## User examples / 用法示例
-
-- 给这个资料文件夹建立备份，排除缓存和依赖目录，保留原文件。
-
-- 再做一个新快照，告诉我新增和修改了哪些文件。
-
-- 校验上周的备份，再恢复到一个新文件夹，核对每个文件的校验值。
+## User examples
 
 - Back up this document folder, excluding caches and dependencies, while preserving originals.
 
@@ -33,4 +27,6 @@ The source selection is explicit. Keep backup data out of Skill packages and pub
 
 - Verify last week’s snapshot and restore it into a new folder with per-file hash checks.
 
-Author / 作者：MochiLab · https://mochilab.bz
+Author:MochiLab · https://mochilab.bz
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

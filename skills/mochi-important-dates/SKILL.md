@@ -1,10 +1,10 @@
 ---
-name: mochi-important-dates
-description: "Track Gregorian and lunar birthdays, anniversaries and sourced annual holidays, with advance alerts, time zones, leap-day policies and calendar export. Use for 重要日子与节日管家."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.0"}}
+name: "mochi-important-dates"
+description: "Track Gregorian and lunar birthdays, anniversaries and sourced annual holidays, with advance alerts, time zones, leap-day policies and calendar export. Use for Important Dates and Holidays."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 重要日子与节日管家 / Important Dates and Holidays
+# Important Dates and Holidays
 
 ## Run a job
 
@@ -21,3 +21,5 @@ Use for birthdays, wedding anniversaries, family milestones and imported statuto
 Holiday imports are annual JSON with country/region and official source URL. Preserve workday, holiday and observance labels. Do not infer statutory days off or Chinese adjusted working weekends from ordinary festival dates. Fetch the relevant year's official notice when the user asks to import a holiday calendar; keep that URL in the file. Lunar conversion and date exports run locally.
 
 Use poll for due reminders and upcoming for a planning view. Birthday ages are based only on explicit Gregorian birth years. export-ics expands actual dated occurrences over a selected <=730-day horizon, including lunar dates. Import that file into a calendar to view it; it is not a live calendar subscription. For automated delivery, read references/notifications.md. poll catches up over the last 48 hours by default, <=7 days; keep the host schedule more frequent than that. Repeated polls deduplicate by event revision, occurrence and advance offset. Editing/removing an event retires its old pending notices. Retain the same user timezone and advance settings on edits.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

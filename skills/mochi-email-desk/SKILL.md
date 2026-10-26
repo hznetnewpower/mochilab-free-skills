@@ -1,10 +1,10 @@
 ---
-name: mochi-email-desk
-description: "Connect IMAP/SMTP/POP3 accounts, sync and search mail, extract attachments, prepare and send messages, and track new-mail notifications. Use for 多邮箱邮件工作台."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.0"}}
+name: "mochi-email-desk"
+description: "Connect IMAP/SMTP/POP3 accounts, sync and search mail, extract attachments, prepare and send messages, and track new-mail notifications. Use for Multi-account Email Desk."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 多邮箱邮件工作台 / Multi-account Email Desk
+# Multi-account Email Desk
 
 ## Run a job
 
@@ -25,3 +25,5 @@ First sync establishes a baseline and caches the most recent limit messages (def
 For sending, prepare returns a local draft preview and sha256. Send that exact draft/hash when the user's recipient/content instruction is complete. Send results record accepted and refused recipients. A repeated sent draft is returned without retransmission. An uncertain outcome or a process interruption after claiming delivery requires checking the Sent mailbox before creating another draft; never auto-retry an uncertain send. Credentials and raw protocol failures stay out of command output. Flags support seen/unseen/starred/unstarred; this tool does not purge mail.
 
 For new-mail alerts, read references/notifications.md. First baseline is quiet. UIDVALIDITY changes re-baseline the folder. Notifications remain pending until delivered and acknowledged; include noticeId in delivery records to deduplicate retries. The host must have a running scheduler and configured destination. Do not call a cron job configured until the host returns its job ID.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

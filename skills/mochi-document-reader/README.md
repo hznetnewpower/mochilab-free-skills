@@ -1,15 +1,63 @@
-# 文件阅读与重点问答 / Document Reading and Questions
+# Document Reading and Questions
 
-Version: 1.1.0 · License: MIT-0
-
-直接读取 DOCX 和文本，跨文件检索原文，导出文本与带行号的证据清单。
+[Simplified Chinese guide](README.zh-CN.md)
 
 Read DOCX and text, search across files and export extracted text and line-cited evidence.
 
-Output files: document.txt / source.json / evidence.md / citations.json
+## What it does
 
-Read SKILL.md and references/input.md. Runtime: Node.js 24.16+ with workspace read/write access. Use the model already connected to the agent.
+Read DOCX and text, search across files and export extracted text and line-cited evidence.
 
-Source: https://github.com/hznetnewpower/mochilab-free-skills/tree/main/skills/mochi-document-reader
+## Usage examples
 
-MochiLab: https://mochilab.bz/
+After installation, send any example below to your AI. Include the files or URLs it refers to.
+
+```text
+Read the uploaded notice.docx and list required actions and deadlines with source locations.
+```
+
+```text
+Find refund conditions across these text files and quote the source with filenames and line numbers.
+```
+
+```text
+Export this DOCX as text and generate a key-evidence list with line numbers.
+```
+
+## Exported files
+
+document.txt / source.json / evidence.md / citations.json
+
+Files stay in the active agent workspace, with paths and SHA256 receipts. Existing records and earlier exports are retained.
+
+## Requirements
+
+OpenClaw, a connected model, Node.js 24.16+ and active-workspace read/write access. DOCX is read locally; PDF and images use available host readers.
+
+## Installation and first use
+
+### MochiLab Skills assistant (recommended)
+
+[Set up and connect the assistant](https://mochilab.bz/Skills/Connect.aspx?lang=en), then send:
+
+```text
+Install mochi-document-reader
+```
+
+### ClawHub
+
+[Open the Skill page](https://clawhub.ai/hznetnewpower/skills/mochi-document-reader), or run from the active agent workspace:
+
+```text
+npx clawhub@latest install @hznetnewpower/mochi-document-reader
+```
+
+### GitHub
+
+[Open the source folder](https://github.com/hznetnewpower/mochilab-free-skills/tree/main/skills/mochi-document-reader). Download the repository ZIP and copy `skills/mochi-document-reader` into the active agent workspace's `skills/` directory.
+
+Start a new conversation after installation.
+
+## Detailed operation contract
+
+Read [SKILL.md](SKILL.md) for the exact workflow, commands, permission boundaries and supporting references. Use the active agent workspace and verify actual outputs.

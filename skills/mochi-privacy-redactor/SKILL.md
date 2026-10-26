@@ -1,10 +1,10 @@
 ---
-name: mochi-privacy-redactor
-description: "Scan and redact email, Chinese mobile numbers, IPs and secret fields in text, CSV and JSON, keeping originals intact. Use for 隐私脱敏与分享检查."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.0"}}
+name: "mochi-privacy-redactor"
+description: "Scan and redact email, Chinese mobile numbers, IPs and secret fields in text, CSV and JSON, keeping originals intact. Use for Privacy Redaction Desk."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 隐私脱敏与分享检查 / Privacy Redaction Desk
+# Privacy Redaction Desk
 
 ## Run in the active agent workspace
 
@@ -19,13 +19,7 @@ Read references/input.md for the exact action fields. Source paths are workspace
 Check the returned ok field and actual result before reporting completion. Never describe an exception or a failed check as a completed job. Follow host approval rules for deletion, mutation requests or external transmissions. The helper does not grant authorization merely because a JSON field is set.
 
 Do not upload source files or logs to third parties during this workflow. A scan is pattern detection, not a certification that all identifying facts have been removed.
-## User examples / 用法示例
-
-- 检查这些日志里是否有邮箱、手机号或密钥，先只给我数量。
-
-- 把这份JSON中的密码和令牌字段脱敏，生成可分享的新副本。
-
-- 批量处理这些文本，除了常见隐私，再隐藏我指定的项目名称。
+## User examples
 
 - Scan these logs for emails, phone numbers and tokens and report counts first.
 
@@ -33,4 +27,6 @@ Do not upload source files or logs to third parties during this workflow. A scan
 
 - Process these text files and also hide the exact project names I supply.
 
-Author / 作者：MochiLab · https://mochilab.bz
+Author:MochiLab · https://mochilab.bz
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

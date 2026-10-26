@@ -1,10 +1,10 @@
 ---
-name: mochi-site-check
-description: Check one to five explicitly chosen public HTTPS URLs once for GET status, elapsed time, redirects, verified TLS and basic HTML SEO fields, saving local JSON and Markdown. Use for 网站巡检 or a basic page availability check; not vulnerability scanning, port probing, crawling or monitoring.
-metadata: {"openclaw":{"requires":{"bins":["node"]},"homepage":"https://mochilab.bz"}}
+name: "mochi-site-check"
+description: "Check selected pages once for status, redirects, timing and basic SEO fields."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 网站可用性与基础 SEO 巡检 / Site Check
+# Website Availability and Basic SEO Check
 
 Inspect only the public URLs the user explicitly names. Do not invent targets or crawl linked pages. This Skill uses Node 24+ core HTTPS with normal TLS verification; no npm, extra API key, model API, scheduler or delivery.
 
@@ -33,3 +33,5 @@ Missing robots meta does not prove crawl permission. The script does not fetch r
 `site-checks/site-check-RUN.json` keeps structured evidence; `.md` escapes untrusted symbols for reading. Each run gets new files and never overwrites an existing artifact. The script refuses symlink/junction workspace paths and caps descriptor reads. It is not a defense against every race from a malicious local process.
 
 For a user-authorized public demonstration, copy `samples/urls.json` into the workspace and check it once. Real websites may rate-limit or deny this host; report that honestly. Operators see GET requests and this host's IP. Reports shared with the existing cloud model follow that provider's data policy. Do not promise to keep monitoring or externally send results.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

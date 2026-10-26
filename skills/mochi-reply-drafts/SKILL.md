@@ -1,10 +1,10 @@
 ---
-name: mochi-reply-drafts
-description: Prepare local email or customer-support reply drafts from supplied messages and policies, trace paragraphs to evidence and requests, and check recipients, unsupported values and explicit commitments. Use for 邮件回复 or 客服回复草稿; this Skill does not connect to mailboxes or send messages.
-metadata: {"openclaw":{"requires":{"bins":["node"]},"homepage":"https://mochilab.bz"}}
+name: "mochi-reply-drafts"
+description: "Draft replies from messages and verified notes, with evidence and a follow-up checklist."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 回复草稿 / Reply Drafts
+# Reply Drafts
 
 Draft a useful reply in the user's requested language and tone using the current OpenClaw model. Node 24+ is the only script dependency; there is no new model key, mailbox integration, networking, scheduling or sending.
 
@@ -25,6 +25,8 @@ The checker verifies source-quote presence, references, allowed destinations, nu
 
 All outputs go into a new UUID directory, without overwriting input/reports or following symlink/junction paths. No `.eml`, email API or send command is generated. Sending, if requested separately, is outside this Skill and must use the user's actual authorized channel; do not infer permission from making a draft.
 
-Example: “客户说付款没有到账。根据我给的查账结果，写一封礼貌英文回复，询问交易编号和网络，不要承诺退款，也不要发送。”
+Example: “A customer says a payment has not arrived. Using the account-check results I supply, draft a polite English reply asking for the transaction ID and network. Do not promise a refund or send the message.”
 
 The Skill is free; the model may charge and process message content under its own privacy terms. Remove unnecessary sensitive data. The local checklist includes the supplied incoming message, so keep that workspace private.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

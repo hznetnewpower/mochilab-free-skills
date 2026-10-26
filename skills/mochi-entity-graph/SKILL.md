@@ -1,14 +1,12 @@
 ---
-name: mochi-entity-graph
-description: "Store source-linked entities and relationships, traverse their connections and export a local graph. Use for 人物项目关系记忆库."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "version": "1.0.0", "homepage": "https://mochilab.bz"}}
+name: "mochi-entity-graph"
+description: "Store source-linked entities and relationships, traverse their connections and export a local graph. Use for Entity Relationship Memory."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "version": "1.0.1", "homepage": "https://mochilab.bz"}}
 ---
 
-# 人物项目关系记忆库 / Entity Relationship Memory
+# Entity Relationship Memory
 
 Store source-linked entities and relationships, traverse their connections and export a local graph.
-
-将人物、项目与资源保存为带来源的实体和关系，按层级查看关联，导出当前 BOT 的结构化关系图数据。
 
 ## Workflow
 
@@ -24,13 +22,7 @@ Check ok=true and read the actual output files before reporting success. Outputs
 
 Use only user-authorized information in the active agent workspace. Ask before storing sensitive personal details. Relations are supplied facts, not inferred employment, trust or eligibility decisions.
 
-## Useful requests / 用法示例
-
-- 记住这个项目由小李负责，客户是示例公司，并标记信息来源。
-
-- 查看这个项目与哪些人员和资源有关。
-
-- 导出当前助手保存的人物项目关系，方便我核对。
+## Useful requests
 
 - Store this project, its owner and customer with their stated source.
 
@@ -42,4 +34,6 @@ Use only user-authorized information in the active agent workspace. Ask before s
 
 Run `python3 "{baseDir}/tests/smoke.py"` for bundled synthetic tests. This does not test the user’s real account, remote permissions, complete source accuracy or visual rendering. Report those separately when relevant.
 
-Author: MochiLab · https://mochilab.bz · Version 1.0.0
+Author: MochiLab · https://mochilab.bz · Version 1.0.1
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

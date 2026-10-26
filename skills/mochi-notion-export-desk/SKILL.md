@@ -1,14 +1,12 @@
 ---
-name: mochi-notion-export-desk
-description: "Index an existing Notion Markdown/CSV export with page references, table counts and source hashes. Use for Notion 导出资料整理."
-metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "version": "1.0.0", "homepage": "https://mochilab.bz"}}
+name: "mochi-notion-export-desk"
+description: "Index an existing Notion Markdown/CSV export with page references, table counts and source hashes. Use for Notion Export Desk."
+metadata: {"openclaw": {"requires": {"anyBins": ["python3", "python"]}, "version": "1.0.1", "homepage": "https://mochilab.bz"}}
 ---
 
-# Notion 导出资料整理 / Notion Export Desk
+# Notion Export Desk
 
 Index an existing Notion Markdown/CSV export with page references, table counts and source hashes.
-
-读取 Notion 的 Markdown 与 CSV 导出包，整理页面索引、数据库行列统计和原文合集，保留来源路径及哈希。
 
 ## Workflow
 
@@ -24,13 +22,7 @@ Check ok=true and read the actual output files before reporting success. Outputs
 
 In Notion use the page menu → Export → Markdown & CSV, then provide the resulting ZIP. Follow current official help at https://www.notion.com/help/export-your-content . This is an offline export reader, not an API connector, permission migration or full-fidelity backup.
 
-## Useful requests / 用法示例
-
-- 把这个 Notion 导出包整理成页面索引和 Markdown 合集。
-
-- 看看导出的数据库有多少行、有哪些字段。
-
-- 列出导出包里未处理的附件，核对每个页面的来源哈希。
+## Useful requests
 
 - Index this Notion export and assemble its Markdown pages.
 
@@ -42,4 +34,6 @@ In Notion use the page menu → Export → Markdown & CSV, then provide the resu
 
 Run `python3 "{baseDir}/tests/smoke.py"` for bundled synthetic tests. This does not test the user’s real account, remote permissions, complete source accuracy or visual rendering. Report those separately when relevant.
 
-Author: MochiLab · https://mochilab.bz · Version 1.0.0
+Author: MochiLab · https://mochilab.bz · Version 1.0.1
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

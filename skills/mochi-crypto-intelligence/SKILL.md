@@ -1,6 +1,7 @@
 ---
-name: mochi-crypto-intelligence
-description: Research recent crypto-market developments from free public sources, verify original evidence, deduplicate stories, and track changes to a local watchlist. Use for crypto intelligence briefs, project updates, event calendars, narrative research and rumor verification; no paid data provider or API key required.
+name: "mochi-crypto-intelligence"
+description: "Research recent crypto-market developments from free public sources, verify original evidence, deduplicate stories, and track changes to a local watchlist. Use for crypto intelligence briefs, project updates, event calendars, narrative research and rumor verification; no paid data provider or API key required."
+metadata: {"openclaw": {"version": "1.0.1"}}
 ---
 
 # Mochi Crypto Intelligence
@@ -54,3 +55,5 @@ The first command previews new/updated/unchanged event keys. Commit performs loc
 Lead with the few changes that matter and why. A concise brief normally gives each event's project/chain, factual change, stage, publication/event time, evidence label, original link(s), plausible impact and remaining question. Expand only for the requested depth. Reply in the user's language while keeping exact tickers, contract addresses, dates and numeric units intact; machine-translated claims still need source checks.
 
 Include the cutoff and actual coverage, identify inaccessible sources and date ambiguity, distinguish no material developments found from no coverage, and identify first-run vs incremental research. Offer a calendar only for sourced scheduled dates, with timezone and confirmation status; never invent dates for an incomplete calendar. Saved reports retain their date and are not live dashboards. Do not silently schedule repeated runs or present certainty of investment outcomes.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)

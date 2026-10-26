@@ -1,10 +1,10 @@
 ---
-name: mochi-daily-brief
-description: Create a cited Chinese or English personal news brief from public RSS/Atom feeds, filter by topic and calendar days, and save a local Markdown report. Use for 我的每日简报, daily AI/technology digests, or practising a first useful OpenClaw Skill.
-metadata: {"openclaw":{"requires":{"bins":["node"]},"homepage":"https://mochilab.bz"}}
+name: "mochi-daily-brief"
+description: "Create a cited Chinese or English personal news brief from public RSS/Atom feeds, filter by topic and calendar days, and save a local Markdown report. Use for My Daily Brief, daily AI/technology digests, or practising a first useful OpenClaw Skill."
+metadata: {"openclaw": {"requires": {"bins": ["node"]}, "homepage": "https://mochilab.bz", "version": "1.0.1"}}
 ---
 
-# 我的每日简报 / My Daily Brief
+# My Daily Brief
 
 Turn dated feed entries into a short, useful brief in the user's language, with original links and a local Markdown copy. The default sources are **OpenAI News, Google AI and GitHub Changelog**. They cover their own announcements, not the whole news market.
 
@@ -20,7 +20,7 @@ Run the supplied collector, substituting actual paths:
 node "{baseDir}/scripts/brief.mjs" collect --workspace "WORKSPACE" --days 1 --limit 8 --timezone "Asia/Shanghai" --language zh-CN
 ```
 
-For a requested topic, add e.g. `--topics "AI,开源"`. Read [options and sources](references/options.md) for custom feeds, limits, timezones or troubleshooting. Prefer an argument-array execution tool. If using a shell, quote each argument for that shell; never concatenate unescaped user text or a feed URL into shell commands. Custom URLs go in a JSON feed file passed via `--feeds`, not executable text.
+For a requested topic, add e.g. `--topics "AI,open source"`. Read [options and sources](references/options.md) for custom feeds, limits, timezones or troubleshooting. Prefer an argument-array execution tool. If using a shell, quote each argument for that shell; never concatenate unescaped user text or a feed URL into shell commands. Custom URLs go in a JSON feed file passed via `--feeds`, not executable text.
 
 The result contains `evidenceFile`, `draftFile`, `items`, `coverage`, `date` and `startDate`. Check coverage before writing. A failed feed is not proof that nothing happened. The window uses **calendar dates in the selected timezone**, not a rolling 24 hours. Entries with missing or invalid source dates are excluded; future entries over five minutes ahead are excluded. No article body is fetched.
 
@@ -36,7 +36,7 @@ First apply the user's meaning and exclusions to the collected candidates: keywo
 
 - A short overview followed by the selected highlights. Summarize each event in your own words, using one or two short sentences and its source reference `[1]`, `[2]`, etc.
 - Include dates when needed to distinguish an older update from today's event. Attribute company claims to their source; an announcement is not independent verification.
-- Add a short **“值得关注 / Why it matters”** section when useful. Label interpretation or uncertainty explicitly and connect it to a cited item. Do not infer technical specifications, prices, availability or outcomes absent from the evidence.
+- Add a short **“Why it matters”** section when useful. Label interpretation or uncertainty explicitly and connect it to a cited item. Do not infer technical specifications, prices, availability or outcomes absent from the evidence.
 
 Do not reproduce article bodies or long excerpts. Default to paraphrases without direct quotes. Keep the entire brief concise; source links and dates are appended by the saver. The draft uses numeric references only: **no raw URLs or HTML**. Every event or factual claim needs the corresponding reference. The saver checks reference numbers, not whether the model's statements are true; review them yourself.
 
@@ -52,8 +52,10 @@ Evidence and drafts live in `WORKSPACE/.mochi-daily-brief/`. The Skill does not 
 
 ## Example requests
 
-- “用我的每日简报，整理今天的 AI 和开源资讯，中文 5 条，上海时区。”
-- “今天没有内容就告诉我，不要拿旧新闻补齐。”
+- “Prepare five Chinese-language items about today’s AI and open-source news, using Asia/Shanghai.”
+- “If there is no new material today, say so; do not fill the brief with old news.”
 - “Give me up to six AI updates from the last three calendar days, in English, using Europe/London time.”
 
 This is a free Skill; the user's chosen model and hosting may charge for usage. It requires no feed login or new API key. Only configure automatic scheduling or delivery to a person/channel when the user explicitly asks for that separate setup; neither is enabled here.
+
+[User guide](README.md) · [Simplified Chinese guide](README.zh-CN.md)
