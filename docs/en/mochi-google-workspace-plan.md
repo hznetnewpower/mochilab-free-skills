@@ -8,9 +8,7 @@ Plan concrete Gmail, Calendar, Drive, Sheets and Docs actions for an explicitly 
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Plan how to find this month’s invoices in my Google mail and summarize them in the selected sheet. Review accounts and resources before editing.
-```
+**“Plan how to find this month’s invoices in my Google mail and summarize them in the selected sheet. Review accounts and resources before editing.”**
 
 ## What to provide
 

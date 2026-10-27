@@ -8,9 +8,7 @@ Locate test, dependency, compilation, permission and timeout signals in a select
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review this failed CI log. Identify the earliest useful error signals and line numbers without rerunning deployment.
-```
+**“Review this failed CI log. Identify the earliest useful error signals and line numbers without rerunning deployment.”**
 
 ## What to provide
 

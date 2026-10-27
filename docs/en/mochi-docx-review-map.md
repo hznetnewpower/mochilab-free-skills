@@ -8,9 +8,7 @@ Map comments, their paragraph anchors and tracked insertions or deletions in a D
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Map comments and tracked changes in this Word document to their paragraphs. Do not accept or reject changes.
-```
+**“Map comments and tracked changes in this Word document to their paragraphs. Do not accept or reject changes.”**
 
 ## What to provide
 

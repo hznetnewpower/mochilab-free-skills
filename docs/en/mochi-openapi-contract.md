@@ -8,9 +8,7 @@ Inspect OpenAPI3 JSON operations for duplicate IDs, missing responses and undecl
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review this OpenAPI file for duplicate operation IDs, missing path parameters and missing responses. List findings by endpoint.
-```
+**“Review this OpenAPI file for duplicate operation IDs, missing path parameters and missing responses. List findings by endpoint.”**
 
 ## What to provide
 

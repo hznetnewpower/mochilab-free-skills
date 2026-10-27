@@ -8,9 +8,7 @@ Validate proposed video chapters against supplied transcript segment IDs and exp
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Create concise video chapters from this timestamped transcript. Link each chapter to supporting segments and export a timestamp list.
-```
+**“Create concise video chapters from this timestamped transcript. Link each chapter to supporting segments and export a timestamp list.”**
 
 ## What to provide
 

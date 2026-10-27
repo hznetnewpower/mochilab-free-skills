@@ -8,9 +8,7 @@ Order sourced incident events by aware timestamps and expose elapsed gaps withou
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Build an incident timeline from these logs and notes, citing each event and calculating gaps. Do not infer a root cause or run repairs.
-```
+**“Build an incident timeline from these logs and notes, citing each event and calculating gaps. Do not infer a root cause or run repairs.”**
 
 ## What to provide
 

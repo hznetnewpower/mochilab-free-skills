@@ -8,9 +8,7 @@ Prepare a timed agenda, identify topics without a decision target and compare al
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Prepare a 30-minute project review to decide the next milestone and discuss open questions. Propose timings and missing background.
-```
+**“Prepare a 30-minute project review to decide the next milestone and discuss open questions. Propose timings and missing background.”**
 
 ## What to provide
 

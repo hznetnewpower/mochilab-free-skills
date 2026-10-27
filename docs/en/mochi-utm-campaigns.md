@@ -8,9 +8,7 @@ Build URL-encoded campaign links while preserving ordinary query parameters and 
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Add campaign tags to this link: source newsletter, medium email and campaign autumn-launch. Preserve its language parameter.
-```
+**“Add campaign tags to this link: source newsletter, medium email and campaign autumn-launch. Preserve its language parameter.”**
 
 ## What to provide
 

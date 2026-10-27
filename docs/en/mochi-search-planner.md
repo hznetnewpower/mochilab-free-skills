@@ -8,9 +8,7 @@ Build focused queries with exact phrases and source domains before researching a
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Plan research into the installation requirements for OpenClaw. Prioritize official documentation and list the questions and searches to run.
-```
+**“Plan research into the installation requirements for OpenClaw. Prioritize official documentation and list the questions and searches to run.”**
 
 ## What to provide
 

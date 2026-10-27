@@ -8,9 +8,7 @@ Review draft posts against user-supplied platform character limits and asset lis
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review these draft posts against the supplied platform limits and asset lists. Do not publish or schedule them.
-```
+**“Review these draft posts against the supplied platform limits and asset lists. Do not publish or schedule them.”**
 
 ## What to provide
 

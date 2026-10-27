@@ -8,9 +8,7 @@ Convert simple local headings, bullet lines and paragraphs into reviewable Notio
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Prepare a Notion page draft from this note, retaining headings, bullets and paragraphs. Show a preview without uploading.
-```
+**“Prepare a Notion page draft from this note, retaining headings, bullets and paragraphs. Show a preview without uploading.”**
 
 ## What to provide
 

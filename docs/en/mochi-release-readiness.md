@@ -8,9 +8,7 @@ Check a release manifest for valid versions, checksums and recorded passing test
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review the attached release package, version, checksum file and test receipts. List missing evidence without publishing.
-```
+**“Review the attached release package, version, checksum file and test receipts. List missing evidence without publishing.”**
 
 ## What to provide
 

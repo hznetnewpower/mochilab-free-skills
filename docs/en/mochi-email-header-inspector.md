@@ -8,9 +8,7 @@ Inspect exported mail headers for duplicate From fields, reported authentication
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Inspect this suspicious message’s exported headers. Explain useful evidence without opening message links.
-```
+**“Inspect this suspicious message’s exported headers. Explain useful evidence without opening message links.”**
 
 ## What to provide
 

@@ -8,9 +8,7 @@ Pack complete selected document excerpts into an explicit character budget and d
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Pack these documents for another assistant within 5,000 characters. Prioritize requirements and confirmed decisions and list omissions.
-```
+**“Pack these documents for another assistant within 5,000 characters. Prioritize requirements and confirmed decisions and list omissions.”**
 
 ## What to provide
 

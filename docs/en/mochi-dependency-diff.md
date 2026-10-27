@@ -8,9 +8,7 @@ Compare explicit dependency version maps and highlight additions, removals and m
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Compare these before-and-after dependency lists. Show additions, removals and version changes, especially major upgrades.
-```
+**“Compare these before-and-after dependency lists. Show additions, removals and version changes, especially major upgrades.”**
 
 ## What to provide
 

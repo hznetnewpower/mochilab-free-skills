@@ -8,9 +8,7 @@ Validate a workflow dependency graph, detect cycles and separate read-only steps
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Design a workflow to collect sales sheets, summarize a weekly report and send it to colleagues. Check dependencies without sending anything.
-```
+**“Design a workflow to collect sales sheets, summarize a weekly report and send it to colleagues. Check dependencies without sending anything.”**
 
 ## What to provide
 

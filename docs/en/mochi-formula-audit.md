@@ -8,9 +8,7 @@ Inspect XLSX formula cells, cached error values and external-link parts without 
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review formulas in this Excel workbook. Locate error markers, external references and cells needing review without changing the file.
-```
+**“Review formulas in this Excel workbook. Locate error markers, external references and cells needing review without changing the file.”**
 
 ## What to provide
 

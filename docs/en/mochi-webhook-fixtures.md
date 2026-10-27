@@ -8,9 +8,7 @@ Deduplicate selected webhook events by event ID and export replay fixtures witho
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Deduplicate these webhook events by event ID and prepare local replay fixtures without sending requests.
-```
+**“Deduplicate these webhook events by event ID and prepare local replay fixtures without sending requests.”**
 
 ## What to provide
 

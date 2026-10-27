@@ -8,9 +8,7 @@ Count explicit RSVP statuses, confirmed party sizes and meal choices while flagg
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Reconcile event RSVPs: Wang confirms a party of 3; Lee confirms 1 vegetarian guest; Chen is undecided. Capacity is 10. Summarize confirmed seats, uncertainty and missing meal details.
-```
+**“Reconcile event RSVPs: Wang confirms a party of 3; Lee confirms 1 vegetarian guest; Chen is undecided. Capacity is 10. Summarize confirmed seats, uncertainty and missing meal details.”**
 
 ## What to provide
 

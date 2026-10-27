@@ -8,9 +8,7 @@ Map requested values to an observed form, identify missing required fields and s
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review this contact form for an enterprise-plan inquiry. List what information is missing and do not submit it.
-```
+**“Review this contact form for an enterprise-plan inquiry. List what information is missing and do not submit it.”**
 
 ## What to provide
 

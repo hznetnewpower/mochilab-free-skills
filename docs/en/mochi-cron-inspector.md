@@ -8,9 +8,7 @@ Preview upcoming five-field cron occurrences with an explicit timezone, includin
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Preview the next five runs for weekdays at 9am in Asia/Shanghai. Do not create a scheduled task.
-```
+**“Preview the next five runs for weekdays at 9am in Asia/Shanghai. Do not create a scheduled task.”**
 
 ## What to provide
 

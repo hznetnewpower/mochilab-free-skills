@@ -8,9 +8,7 @@ Arrange user-selected itinerary stops, detect time overlaps and keep estimated c
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Organize these selected itinerary stops, flag time overlaps and total CNY and USD budgets separately.
-```
+**“Organize these selected itinerary stops, flag time overlaps and total CNY and USD budgets separately.”**
 
 ## What to provide
 

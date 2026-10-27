@@ -8,9 +8,7 @@ Evaluate recorded agent replies against explicit required, forbidden and exact t
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Check these recorded assistant replies. Each must state a timezone and none may contain an API key. Flag failures.
-```
+**“Check these recorded assistant replies. Each must state a timezone and none may contain an API key. Flag failures.”**
 
 ## What to provide
 

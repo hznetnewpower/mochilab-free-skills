@@ -8,9 +8,7 @@ Identify required launch tasks lacking completion or evidence before a human go/
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review this launch checklist. Flag required tasks that are incomplete or lack evidence even if marked done.
-```
+**“Review this launch checklist. Flag required tasks that are incomplete or lack evidence even if marked done.”**
 
 ## What to provide
 

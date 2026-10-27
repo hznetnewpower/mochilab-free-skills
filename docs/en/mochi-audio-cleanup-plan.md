@@ -8,9 +8,7 @@ Read a supplied ffprobe JSON and prepare the first loudness-analysis filter with
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Help make this podcast’s loudness more consistent. Inspect the audio and prepare a processing plan while preserving the original.
-```
+**“Help make this podcast’s loudness more consistent. Inspect the audio and prepare a processing plan while preserving the original.”**
 
 ## What to provide
 

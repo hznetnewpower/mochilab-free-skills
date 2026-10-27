@@ -8,9 +8,7 @@ Apply user-defined keyword topic labels to selected feedback and expose unmatche
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Group this feedback by speed and billing. Use slow, lag and latency for speed, and invoice and charge for billing. Leave uncertain items visible.
-```
+**“Group this feedback by speed and billing. Use slow, lag and latency for speed, and invoice and charge for billing. Leave uncertain items visible.”**
 
 ## What to provide
 

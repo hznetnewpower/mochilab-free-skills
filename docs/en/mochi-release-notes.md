@@ -8,9 +8,7 @@ Group exported conventional commit subjects into draft release notes and flag de
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Draft release notes for 1.1.0 from these commits. Separate features, fixes and declared breaking changes.
-```
+**“Draft release notes for 1.1.0 from these commits. Separate features, fixes and declared breaking changes.”**
 
 ## What to provide
 

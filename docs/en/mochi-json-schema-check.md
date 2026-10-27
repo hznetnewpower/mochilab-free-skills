@@ -8,9 +8,7 @@ Check JSON values against an explicitly supported schema subset and report unsup
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Check this order data: quantity must be a positive integer, the order ID must be present, and unexpected fields are forbidden. Locate failures.
-```
+**“Check this order data: quantity must be a positive integer, the order ID must be present, and unexpected fields are forbidden. Locate failures.”**
 
 ## What to provide
 

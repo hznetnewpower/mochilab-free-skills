@@ -8,9 +8,7 @@ Identify conflicting and expired user-selected facts before proposing changes to
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review these facts for a proposed memory update. Flag conflicts and expired information and show changes before applying them.
-```
+**“Review these facts for a proposed memory update. Flag conflicts and expired information and show changes before applying them.”**
 
 ## What to provide
 

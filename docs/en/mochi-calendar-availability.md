@@ -8,9 +8,7 @@ Calculate shared free intervals from explicitly provided busy ranges with timezo
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Find a shared 30-minute slot on 28 October 2026 between 9am and noon in Asia/Shanghai. Wang is busy 10–11am and Lee is busy 9–9:30am.
-```
+**“Find a shared 30-minute slot on 28 October 2026 between 9am and noon in Asia/Shanghai. Wang is busy 10–11am and Lee is busy 9–9:30am.”**
 
 ## What to provide
 

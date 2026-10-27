@@ -8,9 +8,7 @@ Check selected SRT or simple WebVTT cues for nonpositive durations, overlaps and
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Check these subtitles for overlaps, invalid durations and excessive reading speed. List cue numbers and reasons.
-```
+**“Check these subtitles for overlaps, invalid durations and excessive reading speed. List cue numbers and reasons.”**
 
 ## What to provide
 

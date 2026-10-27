@@ -8,9 +8,7 @@ Calculate decimal purchase-request totals by currency and flag requests above us
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Summarize a purchase request for 3 parts at CNY 29.90 each, excluding shipping. Approval is required above CNY 80. Calculate the total and missing quote evidence.
-```
+**“Summarize a purchase request for 3 parts at CNY 29.90 each, excluding shipping. Approval is required above CNY 80. Calculate the total and missing quote evidence.”**
 
 ## What to provide
 

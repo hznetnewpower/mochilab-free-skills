@@ -8,9 +8,7 @@ Inspect slide XML for empty text and excessive declared character budgets before
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review this deck for text-heavy slides using a 300-character warning budget per slide. List pages to simplify.
-```
+**“Review this deck for text-heavy slides using a 300-character warning budget per slide. List pages to simplify.”**
 
 ## What to provide
 

@@ -8,9 +8,7 @@ Calculate unique completion days, a streak ending on an explicit date and a boun
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review my reading log: completed on 25, 26 and 27 October 2026. As of the 27th, calculate the streak and seven-day completion rate.
-```
+**“Review my reading log: completed on 25, 26 and 27 October 2026. As of the 27th, calculate the streak and seven-day completion rate.”**
 
 ## What to provide
 

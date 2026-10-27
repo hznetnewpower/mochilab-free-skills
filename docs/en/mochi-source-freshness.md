@@ -8,9 +8,7 @@ Compare explicitly dated sources with a research cutoff and flag stale, undated 
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Check whether these sources are current enough. Use a cutoff of 27 October 2026 and a 30-day publication window.
-```
+**“Check whether these sources are current enough. Use a cutoff of 27 October 2026 and a 30-day publication window.”**
 
 ## What to provide
 

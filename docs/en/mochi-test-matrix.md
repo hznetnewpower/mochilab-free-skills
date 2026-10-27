@@ -8,9 +8,7 @@ Generate a bounded greedy pairwise matrix for discrete configuration factors and
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Build a pairwise test matrix for Android and HarmonyOS, English and Chinese, and light and dark themes.
-```
+**“Build a pairwise test matrix for Android and HarmonyOS, English and Chinese, and light and dark themes.”**
 
 ## What to provide
 

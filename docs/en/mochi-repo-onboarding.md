@@ -8,9 +8,7 @@ Map an explicitly supplied repository file list to ecosystem, documentation and 
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Map this repository: its stack, documents to read first and test entry points. Do not install dependencies or start services.
-```
+**“Map this repository: its stack, documents to read first and test entry points. Do not install dependencies or start services.”**
 
 ## What to provide
 

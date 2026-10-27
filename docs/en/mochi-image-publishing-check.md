@@ -8,9 +8,7 @@ Check selected image assets for file budgets, declared dimensions and missing no
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Review these website images against a 500 KB file budget and alt-text requirements. List oversize assets and missing descriptions.
-```
+**“Review these website images against a 500 KB file budget and alt-text requirements. List oversize assets and missing descriptions.”**
 
 ## What to provide
 

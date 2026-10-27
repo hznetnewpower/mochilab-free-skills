@@ -8,9 +8,7 @@ Turn a selected HTML table from an authorized browser capture into a quoted CSV 
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Export the price table on this webpage to CSV, preserving its headings, product names and source link.
-```
+**“Export the price table on this webpage to CSV, preserving its headings, product names and source link.”**
 
 ## What to provide
 

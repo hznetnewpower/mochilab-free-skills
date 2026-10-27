@@ -8,9 +8,7 @@ Deduplicate user-supplied references by normalized DOI or title and export escap
 
 After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```text
-Deduplicate these references and export BibTeX, keeping meaningfully different editions separate.
-```
+**“Deduplicate these references and export BibTeX, keeping meaningfully different editions separate.”**
 
 ## What to provide
 
