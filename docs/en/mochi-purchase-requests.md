@@ -1,12 +1,16 @@
 # Purchase Request Evidence Desk
 
-## What it does
+## Prepare requests with auditable prices
 
-Calculate decimal purchase-request totals by currency and flag requests above user-provided approval thresholds.
+Give each request a unique ID, positive quantity, decimal unit price and currency. Preserve the quote source and date in the procurement notes. Use decimal strings for prices when exact arithmetic matters, and do not mix tax-inclusive and tax-exclusive quotes without labeling them.
 
-## How to use it
+## Route amounts to a real approval process
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Inspect line totals and totals grouped by currency. Optional currency-specific thresholds indicate which requests need review; they do not grant approval or identify an authorized approver. Tax, shipping and discounts contribute only when represented in the supplied figures.
+
+Verify quotes against the vendor before a purchasing decision and confirm budget ownership through the user's actual process. The helper does not compare current market prices, place orders or execute payments. Deliver the request ledger, arithmetic and outstanding approval questions without treating a calculated threshold as a spending authorization.
+
+## Input example
 
 ```json
 {
@@ -24,12 +28,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   }
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 This organizes requests; it does not grant approval, compare current market prices or execute payments. Tax and shipping are included only if represented in inputs. Verify quotes and authorized approvers separately.
 

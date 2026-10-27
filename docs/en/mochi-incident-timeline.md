@@ -1,12 +1,16 @@
 # Incident Evidence Timeline
 
-## What it does
+## Keep event time separate from observation time
 
-Order sourced incident events by aware timestamps and expose elapsed gaps without inventing a root cause.
+Collect uniquely identified events with aware timestamps, concise summaries and traceable sources. Preserve the raw records privately. When a source was observed later than the event it describes, record that distinction in the investigation notes rather than replacing one timestamp with the other.
 
-## How to use it
+## Reconcile the ordered narrative
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Review `timeline.md` against logs, monitor results and human reports. Flag clock differences, missing periods and contradictory evidence. Mark uncertain reports explicitly; chronological proximity does not prove that one event caused another.
+
+The helper orders supplied evidence only. It does not query monitoring systems, infer a root cause, run remediation, delete logs or notify outside parties. Deliver a sourced chronology and open questions, then validate any proposed cause through separate investigation. Keep restoration claims tied to an actual recovery observation instead of a person's expectation.
+
+## Input example
 
 ```json
 {
@@ -26,12 +30,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Distinguish observation time from event time and preserve uncertain reports. Timeline order is not proof of causation. Do not run remediation, delete logs or notify external parties without the user's task authorization.
 

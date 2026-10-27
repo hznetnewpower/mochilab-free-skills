@@ -94,32 +94,32 @@ MIT-0. https://mochilab.bz/
 | [Webhook Fixture Builder](skills/mochi-webhook-fixtures/SKILL.md) | 1.0.0 |
 | [Cron Timezone Preview](skills/mochi-cron-inspector/SKILL.md) | 1.0.0 |
 | [Release Evidence Gate](skills/mochi-release-readiness/SKILL.md) | 1.0.0 |
-| [OpenAPI Operation Review](skills/mochi-openapi-contract/SKILL.md) | 1.0.0 |
-| [JSON Contract Subset Check](skills/mochi-json-schema-check/SKILL.md) | 1.0.0 |
-| [CI Failure Signal Map](skills/mochi-ci-failure-map/SKILL.md) | 1.0.0 |
-| [Dependency Upgrade Delta](skills/mochi-dependency-diff/SKILL.md) | 1.0.0 |
-| [Pairwise Test Matrix](skills/mochi-test-matrix/SKILL.md) | 1.0.0 |
-| [Repository Onboarding Map](skills/mochi-repo-onboarding/SKILL.md) | 1.0.0 |
-| [Commit Release Notes](skills/mochi-release-notes/SKILL.md) | 1.0.0 |
-| [Google Workspace Action Plan](skills/mochi-google-workspace-plan/SKILL.md) | 1.0.0 |
-| [Email Header Evidence Review](skills/mochi-email-header-inspector/SKILL.md) | 1.0.0 |
-| [Shared Availability Finder](skills/mochi-calendar-availability/SKILL.md) | 1.0.0 |
-| [Decision-Focused Meeting Prep](skills/mochi-meeting-prep/SKILL.md) | 1.0.0 |
-| [Notion Block Draft Builder](skills/mochi-notion-block-planner/SKILL.md) | 1.0.0 |
-| [Spreadsheet Formula Evidence Audit](skills/mochi-formula-audit/SKILL.md) | 1.0.0 |
-| [DOCX Comments and Revisions Map](skills/mochi-docx-review-map/SKILL.md) | 1.0.0 |
-| [PPTX Text Density Review](skills/mochi-pptx-review/SKILL.md) | 1.0.0 |
-| [Citation Normalizer](skills/mochi-citation-manager/SKILL.md) | 1.0.0 |
-| [Subtitle Timing and Reading Rate](skills/mochi-subtitle-quality/SKILL.md) | 1.0.0 |
-| [Transcript Chapter Evidence](skills/mochi-transcript-chapters/SKILL.md) | 1.0.0 |
-| [Image Publishing Checklist](skills/mochi-image-publishing-check/SKILL.md) | 1.0.0 |
-| [Audio Loudness Preparation](skills/mochi-audio-cleanup-plan/SKILL.md) | 1.0.0 |
-| [Customer Feedback Topic Map](skills/mochi-feedback-clusters/SKILL.md) | 1.0.0 |
-| [UTM Campaign Link Builder](skills/mochi-utm-campaigns/SKILL.md) | 1.0.0 |
-| [Social Draft Batch Review](skills/mochi-social-batch-plan/SKILL.md) | 1.0.0 |
-| [Product Launch Evidence Checklist](skills/mochi-launch-checklist/SKILL.md) | 1.0.0 |
-| [Timezone Itinerary Organizer](skills/mochi-travel-itinerary/SKILL.md) | 1.0.0 |
-| [Event RSVP Capacity Desk](skills/mochi-event-rsvp/SKILL.md) | 1.0.0 |
-| [Personal Habit Completion Review](skills/mochi-habit-tracker/SKILL.md) | 1.0.0 |
-| [Purchase Request Evidence Desk](skills/mochi-purchase-requests/SKILL.md) | 1.0.0 |
-| [Incident Evidence Timeline](skills/mochi-incident-timeline/SKILL.md) | 1.0.0 |
+| [OpenAPI Operation Review](skills/mochi-openapi-contract/SKILL.md) | 1.0.1 |
+| [JSON Contract Subset Check](skills/mochi-json-schema-check/SKILL.md) | 1.0.1 |
+| [CI Failure Signal Map](skills/mochi-ci-failure-map/SKILL.md) | 1.0.1 |
+| [Dependency Upgrade Delta](skills/mochi-dependency-diff/SKILL.md) | 1.0.1 |
+| [Pairwise Test Matrix](skills/mochi-test-matrix/SKILL.md) | 1.0.1 |
+| [Repository Onboarding Map](skills/mochi-repo-onboarding/SKILL.md) | 1.0.1 |
+| [Commit Release Notes](skills/mochi-release-notes/SKILL.md) | 1.0.1 |
+| [Google Workspace Action Plan](skills/mochi-google-workspace-plan/SKILL.md) | 1.0.1 |
+| [Email Header Evidence Review](skills/mochi-email-header-inspector/SKILL.md) | 1.0.1 |
+| [Shared Availability Finder](skills/mochi-calendar-availability/SKILL.md) | 1.0.1 |
+| [Decision-Focused Meeting Prep](skills/mochi-meeting-prep/SKILL.md) | 1.0.1 |
+| [Notion Block Draft Builder](skills/mochi-notion-block-planner/SKILL.md) | 1.0.1 |
+| [Spreadsheet Formula Evidence Audit](skills/mochi-formula-audit/SKILL.md) | 1.0.1 |
+| [DOCX Comments and Revisions Map](skills/mochi-docx-review-map/SKILL.md) | 1.0.1 |
+| [PPTX Text Density Review](skills/mochi-pptx-review/SKILL.md) | 1.0.1 |
+| [Citation Normalizer](skills/mochi-citation-manager/SKILL.md) | 1.0.1 |
+| [Subtitle Timing and Reading Rate](skills/mochi-subtitle-quality/SKILL.md) | 1.0.1 |
+| [Transcript Chapter Evidence](skills/mochi-transcript-chapters/SKILL.md) | 1.0.1 |
+| [Image Publishing Checklist](skills/mochi-image-publishing-check/SKILL.md) | 1.0.1 |
+| [Audio Loudness Preparation](skills/mochi-audio-cleanup-plan/SKILL.md) | 1.0.1 |
+| [Customer Feedback Topic Map](skills/mochi-feedback-clusters/SKILL.md) | 1.0.1 |
+| [UTM Campaign Link Builder](skills/mochi-utm-campaigns/SKILL.md) | 1.0.1 |
+| [Social Draft Batch Review](skills/mochi-social-batch-plan/SKILL.md) | 1.0.1 |
+| [Product Launch Evidence Checklist](skills/mochi-launch-checklist/SKILL.md) | 1.0.1 |
+| [Timezone Itinerary Organizer](skills/mochi-travel-itinerary/SKILL.md) | 1.0.1 |
+| [Event RSVP Capacity Desk](skills/mochi-event-rsvp/SKILL.md) | 1.0.1 |
+| [Personal Habit Completion Review](skills/mochi-habit-tracker/SKILL.md) | 1.0.1 |
+| [Purchase Request Evidence Desk](skills/mochi-purchase-requests/SKILL.md) | 1.0.1 |
+| [Incident Evidence Timeline](skills/mochi-incident-timeline/SKILL.md) | 1.0.1 |

@@ -1,12 +1,16 @@
 # JSON Contract Subset Check
 
-## What it does
+## Establish a bounded validation question
 
-Check JSON values against an explicitly supported schema subset and report unsupported keywords instead of silently accepting them.
+Ask which object is being checked and which fields the producer guarantees. Put the schema and candidate value in the same request so that the result can be reproduced. A minimum must be a number rather than a numeric-looking string; `required` names object properties, not their truthiness.
 
-## How to use it
+### Interpret three different outcomes
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+An input error means the request or schema shape cannot be processed. Reported data errors mean the candidate violates the implemented subset. Unsupported schema keywords mean coverage is incomplete, even if all supported checks pass. Keep these outcomes separate in the response.
+
+Supported checks cover types, object properties, required fields, array items, enum membership, numeric bounds and rejection of additional properties. For `$ref`, composition, formats or dialect-specific rules, stop short of a production-valid verdict and recommend the project's maintained standards validator. Preserve the failing property location when explaining a correction; do not silently coerce the user's data.
+
+## Input example
 
 ```json
 {
@@ -28,12 +32,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   }
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Use a full standards validator for reference resolution, formats, unions or production schema certification. Boolean schemas and arbitrary schema dialects are not supported.
 

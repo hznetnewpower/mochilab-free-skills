@@ -1,12 +1,16 @@
 # Google Workspace Action Plan
 
-## What it does
+## Bind every action to an account
 
-Plan concrete Gmail, Calendar, Drive, Sheets and Docs actions for an explicitly selected authorized account.
+Start with the user's concrete objective and the account that should perform it. For each planned step, record the supported action kind plus its query or resource identifier. A document title is not a stable document ID, and an account shown in one connector is not automatically the account used by another tool.
 
-## How to use it
+### Read first, then review changes
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Use search or list actions to locate the intended email, calendar, Drive file, spreadsheet or document. Inspect the selected object before drafting a mutating action. For writes, preserve the exact destination and describe what will change; verify the live result with the authorized connector after execution.
+
+This package creates a plan only. It neither implements Google OAuth nor calls Google APIs. If the environment uses a CLI, inspect that installed CLI's help instead of inventing flags. Never ask users to paste refresh tokens into conversation. A successful local report is not evidence that mail was sent, an event was created or a document was updated.
+
+## Input example
 
 ```json
 {
@@ -24,12 +28,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 The helper does not implement OAuth or call Google. Use an available authorized connector or inspect the installed gog CLI help before executing. Verify account and resource identifiers; do not request refresh tokens in chat.
 

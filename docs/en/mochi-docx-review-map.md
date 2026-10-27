@@ -1,24 +1,22 @@
 # DOCX Comments and Revisions Map
 
-## What it does
+## Map the review evidence in a DOCX
 
-Map comments, their paragraph anchors and tracked insertions or deletions in a DOCX without accepting changes.
+Use the reviewed document itself, not a PDF export, because revisions and comment anchors live in Word XML parts. Preserve a copy before inspection. The helper reads paragraph positions, comment definitions and insertion/deletion records without changing the review state.
 
-## How to use it
+## Follow comments back to paragraphs
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Match comment identifiers to their definitions and reported paragraph anchors. A missing definition needs investigation in the original document; it is not an empty reviewer comment. Review inserted and deleted text separately so that a quotation does not accidentally present removed wording as current content.
+
+Open Word for modern threaded or resolved-comment semantics and visual inspection. The helper neither accepts nor rejects revisions and does not establish legal meaning or reviewer agreement. Deliver a traceable inventory with paragraph references, explain any missing parts, and leave decisions about applying edits to the authorized document review process.
+
+## Input example
 
 ```json
 {
   "file": "samples/review.docx"
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 This is evidence extraction, not legal review, full Word review-state validation or visual layout QA. It does not accept/reject changes or edit comments. Inspect modern threaded/resolved comments and document appearance in Word separately.
 

@@ -1,12 +1,16 @@
 # UTM Campaign Link Builder
 
-## What it does
+## Agree on campaign naming
 
-Build URL-encoded campaign links while preserving ordinary query parameters and refusing obvious embedded credentials.
+Choose consistent source, medium and campaign values before building links. Preserve the destination's existing functional query parameters, such as language or product selection. Use term and content labels only when they answer a defined measurement question.
 
-## How to use it
+## Inspect the encoded destinations
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Review each generated URL after parameter encoding. Confirm the host and path, ensure required campaign fields are nonempty, and check that spaces and non-ASCII labels survive decoding as intended. Do not place names, email addresses, customer IDs or secrets in public query strings.
+
+The helper neither opens links nor installs an analytics collector. Test the final landing page and attribution behavior with the actual publishing and analytics tools when authorized. Return the link manifest and naming conventions; a generated URL does not prove that a campaign was sent, that tracking exists or that conversions are being recorded.
+
+## Input example
 
 ```json
 {
@@ -20,12 +24,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 No analytics collector is installed and no URL is opened. Do not put personal identifiers or secrets into campaign parameters. A link is not evidence that a campaign was published or tracked.
 

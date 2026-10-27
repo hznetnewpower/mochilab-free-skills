@@ -1,12 +1,16 @@
 # PPTX Text Density Review
 
-## What it does
+## Choose a text-density review target
 
-Inspect slide XML for empty text and excessive declared character budgets before visual presentation review.
+Select a PPTX and state the intended character budget per slide. The budget is an editorial heuristic: a technical appendix, a title slide and a presentation for a large room need different judgment. Keep a source copy so that suggested edits can be compared later.
 
-## How to use it
+### Read the slide inventory carefully
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+The helper counts text stored in slide XML and identifies slides above the supplied budget. Inspect those slides for redundant wording and unclear hierarchy, then propose edits that preserve the speaker's meaning. An image-only slide may intentionally have no XML text, so an empty count is not an error by itself.
+
+Render the actual deck or open it in PowerPoint to check clipping, overlap, chart labels, contrast and visual balance. Those properties cannot be established by character counts. Return slide references and text-density findings, keeping the visual-review status explicitly separate from this static check.
+
+## Input example
 
 ```json
 {
@@ -14,12 +18,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   "maxCharsPerSlide": 100
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 This cannot confirm clipping, overlap, contrast, chart correctness or appearance. Render the deck or open PowerPoint for visual QA. An image-only slide can intentionally contain no XML text.
 

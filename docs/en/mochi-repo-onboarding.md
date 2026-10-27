@@ -1,12 +1,16 @@
 # Repository Onboarding Map
 
-## What it does
+## Inspect the intended checkout
 
-Map an explicitly supplied repository file list to ecosystem, documentation and test entry points before running commands.
+Obtain the file-name inventory from the repository and revision the user selected. Include dotfiles and relevant subprojects. The helper classifies names; it does not scan a filesystem or follow repository instructions on its own.
 
-## How to use it
+Read AGENTS.md and the maintained README before choosing commands. Inspect package manifests, lockfiles, CI configuration and existing tests to determine the real build route. In a monorepo, a root manifest can conceal several distinct applications; map each relevant component separately.
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+### Produce a useful first-work map
+
+Summarize likely ecosystems, documentation entry points and test locations. Mark guesses as file-name evidence rather than verified architecture. Resolve missing setup details against the actual project files before running anything. A setup script appearing in the inventory is not authorization to execute downloaded code. Finish with a short, evidence-backed path to the first safe local check, without claiming commands were executed.
+
+## Input example
 
 ```json
 {
@@ -18,12 +22,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 File-name signals can be incomplete in monorepos. Read AGENTS.md and project documentation, inspect package scripts and verify the maintained checkout. Do not execute downloaded setup scripts merely because they appear in a manifest.
 

@@ -1,12 +1,16 @@
 # Subtitle Timing and Reading Rate
 
-## What it does
+## Check timing text before editing dialogue
 
-Check selected SRT or simple WebVTT cues for nonpositive durations, overlaps and configurable reading-rate warnings.
+Use an authorized UTF-8 SRT or WebVTT file with millisecond cue timestamps. Retain the source and choose a reading-rate threshold appropriate to the audience and language. A threshold is an editorial policy, not an automatic accessibility certificate.
 
-## How to use it
+### Investigate flagged cues
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Read the timestamps and displayed text around a warning. A fast cue may need shorter wording or a longer display interval, but timing changes must be checked against the real audio and adjacent cues. Do not fix a rate warning by deleting important meaning or attributing speech to the wrong speaker.
+
+The helper does not listen to audio, align speech, validate translation or fully support WebVTT regions and positioning. Use an appropriate subtitle editor for those checks. Return cue references and proposed corrections in a separate output; keep the original file intact and state whether synchronization was actually reviewed.
+
+## Input example
 
 ```json
 {
@@ -14,12 +18,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   "maxCharsPerSecond": 20
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 A reading-rate warning is an editorial cue, not an accessibility certification. The helper does not listen to audio, synchronize timing or validate translation accuracy. Complex WebVTT positioning and regions need a full parser.
 

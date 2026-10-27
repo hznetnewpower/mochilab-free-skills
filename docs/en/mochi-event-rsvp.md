@@ -1,12 +1,16 @@
 # Event RSVP Capacity Desk
 
-## What it does
+## Reconcile the attendance export
 
-Count explicit RSVP statuses, confirmed party sizes and meal choices while flagging capacity overruns.
+Use a defined cutoff and stable person IDs. Record response status as yes, no, maybe or pending, and use party size for the number of people represented by a positive response. A family or group response must not be counted as a single seat by accident.
 
-## How to use it
+## Plan against confirmed attendance
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Compare confirmed people with capacity and review meal totals for the relevant accepted parties. Keep uncertain responses separate so that catering and venue decisions can show both committed and possible demand. Resolve duplicate identities in the source rather than silently counting them twice.
+
+Only collect attendee details needed for the event. Public summaries should not expose contact information, dietary identities or the underlying guest list. The helper does not send invitations, chase replies or establish live attendance. Deliver counts with their cutoff and any unresolved source discrepancies before the organizer makes purchasing or capacity decisions.
+
+## Input example
 
 ```json
 {
@@ -30,12 +34,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Counts reflect the supplied export, not live attendance. Collect only necessary attendee data and do not expose contact details in public reports. No invitation or reminder is sent.
 

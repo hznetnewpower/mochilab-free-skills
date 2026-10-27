@@ -1,12 +1,16 @@
 # Product Launch Evidence Checklist
 
-## What it does
+## Turn readiness claims into evidence
 
-Identify required launch tasks lacking completion or evidence before a human go/no-go decision.
+Build a checklist for the actual launch scope. Give each item a unique ID, distinguish required from optional work, and record a concrete status and evidence location. A statement that someone tested a feature is weaker than a reproducible test receipt or reviewed artifact.
 
-## How to use it
+## Examine unresolved required work
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+A required task needs both done status and nonempty evidence. Review the evidence itself before approving a launch; a populated string is not proof that a result is valid. Explicitly cover rollback, support ownership, known limitations and the installation or upgrade path relevant to this release.
+
+The report is an input to a human release decision. It does not deploy software, accept agreements, send launch announcements or certify compliance. Deliver a short list of blocking items and their owners, preserving optional work separately so that it does not obscure genuine release requirements.
+
+## Input example
 
 ```json
 {
@@ -23,12 +27,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 A checked box is not a compliance certificate. Verify actual artifacts, support ownership, rollback and known limitations. The helper does not deploy, send announcements or accept agreements.
 

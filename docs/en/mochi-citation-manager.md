@@ -1,12 +1,16 @@
 # Citation Normalizer
 
-## What it does
+## Build a traceable reference set
 
-Deduplicate user-supplied references by normalized DOI or title and export escaped BibTeX records.
+Gather stable record IDs, titles and any supplied authors, year or DOI. Preserve the source of each bibliographic record outside the normalized export so that later corrections remain possible. Verify publication metadata against the publisher before treating a citation as final.
 
-## How to use it
+## Resolve duplicates without losing editions
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+The helper deduplicates exact normalized DOI or title matches and exports `references.bib`. Inspect the retained record and duplicate IDs rather than assuming every title match is the same work. Translations, editions, corrections and retractions may need distinct entries even when wording overlaps.
+
+Check the exported citation keys in the document or reference manager that will consume them. The helper does not resolve DOI URLs, search scholarly services or establish that a paper supports a claim. Deliver the bibliography with unresolved metadata and duplicate decisions recorded; do not invent missing authors or publication years to make the file look complete.
+
+## Input example
 
 ```json
 {
@@ -28,12 +32,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 No DOI resolution, scholarly search or truth verification. Preserve distinct editions and corrections when bibliographically meaningful. Check exact publication metadata against the publisher before final citation.
 

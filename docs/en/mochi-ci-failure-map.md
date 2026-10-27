@@ -1,24 +1,22 @@
 # CI Failure Signal Map
 
-## What it does
+## Begin with one failed run
 
-Locate test, dependency, compilation, permission and timeout signals in a selected CI log without replaying the pipeline.
+Obtain the log for the exact failing job, including its run identifier and revision. Select a local UTF-8 export; do not combine unrelated retries without labeling them. Keep the original log private because build output can contain credentials and internal addresses.
 
-## How to use it
+### Use line numbers as leads
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+The report groups dependency, compilation, test, permission and timeout signals. Open the cited locations in the original log and read the preceding step header, first exception and final exit status. A later test failure can be a consequence of an earlier failed install. Multiple categories are not multiple confirmed root causes.
+
+Before rerunning, decide whether the job deploys, publishes packages, migrates data or sends notifications. Investigate with read-only project evidence first. The final diagnosis should identify the failing stage, the strongest supporting lines and remaining uncertainty. Do not paste whole log blocks into a public issue or claim a pipeline was rerun by this helper.
+
+## Input example
 
 ```json
 {
   "file": "samples/ci.log"
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 A pattern match is a diagnostic lead, not confirmed root cause. Read relevant surrounding lines privately and investigate the earliest causal failure. Do not expose tokens from logs or rerun side-effecting jobs automatically.
 

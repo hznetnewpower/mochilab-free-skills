@@ -1,12 +1,16 @@
 # Timezone Itinerary Organizer
 
-## What it does
+## Build the day from verified constraints
 
-Arrange user-selected itinerary stops, detect time overlaps and keep estimated costs separated by currency.
+Collect the traveler’s selected stops, aware start/end times and any supplied costs. Keep costs in their original currencies. Before giving current recommendations, verify opening hours, entry rules, availability and transport information with authoritative live sources.
 
-## How to use it
+### Review the sequence as a real journey
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Read `itinerary.md` in chronological order and inspect every overlap. Check transfers and buffers independently: the supplied times do not establish feasible travel between locations. Allow for accessibility needs, check-in windows and reservations only when the user has provided or verified them.
+
+Totals are estimates grouped by currency; the helper performs no exchange conversion. It does not reserve accommodation, buy tickets or make payments. Deliver the itinerary with assumptions and unresolved bookings clearly identified. Avoid presenting a fictional sample stop or unverified price as a current recommendation.
+
+## Input example
 
 ```json
 {
@@ -29,12 +33,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Current travel recommendations, opening hours, entry rules, fares and availability require live verification. User-supplied times are not verified transit times. No booking, payment or exchange-rate conversion occurs.
 

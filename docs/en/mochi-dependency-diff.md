@@ -1,12 +1,16 @@
 # Dependency Upgrade Delta
 
-## What it does
+## Choose comparable dependency snapshots
 
-Compare explicit dependency version maps and highlight additions, removals and major-version changes.
+Prepare two name-to-version maps from the same dependency scope and package manager. Resolve exact installed or locked versions where possible. Comparing a production map with a development map creates misleading removals; comparing ranges does not establish an actual upgrade.
 
-## How to use it
+## Review each kind of change
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Added names can introduce new runtime or build requirements. Removed names may still be imported elsewhere. Changed versions need upstream release notes and project-specific checks. Numeric major changes receive a review flag; that flag is not a compatibility prediction, and nonnumeric versions cannot support the same inference.
+
+Report the before and after versions beside each changed name, then identify which migration notes or tests remain necessary. The helper does not install dependencies, query vulnerability databases or certify licenses. Keep a separate decision record for approving the actual upgrade, and retain the lockfile diff as evidence when one exists.
+
+## Input example
 
 ```json
 {
@@ -20,12 +24,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   }
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 No dependency is installed and no vulnerability database is queried. A major-version flag is a review cue, not a compatibility verdict. Read upstream migration notes and run project checks before upgrading.
 

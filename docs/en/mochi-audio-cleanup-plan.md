@@ -1,12 +1,16 @@
 # Audio Loudness Preparation
 
-## What it does
+## Establish the audio source and target
 
-Read a supplied ffprobe JSON and prepare the first loudness-analysis filter without altering audio or inventing measurements.
+Obtain ffprobe JSON for the selected media and review its audio streams. Ask which stream should be processed and what loudness and true-peak targets the delivery channel requires. The package does not bundle ffmpeg or ffprobe; verify installed tool help before running media commands.
 
-## How to use it
+## Use a measured two-pass workflow
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+The helper proposes an analysis filter from the supplied probe data and target values. Run that analysis against the intended audio, retain the measured loudnorm fields, and use those measurements to prepare the second pass. The initial report is not a ready-made second-pass result.
+
+Write processed audio to a new file and listen to quiet passages, peaks, transitions and the ending. Confirm duration and channel mapping before delivery. Loudness normalization does not remove background noise, repair clipping or verify intelligibility. Return the plan and measured evidence, distinguishing a proposed filter from audio that was actually processed and auditioned.
+
+## Input example
 
 ```json
 {
@@ -14,12 +18,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   "targetLufs": -16
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Requires ffmpeg/ffprobe for actual media work; these binaries are not bundled. Run analysis first, use measured loudnorm fields for a second pass, save a new output and listen to it. Loudness normalization is not noise removal.
 

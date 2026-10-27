@@ -1,12 +1,16 @@
 # Image Publishing Checklist
 
-## What it does
+## Inspect the real assets first
 
-Check selected image assets for file budgets, declared dimensions and missing nondecorative alt text before publication.
+Select images that the user intends to publish and view them with an available image tool. Supply the workspace-relative file path, declared dimensions and either meaningful alt text or a deliberate decorative designation. Do not mark informative diagrams decorative merely to suppress a missing-alt warning.
 
-## How to use it
+### Review the manifest findings
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Compare byte counts with the publishing budget and verify declared dimensions using an image decoder. This helper does not decode image dimensions, judge visual quality or determine whether alt text describes the picture accurately. Keep any such checks as separately recorded evidence.
+
+For oversized assets, choose a suitable export format and inspect the resulting image before replacement. Do not overwrite the original silently. Finish with an asset list, measured-size issues and unresolved accessibility or visual questions. A clean manifest report does not certify the whole page's accessibility, performance or appearance.
+
+## Input example
 
 ```json
 {
@@ -20,12 +24,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Inspect actual images with an image tool and verify declared dimensions before publishing. The helper does not generate images, evaluate alt-text accuracy, resize files or certify accessibility. Decorative status must be chosen deliberately.
 

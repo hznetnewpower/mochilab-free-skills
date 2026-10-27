@@ -1,24 +1,25 @@
 # OpenAPI Operation Review
 
-## What it does
+## Collect the actual contract
 
-Inspect OpenAPI3 JSON operations for duplicate IDs, missing responses and undeclared required path parameters.
+Work from the OpenAPI JSON exported by the intended service or checked-in API revision. Record that revision in the review notes. A rendered API documentation page or a response example is not a replacement for the specification. Set `file` to this JSON inside the selected workspace.
 
-## How to use it
+## Triage the findings
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+- Follow each reported HTTP method and path back to its operation object.
+- Resolve duplicate operation IDs by deciding which operation owns the identifier; do not rename IDs without checking generated clients.
+- For a `{placeholder}`, inspect both path-level and operation-level declarations and confirm the parameter is required.
+- A response map needs meaningful status descriptions and payload schemas even when this limited checker reports no missing responses.
+
+Hand off external references, authentication schemes, callback definitions and dialect validation to a full OpenAPI validator. This helper does not dereference remote schemas or contact the API. Return an operation inventory and unresolved review items, tied to the supplied specification revision.
+
+## Input example
 
 ```json
 {
   "file": "samples/openapi.json"
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 This is a focused static check, not full OpenAPI validation or an API penetration test. References are not resolved and no endpoints are called. Confirm authentication and payload contracts using the actual service docs.
 

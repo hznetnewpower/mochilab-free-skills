@@ -1,12 +1,16 @@
 # Transcript Chapter Evidence
 
-## What it does
+## Anchor chapter titles in transcript evidence
 
-Validate proposed video chapters against supplied transcript segment IDs and export a timestamped chapter list.
+Collect authorized transcript segments with unique IDs and start/end times. Read the actual segment text when drafting titles; this helper receives timing and source references and cannot establish what a speaker said. Keep the transcript provenance with the task notes.
 
-## How to use it
+## Review the chapter boundary proposals
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Each chapter needs a start, a meaningful title and at least one source ID that exists in the segment list. Confirm that proposed boundaries follow the program's actual topic changes rather than dividing duration mechanically. Check timing order against the media before publishing chapter markers.
+
+Inspect `chapters.txt` and compare its final marker with the supplied recording duration. Source-ID validation proves referential consistency only, not summary accuracy. The helper does not fetch videos, obtain transcripts or publish metadata. Deliver the chapter file and evidence mapping, identifying any title or timing that still needs a human listen-through.
+
+## Input example
 
 ```json
 {
@@ -40,12 +44,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Use an authorized transcript or the user's file. The model writes titles from actual segment evidence; the helper only checks references and timing. It does not fetch videos or prove that a summary is factually accurate.
 

@@ -1,12 +1,16 @@
 # Shared Availability Finder
 
-## What it does
+## Define the scheduling window
 
-Calculate shared free intervals from explicitly provided busy ranges with timezone-aware timestamps.
+Ask for a start, end, minimum meeting duration and the timezones participants actually use. Supply aware ISO timestamps with offsets. Collect busy intervals only from calendars the user is authorized to access, and record the export cutoff because availability changes.
 
-## How to use it
+## Interpret the remaining intervals
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+The helper removes supplied busy time from the chosen window and returns gaps long enough for the requested duration. Check that every proposed slot sits inside the window and clear of all supplied conflicts. Convert display times for each participant without changing the underlying instant.
+
+Working hours, travel buffers, holidays and tentative holds must be represented in the inputs or reviewed separately. Absence of a busy record does not prove a person is free. Recheck the selected time in the actual calendars before creating an event. Return candidate intervals and the assumptions used; this tool does not book a meeting or send invitations.
+
+## Input example
 
 ```json
 {
@@ -24,12 +28,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Obtain each person's calendar access legitimately. This uses provided availability only; travel buffers, working hours and last-minute changes must be supplied or checked separately before booking.
 

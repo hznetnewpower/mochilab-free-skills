@@ -1,24 +1,25 @@
 # Spreadsheet Formula Evidence Audit
 
-## What it does
+## Audit a preserved workbook copy
 
-Inspect XLSX formula cells, cached error values and external-link parts without modifying or recalculating the workbook.
+Select the XLSX that belongs to this task and retain the original. This check inspects workbook XML without running macros, following external links or invoking a spreadsheet calculation engine. Password-protected or non-XLSX inputs need another workflow.
 
-## How to use it
+### Review formula evidence
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+- Locate each reported formula cell in the corresponding worksheet.
+- Treat a missing cached result as a recalculation question, not proof of a bad formula.
+- Treat a present cache as a stored value that may be stale.
+- Investigate literal REF errors and external-link parts before sharing the workbook.
+
+Open the file in Excel or a compatible engine when real recalculation is required, then verify affected cells and downstream totals. Return the formula inventory and outstanding checks. Do not describe the workbook as visually verified, recalculated or free of all spreadsheet errors based only on this static report.
+
+## Input example
 
 ```json
 {
   "file": "samples/book.xlsx"
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Missing caches do not prove formulas are wrong; stale caches can be misleading. Use Excel or a compatible calculation engine for real recalculation, then inspect results. No macros or links are executed.
 

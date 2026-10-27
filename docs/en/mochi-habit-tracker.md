@@ -1,12 +1,16 @@
 # Personal Habit Completion Review
 
-## What it does
+## Define what one completed day means
 
-Calculate unique completion days, a streak ending on an explicit date and a bounded-window completion rate.
+Use the user's own completion dates and agree on the cutoff date and observation window. Several records for one date count as one completed day. Clarify the user's local date convention before converting timestamps from another system.
 
-## How to use it
+### Interpret the streak conservatively
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+The streak ending at the cutoff describes consecutive recorded completion dates, not motivation, personal worth or health. Review dates outside the window and future entries as data-quality questions. A missing record may be an unlogged activity rather than a confirmed missed action.
+
+Use the report to describe completion frequency and continuity without creating behavioral profiles or diagnostic claims. This package does not schedule reminders, contact another person or infer sensitive medical information. Return the chosen dates and calculation assumptions with the summary, and preserve corrections to self-recorded data rather than silently rewriting history.
+
+## Input example
 
 ```json
 {
@@ -20,12 +24,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   "windowDays": 7
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Only use self-recorded completion data. No health diagnosis, behavioral profiling or automatic reminders. A missed day does not establish motivation or health status; keep interpretation descriptive.
 

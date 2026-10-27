@@ -1,12 +1,16 @@
 # Pairwise Test Matrix
 
-## What it does
+## Model the factors before generating cases
 
-Generate a bounded greedy pairwise matrix for discrete configuration factors and report coverage without executing tests.
+Use a factor for each independent setting, such as operating system, language or account role. Supply the actual values that the product supports. Exclude invalid combinations only through an explicit review process: this helper accepts discrete independent factors and has no constraint language.
 
-## How to use it
+### Coverage means pairs, not all behavior
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+The greedy matrix covers every two-factor value combination. Verify the returned pair-coverage result and compare the generated case count with the full Cartesian count. A small matrix is useful for breadth but does not guarantee the smallest possible suite or cover three-way interactions.
+
+Add targeted regressions for past incidents and known risky combinations, then assign real assertions to every case. Execute those tests separately and retain their results; generated rows are not passing tests. Keep the Cartesian product within the documented bound and reduce redundant factor values rather than truncating the report silently.
+
+## Input example
 
 ```json
 {
@@ -26,12 +30,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   }
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Pairwise coverage is not exhaustive behavior coverage and the greedy result is not guaranteed minimal. Include known high-risk combinations and execute the tests separately.
 

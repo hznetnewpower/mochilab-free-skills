@@ -1,12 +1,16 @@
 # Social Draft Batch Review
 
-## What it does
+## Prepare an editorial batch
 
-Review draft posts against user-supplied platform character limits and asset lists without scheduling or publishing.
+Assign every post a stable ID, intended platform, final text and optional asset references. Supply the current character limit for each platform from an authoritative source. Keep drafts distinct from content already approved or scheduled.
 
-## How to use it
+### Resolve length findings in context
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+The helper counts Unicode code points. Platforms can apply weighted characters, special URL rules or different limits by account type, so validate borderline posts in the real composer. Shorten wording without changing a factual claim, removing necessary attribution or leaving a misleading fragment.
+
+Review referenced assets and the intended publishing account before any live action. This package does not log in, schedule posts or submit content. Deliver the batch with over-limit IDs and the counting assumptions, then obtain any required publication approval and verify the platform's actual response separately.
+
+## Input example
 
 ```json
 {
@@ -27,12 +31,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 Platforms may use weighted characters or URL rules. Confirm current platform limits and use the platform composer before publishing; this count is not a final platform acceptance check. No account login or scheduling occurs.
 

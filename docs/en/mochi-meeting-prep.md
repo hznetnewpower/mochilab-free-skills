@@ -1,12 +1,16 @@
 # Decision-Focused Meeting Prep
 
-## What it does
+## Design the meeting around decisions
 
-Prepare a timed agenda, identify topics without a decision target and compare allocated time with the meeting budget.
+Clarify the meeting title, total duration and the decision each agenda item should support. Give topics explicit minute budgets where possible. Background facts should come from supplied notes or cited sources; do not invent participant roles or unresolved commitments.
 
-## How to use it
+### Resolve an over-budget agenda
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+Compare allocated minutes with the total. If topics exceed the budget, propose which decisions must stay and which discussion can move to written follow-up. Leave room for an opening, transitions and clear next steps instead of distributing every minute mechanically.
+
+Review the generated `meeting-prep.md` for actionable topic wording, evidence needed and decision ownership. This is a preparation document, not a transcript analysis or an invitation. The helper does not retrieve private attendee records, send calendar events or assert that an absent participant agreed. Deliver the brief and call out decisions that still lack an owner or supporting material.
+
+## Input example
 
 ```json
 {
@@ -25,12 +29,6 @@ Give the assistant the concrete task and required inputs. This fictional request
   ]
 }
 ```
-
-## Output and verification
-
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
-
-## Scope
 
 This prepares a meeting; it does not extract commitments from a past transcript, send invitations or fetch private attendee records. Cite any background facts used in the real briefing.
 
