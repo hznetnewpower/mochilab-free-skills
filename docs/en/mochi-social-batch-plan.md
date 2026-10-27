@@ -1,38 +1,33 @@
 # Social Draft Batch Review
 
-## Prepare an editorial batch
+## What it helps with
 
-Assign every post a stable ID, intended platform, final text and optional asset references. Supply the current character limit for each platform from an authoritative source. Keep drafts distinct from content already approved or scheduled.
+Review draft posts against user-supplied platform character limits and asset lists without scheduling or publishing.
 
-### Resolve length findings in context
+## Say it like this
 
-The helper counts Unicode code points. Platforms can apply weighted characters, special URL rules or different limits by account type, so validate borderline posts in the real composer. Shorten wording without changing a factual claim, removing necessary attribution or leaving a misleading fragment.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Review referenced assets and the intended publishing account before any live action. This package does not log in, schedule posts or submit content. Deliver the batch with over-limit IDs and the counting assumptions, then obtain any required publication approval and verify the platform's actual response separately.
-
-## Input example
-
-```json
-{
-  "platformLimits": {
-    "demo": 5
-  },
-  "posts": [
-    {
-      "id": "p1",
-      "platform": "demo",
-      "text": "hello"
-    },
-    {
-      "id": "p2",
-      "platform": "demo",
-      "text": "too long"
-    }
-  ]
-}
+```text
+Review these draft posts against the supplied platform limits and asset lists. Do not publish or schedule them.
 ```
 
+## What to provide
+
+Provide posts, destination platforms, character limits and intended assets.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive over-limit posts, asset listings and revision items.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Platforms may use weighted characters or URL rules. Confirm current platform limits and use the platform composer before publishing; this count is not a final platform acceptance check. No account login or scheduling occurs.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

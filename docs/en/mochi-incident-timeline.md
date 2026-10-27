@@ -1,37 +1,33 @@
 # Incident Evidence Timeline
 
-## Keep event time separate from observation time
+## What it helps with
 
-Collect uniquely identified events with aware timestamps, concise summaries and traceable sources. Preserve the raw records privately. When a source was observed later than the event it describes, record that distinction in the investigation notes rather than replacing one timestamp with the other.
+Order sourced incident events by aware timestamps and expose elapsed gaps without inventing a root cause.
 
-## Reconcile the ordered narrative
+## Say it like this
 
-Review `timeline.md` against logs, monitor results and human reports. Flag clock differences, missing periods and contradictory evidence. Mark uncertain reports explicitly; chronological proximity does not prove that one event caused another.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-The helper orders supplied evidence only. It does not query monitoring systems, infer a root cause, run remediation, delete logs or notify outside parties. Deliver a sourced chronology and open questions, then validate any proposed cause through separate investigation. Keep restoration claims tied to an actual recovery observation instead of a person's expectation.
-
-## Input example
-
-```json
-{
-  "events": [
-    {
-      "id": "b",
-      "at": "2026-10-27T10:05:00Z",
-      "summary": "Recovered",
-      "source": "synthetic monitor"
-    },
-    {
-      "id": "a",
-      "at": "2026-10-27T10:00:00Z",
-      "summary": "Failure observed",
-      "source": "synthetic log"
-    }
-  ]
-}
+```text
+Build an incident timeline from these logs and notes, citing each event and calculating gaps. Do not infer a root cause or run repairs.
 ```
 
+## What to provide
+
+Provide logs or event records and their timezone, distinguishing occurrence from report times.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive a sourced timeline, elapsed gaps and unresolved timestamps.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Distinguish observation time from event time and preserve uncertain reports. Timeline order is not proof of causation. Do not run remediation, delete logs or notify external parties without the user's task authorization.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

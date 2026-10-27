@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 factors:1..8 names mapped to nonempty value lists. Cartesian product must not exceed10000. Returns a greedy covering matrix.
 

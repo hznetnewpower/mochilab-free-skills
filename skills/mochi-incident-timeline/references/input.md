@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 events: unique id,at,summary,source. Exports timeline.md; no source systems are queried.
 

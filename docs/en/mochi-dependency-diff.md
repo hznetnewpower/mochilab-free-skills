@@ -1,31 +1,33 @@
 # Dependency Upgrade Delta
 
-## Choose comparable dependency snapshots
+## What it helps with
 
-Prepare two name-to-version maps from the same dependency scope and package manager. Resolve exact installed or locked versions where possible. Comparing a production map with a development map creates misleading removals; comparing ranges does not establish an actual upgrade.
+Compare explicit dependency version maps and highlight additions, removals and major-version changes.
 
-## Review each kind of change
+## Say it like this
 
-Added names can introduce new runtime or build requirements. Removed names may still be imported elsewhere. Changed versions need upstream release notes and project-specific checks. Numeric major changes receive a review flag; that flag is not a compatibility prediction, and nonnumeric versions cannot support the same inference.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Report the before and after versions beside each changed name, then identify which migration notes or tests remain necessary. The helper does not install dependencies, query vulnerability databases or certify licenses. Keep a separate decision record for approving the actual upgrade, and retain the lockfile diff as evidence when one exists.
-
-## Input example
-
-```json
-{
-  "before": {
-    "alpha": "1.2.0",
-    "old": "1.0.0"
-  },
-  "after": {
-    "alpha": "2.0.0",
-    "new": "1.0.0"
-  }
-}
+```text
+Compare these before-and-after dependency lists. Show additions, removals and version changes, especially major upgrades.
 ```
 
+## What to provide
+
+Provide comparable before-and-after dependency lists or locked-version exports.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive a version delta and migration-review items.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 No dependency is installed and no vulnerability database is queried. A major-version flag is a review cue, not a compatibility verdict. Read upstream migration notes and run project checks before upgrading.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

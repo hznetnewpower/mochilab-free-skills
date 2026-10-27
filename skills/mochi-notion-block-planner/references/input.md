@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 file: UTF-8 plain Markdown. Supports headings1..3, bullet lines and paragraphs; rich text is chunked to1900 characters. Exports notion-blocks.json.
 

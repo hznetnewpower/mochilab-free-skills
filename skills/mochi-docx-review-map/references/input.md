@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 file: DOCX. Reads word/document.xml and optional word/comments.xml. Reports paragraph indexes, comment IDs, text and revision kind.
 

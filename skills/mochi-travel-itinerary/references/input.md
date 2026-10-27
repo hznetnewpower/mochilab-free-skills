@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 stops: name,start,end and optional cost,currency. Timestamps need offsets. title optional. Exports itinerary.md.
 

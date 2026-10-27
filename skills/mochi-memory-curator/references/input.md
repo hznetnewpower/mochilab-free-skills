@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 asOf: aware ISO timestamp. facts: key, value, source, optional expiresAt. Conflicts are not resolved automatically.
 

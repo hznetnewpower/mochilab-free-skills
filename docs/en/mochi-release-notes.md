@@ -1,34 +1,33 @@
 # Commit Release Notes
 
-## Select the release range
+## What it helps with
 
-Collect commits between the actual previous and proposed releases. Preserve each commit ID and subject, and include bodies when they explain migration work. Avoid counting merge commits as additional shipped features unless they contain distinct changes.
+Group exported conventional commit subjects into draft release notes and flag declared breaking changes.
 
-## Turn the draft into release evidence
+## Say it like this
 
-Review feature and fix groups against the real diff. A breaking marker in a subject should lead to an explicit migration note, not merely a warning badge. Verify that the claimed behavior is covered by tests or other concrete evidence, and retain links to relevant issues when available.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-The helper exports `release-notes.md` from supplied messages. It does not inspect code, tag a repository, build artifacts or publish a release. Remove internal-only information before public use. Deliver the draft with the chosen version and commit range, identify unverified claims, and leave final publication to the authorized release workflow.
-
-## Input example
-
-```json
-{
-  "version": "1.1.0",
-  "commits": [
-    {
-      "id": "abc123",
-      "subject": "feat!: change interface"
-    },
-    {
-      "id": "def456",
-      "subject": "fix: preserve settings"
-    }
-  ]
-}
+```text
+Draft release notes for 1.1.0 from these commits. Separate features, fixes and declared breaking changes.
 ```
 
+## What to provide
+
+Provide commit records or an accessible revision range and the release version.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive draft release notes and items requiring verification.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 This does not inspect code or validate that commit messages are accurate. Check the actual diff and test evidence; publishing a release remains separate. Preserve issue links and avoid claiming untested fixes.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

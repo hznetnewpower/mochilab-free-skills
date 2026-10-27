@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 query: nonempty string. sites: optional host-name list. exact: optional exact phrase. Returns raw and URL-encoded queries.
 

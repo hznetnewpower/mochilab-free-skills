@@ -1,35 +1,33 @@
 # Shared Availability Finder
 
-## Define the scheduling window
+## What it helps with
 
-Ask for a start, end, minimum meeting duration and the timezones participants actually use. Supply aware ISO timestamps with offsets. Collect busy intervals only from calendars the user is authorized to access, and record the export cutoff because availability changes.
+Calculate shared free intervals from explicitly provided busy ranges with timezone-aware timestamps.
 
-## Interpret the remaining intervals
+## Say it like this
 
-The helper removes supplied busy time from the chosen window and returns gaps long enough for the requested duration. Check that every proposed slot sits inside the window and clear of all supplied conflicts. Convert display times for each participant without changing the underlying instant.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Working hours, travel buffers, holidays and tentative holds must be represented in the inputs or reviewed separately. Absence of a busy record does not prove a person is free. Recheck the selected time in the actual calendars before creating an event. Return candidate intervals and the assumptions used; this tool does not book a meeting or send invitations.
-
-## Input example
-
-```json
-{
-  "start": "2026-10-27T09:00:00Z",
-  "end": "2026-10-27T12:00:00Z",
-  "people": [
-    {
-      "busy": [
-        {
-          "start": "2026-10-27T10:00:00Z",
-          "end": "2026-10-27T11:00:00Z"
-        }
-      ]
-    }
-  ]
-}
+```text
+Find a shared 30-minute slot on 28 October 2026 between 9am and noon in Asia/Shanghai. Wang is busy 10–11am and Lee is busy 9–9:30am.
 ```
 
+## What to provide
+
+Provide the date, timezone, required duration and each person’s busy intervals, or authorized calendar exports.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive shared free intervals for a later booking decision.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Obtain each person's calendar access legitimately. This uses provided availability only; travel buffers, working hours and last-minute changes must be supplied or checked separately before booking.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

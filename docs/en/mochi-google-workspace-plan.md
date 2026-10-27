@@ -1,35 +1,33 @@
 # Google Workspace Action Plan
 
-## Bind every action to an account
+## What it helps with
 
-Start with the user's concrete objective and the account that should perform it. For each planned step, record the supported action kind plus its query or resource identifier. A document title is not a stable document ID, and an account shown in one connector is not automatically the account used by another tool.
+Plan concrete Gmail, Calendar, Drive, Sheets and Docs actions for an explicitly selected authorized account.
 
-### Read first, then review changes
+## Say it like this
 
-Use search or list actions to locate the intended email, calendar, Drive file, spreadsheet or document. Inspect the selected object before drafting a mutating action. For writes, preserve the exact destination and describe what will change; verify the live result with the authorized connector after execution.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-This package creates a plan only. It neither implements Google OAuth nor calls Google APIs. If the environment uses a CLI, inspect that installed CLI's help instead of inventing flags. Never ask users to paste refresh tokens into conversation. A successful local report is not evidence that mail was sent, an event was created or a document was updated.
-
-## Input example
-
-```json
-{
-  "actions": [
-    {
-      "kind": "gmail.search",
-      "account": "demo@example.com",
-      "query": "subject:invoice"
-    },
-    {
-      "kind": "docs.update",
-      "account": "demo@example.com",
-      "resource": "fictional-document"
-    }
-  ]
-}
+```text
+Plan how to find this month’s invoices in my Google mail and summarize them in the selected sheet. Review accounts and resources before editing.
 ```
 
+## What to provide
+
+Describe the task, intended account and files, using existing authorized connections.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive an action plan and any missing account or resource information.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 The helper does not implement OAuth or call Google. Use an available authorized connector or inspect the installed gog CLI help before executing. Verify account and resource identifiers; do not request refresh tokens in chat.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

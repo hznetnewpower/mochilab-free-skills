@@ -1,29 +1,33 @@
 # Repository Onboarding Map
 
-## Inspect the intended checkout
+## What it helps with
 
-Obtain the file-name inventory from the repository and revision the user selected. Include dotfiles and relevant subprojects. The helper classifies names; it does not scan a filesystem or follow repository instructions on its own.
+Map an explicitly supplied repository file list to ecosystem, documentation and test entry points before running commands.
 
-Read AGENTS.md and the maintained README before choosing commands. Inspect package manifests, lockfiles, CI configuration and existing tests to determine the real build route. In a monorepo, a root manifest can conceal several distinct applications; map each relevant component separately.
+## Say it like this
 
-### Produce a useful first-work map
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Summarize likely ecosystems, documentation entry points and test locations. Mark guesses as file-name evidence rather than verified architecture. Resolve missing setup details against the actual project files before running anything. A setup script appearing in the inventory is not authorization to execute downloaded code. Finish with a short, evidence-backed path to the first safe local check, without claiming commands were executed.
-
-## Input example
-
-```json
-{
-  "files": [
-    "package.json",
-    "README.md",
-    "AGENTS.md",
-    "tests/basic.test.js"
-  ]
-}
+```text
+Map this repository: its stack, documents to read first and test entry points. Do not install dependencies or start services.
 ```
 
+## What to provide
+
+Provide the intended checkout or file listing and the area you want to understand.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive an onboarding map and a suggested reading order.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 File-name signals can be incomplete in monorepos. Read AGENTS.md and project documentation, inspect package scripts and verify the maintained checkout. Do not execute downloaded setup scripts merely because they appear in a manifest.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

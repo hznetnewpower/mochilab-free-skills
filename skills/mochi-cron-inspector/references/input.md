@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 expression: five fields; supports numbers, ranges, lists, star and steps. timezone: IANA name. after: aware ISO time. count:1..20. Search bounded to366days.
 

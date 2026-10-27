@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 asOf: timezone-aware ISO timestamp. maxAgeDays: nonnegative integer. sources: id, url, publishedAt or updatedAt, optional eventDate.
 

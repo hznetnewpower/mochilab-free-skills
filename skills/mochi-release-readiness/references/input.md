@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 artifacts: name, version, sha256 and testStatus. Passing requires semantic-version-shaped versions,64 lowercase hex digits and testStatus=passed.
 

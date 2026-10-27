@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 file: UTF-8 log. Returns matched line numbers and category counts without reproducing full log text.
 

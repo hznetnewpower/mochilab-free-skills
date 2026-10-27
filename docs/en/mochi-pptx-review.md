@@ -1,25 +1,33 @@
 # PPTX Text Density Review
 
-## Choose a text-density review target
+## What it helps with
 
-Select a PPTX and state the intended character budget per slide. The budget is an editorial heuristic: a technical appendix, a title slide and a presentation for a large room need different judgment. Keep a source copy so that suggested edits can be compared later.
+Inspect slide XML for empty text and excessive declared character budgets before visual presentation review.
 
-### Read the slide inventory carefully
+## Say it like this
 
-The helper counts text stored in slide XML and identifies slides above the supplied budget. Inspect those slides for redundant wording and unclear hierarchy, then propose edits that preserve the speaker's meaning. An image-only slide may intentionally have no XML text, so an empty count is not an error by itself.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Render the actual deck or open it in PowerPoint to check clipping, overlap, chart labels, contrast and visual balance. Those properties cannot be established by character counts. Return slide references and text-density findings, keeping the visual-review status explicitly separate from this static check.
-
-## Input example
-
-```json
-{
-  "file": "samples/slides.pptx",
-  "maxCharsPerSlide": 100
-}
+```text
+Review this deck for text-heavy slides using a 300-character warning budget per slide. List pages to simplify.
 ```
 
+## What to provide
+
+Upload the presentation and optionally state a per-slide character budget.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive per-slide text counts and pages flagged for review.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 This cannot confirm clipping, overlap, contrast, chart correctness or appearance. Render the deck or open PowerPoint for visual QA. An image-only slide can intentionally contain no XML text.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

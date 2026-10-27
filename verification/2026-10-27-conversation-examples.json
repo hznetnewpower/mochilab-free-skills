@@ -1,0 +1,233 @@
+{
+  "scope": "Six independently stated user scenarios interpreted by the authoring assistant and executed through the real packaged helper. No automated model, phone or live OpenClaw conversation was exercised; this is not an NLU accuracy claim.",
+  "allPassed": true,
+  "scenarioCount": 6,
+  "items": [
+    {
+      "mode": "event_rsvp",
+      "scenario": "Confirmed family of 3, one vegetarian guest, one undecided reply, capacity 10",
+      "assistantPreparedInput": {
+        "capacity": 10,
+        "people": [
+          {
+            "id": "wang",
+            "status": "yes",
+            "partySize": 3
+          },
+          {
+            "id": "lee",
+            "status": "yes",
+            "partySize": 1,
+            "meal": "vegetarian"
+          },
+          {
+            "id": "chen",
+            "status": "maybe"
+          }
+        ]
+      },
+      "actualResult": {
+        "responsesByStatus": {
+          "yes": 2,
+          "maybe": 1
+        },
+        "confirmedPeople": 4,
+        "mealCounts": {
+          "unspecified": 3,
+          "vegetarian": 1
+        },
+        "capacityExceeded": false,
+        "invitationsSent": false,
+        "contactDetailsExported": false
+      },
+      "passed": true
+    },
+    {
+      "mode": "event_rsvp",
+      "scenario": "One confirmed party of 4 explicitly needs two vegetarian and two standard meals",
+      "assistantPreparedInput": {
+        "capacity": 10,
+        "people": [
+          {
+            "id": "party-veg",
+            "status": "yes",
+            "partySize": 2,
+            "meal": "vegetarian"
+          },
+          {
+            "id": "party-standard",
+            "status": "yes",
+            "partySize": 2,
+            "meal": "standard"
+          }
+        ]
+      },
+      "actualResult": {
+        "responsesByStatus": {
+          "yes": 2
+        },
+        "confirmedPeople": 4,
+        "mealCounts": {
+          "vegetarian": 2,
+          "standard": 2
+        },
+        "capacityExceeded": false,
+        "invitationsSent": false,
+        "contactDetailsExported": false
+      },
+      "passed": true
+    },
+    {
+      "mode": "calendar_availability",
+      "scenario": "28 October, Shanghai 9 to noon; Wang busy 10 to 11, Lee busy 9 to 9:30; minimum 30 minutes",
+      "assistantPreparedInput": {
+        "start": "2026-10-28T09:00:00+08:00",
+        "end": "2026-10-28T12:00:00+08:00",
+        "minMinutes": 30,
+        "people": [
+          {
+            "busy": [
+              {
+                "start": "2026-10-28T10:00:00+08:00",
+                "end": "2026-10-28T11:00:00+08:00"
+              }
+            ]
+          },
+          {
+            "busy": [
+              {
+                "start": "2026-10-28T09:00:00+08:00",
+                "end": "2026-10-28T09:30:00+08:00"
+              }
+            ]
+          }
+        ]
+      },
+      "actualResult": {
+        "available": [
+          {
+            "start": "2026-10-28T09:30:00+08:00",
+            "end": "2026-10-28T10:00:00+08:00",
+            "minutes": 30
+          },
+          {
+            "start": "2026-10-28T11:00:00+08:00",
+            "end": "2026-10-28T12:00:00+08:00",
+            "minutes": 60
+          }
+        ],
+        "people": 2,
+        "eventCreated": false,
+        "liveCalendarsQueried": false
+      },
+      "passed": true
+    },
+    {
+      "mode": "purchase_requests",
+      "scenario": "Three parts at CNY 29.90, shipping excluded; approval above CNY 80",
+      "assistantPreparedInput": {
+        "requests": [
+          {
+            "id": "parts",
+            "quantity": 3,
+            "unitPrice": "29.90",
+            "currency": "CNY"
+          }
+        ],
+        "approvalThresholds": {
+          "CNY": "80"
+        }
+      },
+      "actualResult": {
+        "requests": [
+          {
+            "id": "parts",
+            "estimatedTotal": "89.70",
+            "currency": "CNY",
+            "approvalNeeded": true,
+            "quoteProvided": false
+          }
+        ],
+        "totalsByCurrency": {
+          "CNY": "89.70"
+        },
+        "purchaseOrPaymentExecuted": false,
+        "approvalGranted": false,
+        "taxShippingIncludedOnlyIfInInput": true
+      },
+      "passed": true
+    },
+    {
+      "mode": "habit_tracker",
+      "scenario": "Completed reading on 25,26,27 October2026; cutoff27th; seven days",
+      "assistantPreparedInput": {
+        "dates": [
+          "2026-10-25",
+          "2026-10-26",
+          "2026-10-27"
+        ],
+        "asOf": "2026-10-27",
+        "windowDays": 7
+      },
+      "actualResult": {
+        "completedDays": 3,
+        "streakEndingAsOf": 3,
+        "windowCompletedDays": 3,
+        "windowDays": 7,
+        "completionRate": 0.4286,
+        "healthAdviceProvided": false,
+        "remindersScheduled": false
+      },
+      "passed": true
+    },
+    {
+      "mode": "test_matrix",
+      "scenario": "Android/HarmonyOS, English/Chinese, light/dark",
+      "assistantPreparedInput": {
+        "factors": {
+          "os": [
+            "Android",
+            "HarmonyOS"
+          ],
+          "language": [
+            "English",
+            "Chinese"
+          ],
+          "theme": [
+            "light",
+            "dark"
+          ]
+        }
+      },
+      "actualResult": {
+        "cases": [
+          {
+            "language": "English",
+            "os": "Android",
+            "theme": "light"
+          },
+          {
+            "language": "English",
+            "os": "HarmonyOS",
+            "theme": "dark"
+          },
+          {
+            "language": "Chinese",
+            "os": "Android",
+            "theme": "dark"
+          },
+          {
+            "language": "Chinese",
+            "os": "HarmonyOS",
+            "theme": "light"
+          }
+        ],
+        "caseCount": 4,
+        "cartesianCount": 8,
+        "pairCoverageComplete": true,
+        "testsExecuted": false
+      },
+      "passed": true
+    }
+  ]
+}

@@ -1,28 +1,33 @@
 # Browser Table Capture
 
-## What it does
+## What it helps with
 
 Turn a selected HTML table from an authorized browser capture into a quoted CSV with source attribution.
 
-## How to use it
+## Say it like this
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```json
-{
-  "file": "samples/table.html",
-  "table": 0,
-  "sourceUrl": "https://example.com/demo"
-}
+```text
+Export the price table on this webpage to CSV, preserving its headings, product names and source link.
 ```
 
-## Output and verification
+## What to provide
 
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
+Provide a page link or saved HTML file, and identify the table if several are present.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive a CSV file with the source and a clear statement of what was captured.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
 
 ## Scope
 
 Capture the page with an available browser first. This parser handles outer HTML tables, not nested-table fidelity, JavaScript grids or infinite scrolling. Do not claim the whole site was crawled.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

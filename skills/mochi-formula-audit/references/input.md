@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 file: relative XLSX path. Returns formula cells, cached-result presence, literal REF errors and external-link parts.
 

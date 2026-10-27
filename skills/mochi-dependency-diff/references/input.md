@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 before and after: package-name to exact-version maps. Major change detection applies only to numeric major prefixes.
 

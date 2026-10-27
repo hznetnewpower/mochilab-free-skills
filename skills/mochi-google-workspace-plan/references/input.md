@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 actions: kind, account, resource or query. Supports documented planning labels for gmail.search/draft,calendar.list/create,drive.list/upload,sheets.read/update,docs.read/update.
 

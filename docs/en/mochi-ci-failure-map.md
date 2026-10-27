@@ -1,24 +1,33 @@
 # CI Failure Signal Map
 
-## Begin with one failed run
+## What it helps with
 
-Obtain the log for the exact failing job, including its run identifier and revision. Select a local UTF-8 export; do not combine unrelated retries without labeling them. Keep the original log private because build output can contain credentials and internal addresses.
+Locate test, dependency, compilation, permission and timeout signals in a selected CI log without replaying the pipeline.
 
-### Use line numbers as leads
+## Say it like this
 
-The report groups dependency, compilation, test, permission and timeout signals. Open the cited locations in the original log and read the preceding step header, first exception and final exit status. A later test failure can be a consequence of an earlier failed install. Multiple categories are not multiple confirmed root causes.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Before rerunning, decide whether the job deploys, publishes packages, migrates data or sends notifications. Investigate with read-only project evidence first. The final diagnosis should identify the failing stage, the strongest supporting lines and remaining uncertainty. Do not paste whole log blocks into a public issue or claim a pipeline was rerun by this helper.
-
-## Input example
-
-```json
-{
-  "file": "samples/ci.log"
-}
+```text
+Review this failed CI log. Identify the earliest useful error signals and line numbers without rerunning deployment.
 ```
 
+## What to provide
+
+Supply the log for the failing run, with its run ID and revision if available.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive categorized error signals, locations and next investigation steps.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 A pattern match is a diagnostic lead, not confirmed root cause. Read relevant surrounding lines privately and investigate the earliest causal failure. Do not expose tokens from logs or rerun side-effecting jobs automatically.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

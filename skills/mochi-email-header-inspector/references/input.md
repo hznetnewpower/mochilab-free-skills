@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 file: RFC-style message or header text. Returns counts and diagnostic signals without copying addresses or body content.
 

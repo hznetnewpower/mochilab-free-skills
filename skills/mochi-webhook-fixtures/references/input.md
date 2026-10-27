@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 events: list of id and payload. First occurrence of an ID is retained. Exports fixtures.jsonl.
 

@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 commits: id, subject and optional body. version: optional heading. Exports release-notes.md.
 

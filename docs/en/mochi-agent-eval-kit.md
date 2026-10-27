@@ -1,42 +1,33 @@
 # Agent Response Regression Kit
 
-## What it does
+## What it helps with
 
 Evaluate recorded agent replies against explicit required, forbidden and exact text expectations without calling a model.
 
-## How to use it
+## Say it like this
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```json
-{
-  "cases": [
-    {
-      "id": "timezone",
-      "actual": "09:00 UTC",
-      "mustContain": [
-        "UTC"
-      ],
-      "mustNotContain": [
-        "API_KEY"
-      ]
-    },
-    {
-      "id": "exact",
-      "actual": "done",
-      "exact": "done"
-    }
-  ]
-}
+```text
+Check these recorded assistant replies. Each must state a timezone and none may contain an API key. Flag failures.
 ```
 
-## Output and verification
+## What to provide
 
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
+Provide recorded replies and explicit required, forbidden or exact-text expectations.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive per-reply pass/fail results and the failed conditions.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
 
 ## Scope
 
 These are deterministic assertions on supplied replies, not a semantic intelligence score. Generate realistic cases, keep held-out cases separate, and report model execution separately. Do not automatically rewrite agent instructions.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

@@ -1,31 +1,33 @@
 # UTM Campaign Link Builder
 
-## Agree on campaign naming
+## What it helps with
 
-Choose consistent source, medium and campaign values before building links. Preserve the destination's existing functional query parameters, such as language or product selection. Use term and content labels only when they answer a defined measurement question.
+Build URL-encoded campaign links while preserving ordinary query parameters and refusing obvious embedded credentials.
 
-## Inspect the encoded destinations
+## Say it like this
 
-Review each generated URL after parameter encoding. Confirm the host and path, ensure required campaign fields are nonempty, and check that spaces and non-ASCII labels survive decoding as intended. Do not place names, email addresses, customer IDs or secrets in public query strings.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-The helper neither opens links nor installs an analytics collector. Test the final landing page and attribution behavior with the actual publishing and analytics tools when authorized. Return the link manifest and naming conventions; a generated URL does not prove that a campaign was sent, that tracking exists or that conversions are being recorded.
-
-## Input example
-
-```json
-{
-  "links": [
-    {
-      "url": "https://example.com/page?lang=en",
-      "utm_source": "newsletter",
-      "utm_medium": "email",
-      "utm_campaign": "demo launch"
-    }
-  ]
-}
+```text
+Add campaign tags to this link: source newsletter, medium email and campaign autumn-launch. Preserve its language parameter.
 ```
 
+## What to provide
+
+Provide the original URL, source, medium and campaign name.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive copyable tagged URLs and a description of the added campaign fields.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 No analytics collector is installed and no URL is opened. Do not put personal identifiers or secrets into campaign parameters. A link is not evidence that a campaign was published or tracked.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

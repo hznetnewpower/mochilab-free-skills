@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 file: relative UTF-8 HTML path. table: zero-based index, default0. sourceUrl: optional provenance URL. Exports table.csv.
 

@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 schema and value required. Supports type, properties, required, items, enum, minimum, maximum, additionalProperties=false. Unsupported keywords make the verdict incomplete.
 

@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 assets: file, optional width,height,alt,decorative. maxBytes: optional file budget. Does not decode dimensions.
 

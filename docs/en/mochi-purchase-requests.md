@@ -1,35 +1,33 @@
 # Purchase Request Evidence Desk
 
-## Prepare requests with auditable prices
+## What it helps with
 
-Give each request a unique ID, positive quantity, decimal unit price and currency. Preserve the quote source and date in the procurement notes. Use decimal strings for prices when exact arithmetic matters, and do not mix tax-inclusive and tax-exclusive quotes without labeling them.
+Calculate decimal purchase-request totals by currency and flag requests above user-provided approval thresholds.
 
-## Route amounts to a real approval process
+## Say it like this
 
-Inspect line totals and totals grouped by currency. Optional currency-specific thresholds indicate which requests need review; they do not grant approval or identify an authorized approver. Tax, shipping and discounts contribute only when represented in the supplied figures.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Verify quotes against the vendor before a purchasing decision and confirm budget ownership through the user's actual process. The helper does not compare current market prices, place orders or execute payments. Deliver the request ledger, arithmetic and outstanding approval questions without treating a calculated threshold as a spending authorization.
-
-## Input example
-
-```json
-{
-  "requests": [
-    {
-      "id": "r1",
-      "quantity": 3,
-      "unitPrice": "0.10",
-      "currency": "USD",
-      "quoteSource": "Fictional quote"
-    }
-  ],
-  "approvalThresholds": {
-    "USD": "0.20"
-  }
-}
+```text
+Summarize a purchase request for 3 parts at CNY 29.90 each, excluding shipping. Approval is required above CNY 80. Calculate the total and missing quote evidence.
 ```
 
+## What to provide
+
+Provide quantities, unit prices, currencies, approval thresholds and quote evidence, stating whether tax and shipping are included.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive currency-separated totals, approval flags and missing quote evidence.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 This organizes requests; it does not grant approval, compare current market prices or execute payments. Tax and shipping are included only if represented in inputs. Verify quotes and authorized approvers separately.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

@@ -1,0 +1,666 @@
+{
+  "version": "1.0.2",
+  "skills": 40,
+  "runtimeCodeChanged": false,
+  "scriptsParseNaturalLanguage": false,
+  "naturalLanguageHandledBy": "The host assistant follows SKILL.md and creates the helper input; the Python helper still expects its documented internal data contract.",
+  "remotePublicationPerformed": false,
+  "items": [
+    {
+      "slug": "mochi-search-planner",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "05a7fdbdeb47d4c8ea35e8ac872350d1ac95512b2795efd9329ca8f91f78bf41",
+        "tests/case.json": "4070bc9e7c3d3e3944c94ca97150f587033c295dcb4f2b0a74c0dd065bbeda26",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "9cacddc532b533df99ebdf036749011ce4c5bfccc6e2df28dc0be2fe172624a5"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-browser-table-extractor",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "5b61784e5bf5c245787dbae5fb4f2fb980f3b7bb486a0dd91130b3737a59c267",
+        "tests/case.json": "a7c21c0034d5ca97b74bb90165f5c2b959279bc2d792540b419aaca0a55f5e4b",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "00574cfc04cf44d2b781e35b665352ae42c581e6398350cfb59bbad77a2825fb",
+        "samples/table.html": "43ad979c07005023d5cf1bb38c640b194d707dd84a769866b864d9d6fb075e65"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-form-submission-plan",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "79759692c03c7476a08ab1bbec9664dc75e83bed80734e518a40f13e8a9ad6d1",
+        "tests/case.json": "331fdc0f1f53f5c0614a7f4272f1d530d2d8b9557742764cbed4357adce8c30a",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "984529e3dfec6e2e26fc42e8cf286d7397b97feefa2aeea7db81c1db5a3db6ce"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-source-freshness",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "14e55d7b1ca67a596fc201e77ccf45310538d7913d22aa3542235e31c4b851fd",
+        "tests/case.json": "0968b66a66ea32e5715e6049caeda58f1e91b73bae3029926befad05cf6d5389",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "bbb0b42c09c987a1a2dc0f1c4e26902517077e6b25201fe5160c96f2c6598fa5"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-agent-eval-kit",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "ae86f4db346ecf264fed81b33ed3362e450cb5caf96b58faa32c9fdeb262f756",
+        "tests/case.json": "b6a7426847311b7d0e74e48fcd0e9b44278b212895640d3986ab8a4e886b00f7",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "6c9ba02d5e3f46ee5a5502a75a7fdd1d8e982c0530d471dee3e84a88420be6c5"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-memory-curator",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "b6bc21eef59f577a8fcf1deb035309cc63de8d755b8b2a9cdfb7180ca80ffd2e",
+        "tests/case.json": "5de042a1806f09251340b10971714e4a67cca08ff7dca357fee7e2b7a8c57206",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "104005a56d93f3b63e4743cb94f3fec7f55f78448d6b9e1ae34e030f43beef86"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-context-pack",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "6dcf3ce96c51a3230fa4b9bcf39f0a7e2c12ee7ce42e614bf042424a6b92ec1b",
+        "tests/case.json": "72921133704598ae4e2367fcbeab8e19ef5ffcd0dc12a3c001fdb59cd13746b2",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "4239362471d38009d2ba162ba90d1ed79f1ee59d487e2e47de1d1305a69feeea"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-workflow-blueprints",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "89b71151e6f4db94643dd4aa3e0934a8e6eb6fe8f7dd8074afdb27d8a2ee40dd",
+        "tests/case.json": "98d0372da886b6308f385ff03f32b130b3671897069842f6c0c3efe87502227a",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "3e1bb55e40905b82c22366a5ec156e5ae15603d027cb1ddd1facf482479bb7f6"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-webhook-fixtures",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "df850a11fc180ab9d8accbdec2f8e215db1e6802f92c6a78ee4298c2f78c0e2a",
+        "tests/case.json": "05913f2eafb2f970f40f3c9e6616e4ad3229fe871de50060bc95157ff7bf6682",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "33384b33f8b7d00180277e13f63f853452145e843eafbbb106bd9c8af7eb502e"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-cron-inspector",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "9df73ef5dfc1f325da70a7978e1815ad015b296e6d9db741bd386022f4520729",
+        "tests/case.json": "d79d0041f5ae03254495f76234d67cc626c293e7e57774c8b18a24c4f3d4f5b9",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "6a37eb19f31655e3515940069b2826253790fd786537ef075e5b92e19449d5dc"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-release-readiness",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "c265f892c9a08b7ef12aa3cf381d15d00b5fcc1a31adb56ec6c5be3d2b575270",
+        "tests/case.json": "dd08ac5712620ace1488d0191d759ecc6613fec73b549c7ae310ef34fcf26a2f",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "a19b48a357d8497ab9286d900c190ca6b1c1acc1e02e9a55d2a9fe06627c3dd6"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-openapi-contract",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "9ab5be2c17e5667ef57d53695e38be05195f680196332fce9c0337144f48436c",
+        "tests/case.json": "b3330a575f8c2b157cab6de3704cc2dfe2741fe1cd54d095f41c3645d7661adb",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/not-openapi.json": "d4f886f08b500eba34b152ca80d2474c64a7f4853e92cb7829802d046ad94f48",
+        "samples/openapi.json": "0fd680a57c44bc4bb4c5ae40faed8588d03cff3bb85f9f05d3baf5ebdce60946",
+        "samples/request.json": "db0e36840d9e6e2112a82e01f89d0f6a65fe65c806e6614b791ee9444fa2b84c"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-json-schema-check",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "8391c0a49cd0374e85f40165a7a829391d6973b759d5c6ee4eb59f1815d8860d",
+        "tests/case.json": "b028e60ed700bdcd8093507346b900af93754489204f77334e4eb8de964598f0",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "8b9923274c22cb0bd12e27d7a6e8764d4da90aa286dc31b4e84e7869f883bf4d"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-ci-failure-map",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "e0f8a601d30c33513afa2745206f7fea5469ba6545b2db732c7aaf03e422b967",
+        "tests/case.json": "55b15fddc9c49b26101476b7bb047ad84558350719148cef5419ad6991f05ce4",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/ci.log": "bf082ef8d7f85b87089ee9efb6e34d6f802e4c7126368ff2b0471e5f549452c1",
+        "samples/request.json": "7db4881363ad1fb84f61ccd408e4d74242054ad189e38d719b49a357b9dd613a"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-dependency-diff",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "317dc3d6ea1aef779dbaf9dfef56f63fbb3762d634b2944b2465496a1cd31585",
+        "tests/case.json": "6eb06c2bd473dd4ca4a26f3792c53418db08d17ae1eb2eaee9787f3a7d29caa2",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "f010d2b862ca214e91a48c6a752ab69197e9e070c69a8a6b294d4ce2ecc69aca"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-test-matrix",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "b9b41e5e40a26ca95ae443c0b0a0791f2fe606a446d22465efecbf145780303d",
+        "tests/case.json": "a504cbaf1df808fd5773b8c88848b09e6ad7e53d3fe700f10fc798a04936202e",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "9f69d3696835a98eb7927555d2dc79d264705f6c1219401b81d50739d8a9f79a"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-repo-onboarding",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "438772d91f1adecc1dba0316070ba7d07a9f2945e29b633ff40f402ea7b9eb52",
+        "tests/case.json": "267886e16e3f1ec37176a7557cd68d1de34a11dca4e6c267f17f668e7d1acebd",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "7c0e2fa43ff0496baa0c32be52ff64fd5535835cae5a5ecaf64788e3446e1f11"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-release-notes",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "100c763c2b229df2b1f05eeb604df342d45fd9f18fb62f41a4f456f7b7df686a",
+        "tests/case.json": "6d5d7fdcdef01054baa34857c0725c5912e23cfabcb60cdeae5f2f45eb590da8",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "a6e68ff34b1062e9d44dad8399cef4758a934bdd1266164d66627d84ebbdf80a"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-google-workspace-plan",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "9f48269b7e69fd923e7cde5de0fe33526e78f46dabe3188e579d18559c0c77d3",
+        "tests/case.json": "a8ad6e22b6f5a7ebb311b7a22737031beab6a2cc8f5dc28bbc03698d54426098",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "c0a0ea3c8681eafa8d29059284ec1fb1470754f483478e51662a040dab5cc557"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-email-header-inspector",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "2717e8e1d26153b11fe6d1fac3fce86b8328cdab2af791eb6bc23a038d672342",
+        "tests/case.json": "b1a8e32766eb4ef2c493830e11d0ef97609eb09ead65164e4257a4e8fcd4d752",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/message.eml": "93c9156ab1a58bc1efe2e48e818dce432538128eea0d039d74322c9c36641af5",
+        "samples/request.json": "0fff8dbe28e6f235f365c4f4ae5717c8d8aa993e09f6ae53cf78134e44449bb9"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-calendar-availability",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "37267e8b7a29b355b1d976e5147a9f86d3ed92eb054c4bb0039e051bf7fe0bb3",
+        "tests/case.json": "282058828f291b724ca4278af58dcb066175160a6ee8aab5e074e14d35e046ce",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "13261a826f32ea0a66e52f639f90f052aada465cee4fc39bfaeb7423dccf46ac"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-meeting-prep",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "34451219e14689960cb969d6dcda564db874e5431431909a57aba7a78e6f45eb",
+        "tests/case.json": "e765b859a19a54f10e52f900e342389e1e47158b5f64d63f2cdfec7069f89f83",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "46c811ede514c58cb5cd4ff558019d612fa00c33b61d1997035314b5457de561"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-notion-block-planner",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "fe9070657e945581ca0504a67c92fa5075e5a0aae99d490f0e5806c55014e967",
+        "tests/case.json": "d67146fabcd11b3e3a37f107643f0dd144ade0adea8c0e80c7f3ed6692c1f19f",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/note.md": "21906fc398da17a0b0371a29a7a86010e989b278445c4ef73e0c6760fdb47cda",
+        "samples/request.json": "d9e8b8277b351e926ab545edfff0dc8be9105ec0954380aa12ae3a619517a7e4"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-formula-audit",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "ceb04dd138d06acee1d1bc7f2cbd59b1d1720e7c54de2d5783d67654a6245daf",
+        "tests/case.json": "4a3e0130cce4f8abee872c83f65ee0fd4530fdd8a47ae1286052db6384acd26d",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/book.xlsx": "5ef9c232f47e114ff832db85dbe0b6021fb0add4e30f545fef6ef6c57ce886e2",
+        "samples/plain.txt": "c06ff89a6e732381a2215a0b3e3fe0460fc6983bcd9f99d92254fe27f81ca8d8",
+        "samples/request.json": "28fcd9ab1e4f4c8130c104cf54a2fca1cb6e2919c11d673d71b75bf16de7d313"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-docx-review-map",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "75430e08620674b37a1fac60c659e0a4ab4e14f589f70eee3c91314a5dd26d72",
+        "tests/case.json": "7347290a96bb709fd4fa4a4c57ffac8d040d825d68f6d0eca6b66dda00b41d30",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/plain.txt": "c06ff89a6e732381a2215a0b3e3fe0460fc6983bcd9f99d92254fe27f81ca8d8",
+        "samples/request.json": "16fb9ef6f11adf2c6ff19340a47e014fe845b2c89a510d4d0eaf52e74742ab8a",
+        "samples/review.docx": "a60a6bfb87552b50720426d3d3daed9d887a4d219c9aa530d6ecae813f43d70e"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-pptx-review",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "f322cb44c613546f04298a1f827e8b37bc343c23a05421ffe657b943ab66d980",
+        "tests/case.json": "a0d2774f09850609e4becf668ed12500a4c90293e0aa9302241dd7de4128f935",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/plain.txt": "c06ff89a6e732381a2215a0b3e3fe0460fc6983bcd9f99d92254fe27f81ca8d8",
+        "samples/request.json": "6ed27d084f55d8c7161ff1ded2309b00b6b22bc245c7a04197133775f7662674",
+        "samples/slides.pptx": "a2fd17c7ed2365741d62067d01746d06e8d55a7f1b8c094fa761ff7932e8134d"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-citation-manager",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "62ee08e814e307e6b1cfd121f590c1aa6e188545d6e50d20b490a8a9b74c251e",
+        "tests/case.json": "b081c000893e77a20ba98485d94bbd944cb16e27ecd70993138c8ed3b271bbce",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "7d4a2cf4e39de58b62ccf4aa974b54dd81ff62b0b4736dde8749135735a9f52f"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-subtitle-quality",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "eb30798ea2f9f24a69fb1d06acd50ba2bc93498bda1aa2750633eb3b89c5516f",
+        "tests/case.json": "e01325cc97b01b1bc69990e550bf5ab763208f880b33bb7ea97e79fdd8625f81",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/plain.txt": "c06ff89a6e732381a2215a0b3e3fe0460fc6983bcd9f99d92254fe27f81ca8d8",
+        "samples/request.json": "16dc64951f912bbc4a2791fb4c9ea552a4f75bb68880f1f3281bd6fd17bc61ac",
+        "samples/subtitles.srt": "b18ca349a71de6efafa6e44fb33e415b387a9b401efcfc4fdd26d71a9ef121ed"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-transcript-chapters",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "07d56136359e1172fae0f24b3db83abcde9c07233a56cf87508ad6ae1a1439a4",
+        "tests/case.json": "ef8850cbf3f5ff8e5b559b1d295abfe0fbd5d13d7fd4641ce437e9bb1c53ebe8",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "069960f72a88425d262147a33e243505b8e79841bc8ae2ce78f9de79b66e4efe"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-image-publishing-check",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "aea4e2887db7e955e4d20bfc0a03e775f7bb7fd0fe4639e852383945cc2472f6",
+        "tests/case.json": "c85371e01cbbf2aacf0b3525fb3752bbfb201cf59bdd1802331b35a4fc545f3b",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/demo.png": "4c5d573cfb85b8ab0a5659062b830a058d1a449e51a6d79c13b483a77ea7ed28",
+        "samples/request.json": "a7e4c547382bbf53e27996e16bb2723bfd0644dacbbb59f87ecc8496be7dedc6"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-audio-cleanup-plan",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "bbd63852717453edfa91587db038a5381014b23fe9cae628337bdd4694e6e037",
+        "tests/case.json": "428c6d63513b0b226c2e130d61885b428d33468dc04f925de006d8bfe2f1a02c",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/probe.json": "a5e336207e697b63a43b5dca68305ead79dc782b58fdfc33a03754f493ab4f79",
+        "samples/request.json": "44b95c3a291878b031523f70d924cfc00784b0a99d269645366a07cc04e64ca0"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-feedback-clusters",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "3c7a325fe679479d74d82750a01388bb40dc697afc12e9b2ec3ca7fff43dcce7",
+        "tests/case.json": "bc5ff6f66b46e8dbfa6041a3937489e364a92ca579743f8abb81229260c55939",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "4dd1714932f4193ebb599107c63decf278b69dd917e18d145e4ccee860ed653c"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-utm-campaigns",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "116f3b255cfb939dabcb1304255205c0fa8603b47d577d534b48c007ce712a65",
+        "tests/case.json": "8f52525c0432c83e6a5628e101420ace77fc4c7312c8edd9c892e90b0c635b35",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "3f9002a48e668e37472397dbcf501a76b30d75b5ae7929a1cee06442d962205a"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-social-batch-plan",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "69efce6d21ec6f20fe3a0fc1a4695ee4057951351c8ab44ab58e5b2b5a4e6f93",
+        "tests/case.json": "cee851741eb3934702cf74404d97382a11aa38a0237a1ffc2fb113e3980c8490",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "ce6bbe4917cb79514b889061918676fc119221a3a08f907471a820085bad10e4"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-launch-checklist",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "9dc18abc581c5041ac21c98157e123dbcec3ea4249cb3818ce1bfb903480e8bc",
+        "tests/case.json": "4d220397d5aa7dadaa94d90b7a908608c38e27c0e749ad24792d359d4b5c137a",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "12c24d21edb8a00d7f2f1c05625918937d97a868d073a0d0679f399a15b34e17"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-travel-itinerary",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "8342cf8e3aae8bd4fd20c2207b7536a7edfd31230e9c5cfd555d082fc1526838",
+        "tests/case.json": "39096670642e71f9eaa7b5fd5fd6defb61ecaf31c6e892c41743ff0a0d91a6f4",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "f69f53bd38375b3795f437617fdee18f675e94b57294001dd82697f10533138f"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-event-rsvp",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "a7dcd9b79bc62103a7fbbdee614e16e8f5828c867288954c86e105a6aff5b718",
+        "tests/case.json": "498b446f9eb3556e9988cc730a194c2437be69baae0502b4985f4fecfa973a86",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "2d85b538b1a2cf3b24d8c32fc732592ca052e0522f561b443ca3e6b278da89a6"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-habit-tracker",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "91a8b632d13c7e92ed24251a6cfa237276bce7697783666dd2ff98e8d257a34e",
+        "tests/case.json": "a8cd5e730b23716e86179153df2a2b676f0f7a29e5edba7684b841afa392e1ad",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "a59129ba4f3efda13d1149ea89d938f4b9f0b8d31592499158f1321391de8b6b"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-purchase-requests",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "489e507c969d74b935ad382fd80c71687e2002b76c2185364d2108370ee6f5f2",
+        "tests/case.json": "55de0dc7f634f546ba91de4082f8fb4c7ca952dcfe3b4c93f6ab2da274c8f86b",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "57503016b5daa890e142cef05ddcd57280f5aad119a6511ae7f507a72d63a9f1"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    },
+    {
+      "slug": "mochi-incident-timeline",
+      "version": "1.0.2",
+      "runtimeFilesUnchanged": true,
+      "runtimeSha256": {
+        "scripts/requirements.txt": "442dd5e8cadc22c4f4661e690b498baa185ba5ccd209b4e43ae10b0b18ded5df",
+        "scripts/run.py": "2a6d4b5fca8714cb596aba85b450bfaddee814f479465e57802ac68797660b3c",
+        "scripts/runtime.py": "1357fdb893b25b84c40a47f3cad17aab17ed8422a9903a7738416da3aa3f57f5",
+        "scripts/task.py": "7f5e0ded67631b716ad81488e3d2c36656b502591a63d41ea8cb7b95e7d21b9b",
+        "tests/case.json": "693b36d03290e2edc6e189ccd06825d9756f0ed19c0692b6027710338470c018",
+        "tests/smoke.py": "3e5f75aba78766c784314835da4ee7cd154d4f2085f661d568eebd2768fd8785",
+        "samples/request.json": "0fab7f515ac3d194d7a912e3c325116f44c897b17f42ad3d7bd87f32ca8210ad"
+      },
+      "publicUsageNaturalLanguage": true,
+      "internalSchemaKeptInReferences": true
+    }
+  ]
+}

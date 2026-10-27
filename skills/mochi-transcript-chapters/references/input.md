@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 segments: unique id,start,end in seconds. chapters: start,title,nonempty sourceIds. Exports chapters.txt.
 

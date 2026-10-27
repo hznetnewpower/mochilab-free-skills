@@ -1,39 +1,33 @@
 # Form Review and Submission Plan
 
-## What it does
+## What it helps with
 
 Map requested values to an observed form, identify missing required fields and separate review from final submission.
 
-## How to use it
+## Say it like this
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```json
-{
-  "fields": [
-    {
-      "name": "email",
-      "required": true
-    },
-    {
-      "name": "message",
-      "required": true
-    }
-  ],
-  "values": {
-    "email": "demo@example.com",
-    "message": "Fictional inquiry"
-  }
-}
+```text
+Review this contact form for an enterprise-plan inquiry. List what information is missing and do not submit it.
 ```
 
-## Output and verification
+## What to provide
 
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
+Provide the form link or fields and the information you want entered.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive a field-by-field review, missing information and a pre-submission checklist.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
 
 ## Scope
 
 Use observed browser fields rather than guessed selectors. The helper never fills or submits a form. Apply the host approval rules to the final browser action, especially purchases, agreements and account permissions.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

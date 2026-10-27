@@ -1,39 +1,33 @@
 # JSON Contract Subset Check
 
-## Establish a bounded validation question
+## What it helps with
 
-Ask which object is being checked and which fields the producer guarantees. Put the schema and candidate value in the same request so that the result can be reproduced. A minimum must be a number rather than a numeric-looking string; `required` names object properties, not their truthiness.
+Check JSON values against an explicitly supported schema subset and report unsupported keywords instead of silently accepting them.
 
-### Interpret three different outcomes
+## Say it like this
 
-An input error means the request or schema shape cannot be processed. Reported data errors mean the candidate violates the implemented subset. Unsupported schema keywords mean coverage is incomplete, even if all supported checks pass. Keep these outcomes separate in the response.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Supported checks cover types, object properties, required fields, array items, enum membership, numeric bounds and rejection of additional properties. For `$ref`, composition, formats or dialect-specific rules, stop short of a production-valid verdict and recommend the project's maintained standards validator. Preserve the failing property location when explaining a correction; do not silently coerce the user's data.
-
-## Input example
-
-```json
-{
-  "schema": {
-    "type": "object",
-    "required": [
-      "count"
-    ],
-    "properties": {
-      "count": {
-        "type": "integer",
-        "minimum": 1
-      }
-    },
-    "additionalProperties": false
-  },
-  "value": {
-    "count": 2
-  }
-}
+```text
+Check this order data: quantity must be a positive integer, the order ID must be present, and unexpected fields are forbidden. Locate failures.
 ```
 
+## What to provide
+
+Supply the data and validation rules, or an existing schema file.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive field-level failures and a clear account of supported and unsupported checks.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Use a full standards validator for reference resolution, formats, unions or production schema certification. Boolean schemas and arbitrary schema dialects are not supported.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 tasks: unique id, optional required(default true),status,evidence. Required tasks need done plus nonempty evidence.
 

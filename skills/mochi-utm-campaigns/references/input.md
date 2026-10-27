@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 links: url,utm_source,utm_medium,utm_campaign and optional utm_term/utm_content. Required values must be nonempty.
 

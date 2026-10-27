@@ -1,25 +1,33 @@
 # Audio Loudness Preparation
 
-## Establish the audio source and target
+## What it helps with
 
-Obtain ffprobe JSON for the selected media and review its audio streams. Ask which stream should be processed and what loudness and true-peak targets the delivery channel requires. The package does not bundle ffmpeg or ffprobe; verify installed tool help before running media commands.
+Read a supplied ffprobe JSON and prepare the first loudness-analysis filter without altering audio or inventing measurements.
 
-## Use a measured two-pass workflow
+## Say it like this
 
-The helper proposes an analysis filter from the supplied probe data and target values. Run that analysis against the intended audio, retain the measured loudnorm fields, and use those measurements to prepare the second pass. The initial report is not a ready-made second-pass result.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Write processed audio to a new file and listen to quiet passages, peaks, transitions and the ending. Confirm duration and channel mapping before delivery. Loudness normalization does not remove background noise, repair clipping or verify intelligibility. Return the plan and measured evidence, distinguishing a proposed filter from audio that was actually processed and auditioned.
-
-## Input example
-
-```json
-{
-  "probeFile": "samples/probe.json",
-  "targetLufs": -16
-}
+```text
+Help make this podcast’s loudness more consistent. Inspect the audio and prepare a processing plan while preserving the original.
 ```
 
+## What to provide
+
+Supply the audio and intended publishing use or target loudness; actual processing requires installed media tools.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive audio stream information, a first-pass loudness-analysis plan and remaining processing steps.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Requires ffmpeg/ffprobe for actual media work; these binaries are not bundled. Run analysis first, use measured loudnorm fields for a second pass, save a new output and listen to it. Loudness normalization is not noise removal.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

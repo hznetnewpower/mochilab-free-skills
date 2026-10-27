@@ -1,41 +1,33 @@
 # Event RSVP Capacity Desk
 
-## Reconcile the attendance export
+## What it helps with
 
-Use a defined cutoff and stable person IDs. Record response status as yes, no, maybe or pending, and use party size for the number of people represented by a positive response. A family or group response must not be counted as a single seat by accident.
+Count explicit RSVP statuses, confirmed party sizes and meal choices while flagging capacity overruns.
 
-## Plan against confirmed attendance
+## Say it like this
 
-Compare confirmed people with capacity and review meal totals for the relevant accepted parties. Keep uncertain responses separate so that catering and venue decisions can show both committed and possible demand. Resolve duplicate identities in the source rather than silently counting them twice.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Only collect attendee details needed for the event. Public summaries should not expose contact information, dietary identities or the underlying guest list. The helper does not send invitations, chase replies or establish live attendance. Deliver counts with their cutoff and any unresolved source discrepancies before the organizer makes purchasing or capacity decisions.
-
-## Input example
-
-```json
-{
-  "capacity": 2,
-  "people": [
-    {
-      "id": "a",
-      "status": "yes",
-      "partySize": 2,
-      "meal": "standard"
-    },
-    {
-      "id": "b",
-      "status": "yes",
-      "meal": "vegetarian"
-    },
-    {
-      "id": "c",
-      "status": "maybe"
-    }
-  ]
-}
+```text
+Reconcile event RSVPs: Wang confirms a party of 3; Lee confirms 1 vegetarian guest; Chen is undecided. Capacity is 10. Summarize confirmed seats, uncertainty and missing meal details.
 ```
 
+## What to provide
+
+Paste replies or upload a sign-up sheet and provide capacity. Ambiguous party sizes should be clarified.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+For this example: 4 confirmed people, 1 undecided response and no capacity overrun; 1 known vegetarian meal, with meal preferences for Wang’s party of 3 still unknown.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Counts reflect the supplied export, not live attendance. Collect only necessary attendee data and do not expose contact details in public reports. No invitation or reminder is sent.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

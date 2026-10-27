@@ -1,31 +1,33 @@
 # Image Publishing Checklist
 
-## Inspect the real assets first
+## What it helps with
 
-Select images that the user intends to publish and view them with an available image tool. Supply the workspace-relative file path, declared dimensions and either meaningful alt text or a deliberate decorative designation. Do not mark informative diagrams decorative merely to suppress a missing-alt warning.
+Check selected image assets for file budgets, declared dimensions and missing nondecorative alt text before publication.
 
-### Review the manifest findings
+## Say it like this
 
-Compare byte counts with the publishing budget and verify declared dimensions using an image decoder. This helper does not decode image dimensions, judge visual quality or determine whether alt text describes the picture accurately. Keep any such checks as separately recorded evidence.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-For oversized assets, choose a suitable export format and inspect the resulting image before replacement. Do not overwrite the original silently. Finish with an asset list, measured-size issues and unresolved accessibility or visual questions. A clean manifest report does not certify the whole page's accessibility, performance or appearance.
-
-## Input example
-
-```json
-{
-  "assets": [
-    {
-      "file": "samples/demo.png",
-      "width": 1,
-      "height": 1,
-      "alt": "Fictional one-pixel sample"
-    }
-  ]
-}
+```text
+Review these website images against a 500 KB file budget and alt-text requirements. List oversize assets and missing descriptions.
 ```
 
+## What to provide
+
+Upload the images and state their use, size budget and deliberately decorative status.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive file-budget findings and an image-description checklist.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Inspect actual images with an image tool and verify declared dimensions before publishing. The helper does not generate images, evaluate alt-text accuracy, resize files or certify accessibility. Decorative status must be chosen deliberately.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

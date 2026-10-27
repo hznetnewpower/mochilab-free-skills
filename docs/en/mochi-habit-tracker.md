@@ -1,31 +1,33 @@
 # Personal Habit Completion Review
 
-## Define what one completed day means
+## What it helps with
 
-Use the user's own completion dates and agree on the cutoff date and observation window. Several records for one date count as one completed day. Clarify the user's local date convention before converting timestamps from another system.
+Calculate unique completion days, a streak ending on an explicit date and a bounded-window completion rate.
 
-### Interpret the streak conservatively
+## Say it like this
 
-The streak ending at the cutoff describes consecutive recorded completion dates, not motivation, personal worth or health. Review dates outside the window and future entries as data-quality questions. A missing record may be an unlogged activity rather than a confirmed missed action.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Use the report to describe completion frequency and continuity without creating behavioral profiles or diagnostic claims. This package does not schedule reminders, contact another person or infer sensitive medical information. Return the chosen dates and calculation assumptions with the summary, and preserve corrections to self-recorded data rather than silently rewriting history.
-
-## Input example
-
-```json
-{
-  "dates": [
-    "2026-10-25",
-    "2026-10-26",
-    "2026-10-27",
-    "2026-10-27"
-  ],
-  "asOf": "2026-10-27",
-  "windowDays": 7
-}
+```text
+Review my reading log: completed on 25, 26 and 27 October 2026. As of the 27th, calculate the streak and seven-day completion rate.
 ```
 
+## What to provide
+
+Provide completion dates, a cutoff date and the review window.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive unique completion days, the streak ending at the cutoff and the window completion rate.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Only use self-recorded completion data. No health diagnosis, behavioral profiling or automatic reminders. A missed day does not establish motivation or health status; keep interpretation descriptive.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

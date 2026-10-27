@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 fields: list of name, optional required/type/sensitive. values: name-to-value map. finalAction: optional action label. Reports field names, never values.
 

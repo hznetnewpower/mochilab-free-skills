@@ -10,7 +10,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "b75fd05b1b118bf4dbe30a1d098a3175a027a9c63d7b8bf49118057b40cb0b1e"
+      "sha256": "e3ec7296ff4df7a5dd884191fa61dd077579fe76941f795719d636dc02e80851"
     },
     {
       "slug": "mochi-browser-table-extractor",
@@ -18,7 +18,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "011cca9145b4ddc879576b0e30f8d27dbea7c70c1ec325e854062404ce5bb9fa"
+      "sha256": "4be84476d36974c079e60de2f398d3d9114b7db0cb5b0b2f3743e2fe08a5673d"
     },
     {
       "slug": "mochi-form-submission-plan",
@@ -26,7 +26,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "552ffc391e0af847f2a3ae2354d3b3abac40d90cc645740ab62cec4608a333cb"
+      "sha256": "e83b540fa6a8fa62614226bf658ab18c5420ab078a793045a09860149e159f2f"
     },
     {
       "slug": "mochi-source-freshness",
@@ -34,7 +34,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "b6d64b2308af6648e5a71c395c37afca7d8fde72621adc5a75acc586eb0c6fb8"
+      "sha256": "db44159bc28d6cce0b82406095d966e5b8248b916b92bc091172a745bfb3f87d"
     },
     {
       "slug": "mochi-agent-eval-kit",
@@ -42,7 +42,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "74d8f019f2eea1dad97015ed358db4ee1ba958a125f7984e1c1fa3f16bb6459d"
+      "sha256": "e0e65729c2e2cea05b0a9018aed5a5d2e80f708dd620c6ad913faa8fba1c9385"
     },
     {
       "slug": "mochi-memory-curator",
@@ -50,7 +50,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "e1bfe5e241d2e6952ca0e1873a4f1049ad6fa11a16ba424cdd13cc23e292b50b"
+      "sha256": "aa7f6bfa014167cab472a75b0dabd12f970ca171b30665a317de21d168f7865f"
     },
     {
       "slug": "mochi-context-pack",
@@ -58,7 +58,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "80141d73e3783f5a0bcd471a917cb760d498d3123b662b36fa333797ed105f0d"
+      "sha256": "36703d9f1f63866f56796cdaa556dcaa1051a09b787d87e11ffa9dfb248b832d"
     },
     {
       "slug": "mochi-workflow-blueprints",
@@ -66,7 +66,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "391489e90cdde34068c6edb3af2756e42f72d1511d302a66de1236b530b89e0a"
+      "sha256": "d9b1191adc2dd039bcbf148d80fc4ac84130ceb6f27048bbcc73c941bd3d8702"
     },
     {
       "slug": "mochi-webhook-fixtures",
@@ -74,7 +74,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "6d98e8042e7966d2ba5d54a0efc9827a0c1fa710fc32b7c57a4fd9453783bdd9"
+      "sha256": "9af6ea7378dc8df0cdee272d72f6383561db8c8618150834ff24a7cdca0fdc34"
     },
     {
       "slug": "mochi-cron-inspector",
@@ -82,7 +82,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "235beb6b6cf29e1b89a9b1748a23492d88d498342108a89dca703a658271b7ed"
+      "sha256": "3650de7e0acfab8aa32df09b92f011a579229bdc626c50fd94ef7580d38dd852"
     },
     {
       "slug": "mochi-release-readiness",
@@ -90,7 +90,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "43f8777e277d0e0158fef2edccca6bedde3cadbe7c88a2f60dca08e23b28da1a"
+      "sha256": "38d1fc1c6e6bc5d35471c6e9e47070c061d095b09d332a2bfacea9efcec36603"
     },
     {
       "slug": "mochi-openapi-contract",
@@ -98,7 +98,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "928220b9a67ab41507c79738dd5d5d89d4297a54099e71127cdf7dc8e739ec01"
+      "sha256": "46091f2decba586980b4f1945b04f6821e9ad26e6a15bee3790793e1bebeafbc"
     },
     {
       "slug": "mochi-json-schema-check",
@@ -106,7 +106,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "d4ff3a85bd75732e75d688f87de0a2dfb8f2defdacfb1d9ecfac2bebe3521683"
+      "sha256": "7fb8ad50783ee74a8463883958cddd67ae935ae41e6aeeb2fd5a2122acc45026"
     },
     {
       "slug": "mochi-ci-failure-map",
@@ -114,7 +114,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "a2e154de0747b263db1c255f64deba4c24f03c52b9953cff047a992bc8851ca1"
+      "sha256": "ceb6e8e6e7ac0f3f7f55bef4be1a5fb256c22d31395fe24e8fa9e6741232bfe0"
     },
     {
       "slug": "mochi-dependency-diff",
@@ -122,7 +122,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "09e8b3ce58ed73b5fefd2d6783b1d320d92b39e62d626b3e1747baaf528dea58"
+      "sha256": "824ab7ff47682f3a5250ecac9e16bd8fdb1719770fbab69d7da58a5e8899b6dc"
     },
     {
       "slug": "mochi-test-matrix",
@@ -130,7 +130,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "29c67dde6b04202ccb2b95c1bbedd7c46eaa8a7179f49628019f8002678ec143"
+      "sha256": "6c39877db663cb206d56382124351c3805e7ec6bb45235f3d3e4e6cd7969b7b0"
     },
     {
       "slug": "mochi-repo-onboarding",
@@ -138,7 +138,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "e7b676932aaab9ff495bc9ad8ce5c15da7f380bd7bde3b98ea98460e4cda2893"
+      "sha256": "f607b949dbb18e788f56c8a0ca6d92612a8b7ba7af72ed0bc4d1b5501ffe6450"
     },
     {
       "slug": "mochi-release-notes",
@@ -146,7 +146,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "cffb573157ef0472f9c945b53c389d337006af328f8009e43815419d40bf2bf3"
+      "sha256": "356781c9881502214002116d5863a6159d86501978eadbea80f930af52c5b13a"
     },
     {
       "slug": "mochi-google-workspace-plan",
@@ -154,7 +154,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "1c88ed0138fa291d20bad804830f916e23c0758e40361d55ae56df9c4a60a78f"
+      "sha256": "1793db8ef137ae25115e510eda1c4867414a6798e985ddb9a397d2d136dc2bae"
     },
     {
       "slug": "mochi-email-header-inspector",
@@ -162,7 +162,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "ea5c42361f76cf8bd9ea8c077302a530c5e96d59c1a0d45c9535f3344fd9c5c0"
+      "sha256": "d5d1056db7fedc3fa728f0e229c378dbfd746c62b23222e4cba3f4a905be5948"
     },
     {
       "slug": "mochi-calendar-availability",
@@ -170,7 +170,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "a41e41d91f5c79fd263aa5a00a3e5eaff43e81dc2ea8e849f7dd6548f8efa7b8"
+      "sha256": "c2ac6dd8f27b9d3b76f439102fd5648169974b090d9c9b7cc29695eb5b62aa42"
     },
     {
       "slug": "mochi-meeting-prep",
@@ -178,7 +178,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "2905213d5b9ebf5ccff635b86137921eff524009f12a8df2de451584e2fa26dc"
+      "sha256": "854f7e6945901c3a51e12579d9e7d769c6e8bce9f918406414424f60e20ff5a2"
     },
     {
       "slug": "mochi-notion-block-planner",
@@ -186,7 +186,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "9d95850968ae42e6ad6297f9819ef0ef71812002362db46cd5982956f2a618d7"
+      "sha256": "65d60ded3bd99232115213bba17b066db9e0fe0ead808ddfb638b89c69c88d6c"
     },
     {
       "slug": "mochi-formula-audit",
@@ -194,7 +194,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "a2a566f3c073006286304dec22727dbfa08e54103f9251760192afd6d60ad05c"
+      "sha256": "57213a021a51b8207006c6840388ab9eab8b0b3d6b6e2f49e319e0c9b88a2b7c"
     },
     {
       "slug": "mochi-docx-review-map",
@@ -202,7 +202,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "a449e7d9cb0d3cd938dc1ecf3bb542152a534aae2a4f6cf0bb6f25fe490ae478"
+      "sha256": "9c062a0de698f91803c866302dbdb1e6948f8516456944d529b3f09e3306fbe3"
     },
     {
       "slug": "mochi-pptx-review",
@@ -210,7 +210,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "d7d6f5e3a4fb0c2aa501ed0917181b4543328f4775106e6db7684a4c029ac2c1"
+      "sha256": "f03676be3f532b41943ea0ad70cc91d92cead6905e2e9a8c714e356f5d4c147f"
     },
     {
       "slug": "mochi-citation-manager",
@@ -218,7 +218,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "69d7e56d9660a90b283b16dc3319cf1bd0252e35c1964949c8e34556e1dff482"
+      "sha256": "54a63428a9a7d93de61e91800f19b12c28a6db34e79e976b86e91b903f16a385"
     },
     {
       "slug": "mochi-subtitle-quality",
@@ -226,7 +226,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "5637aefa31eb0d4ede283acd9e0cdcfaf9a5c71352693ddf509a7404a825fc92"
+      "sha256": "363ac67f91cd0ee0e0708be0430159e339a4082a802f7c3f29c296202090d70c"
     },
     {
       "slug": "mochi-transcript-chapters",
@@ -234,7 +234,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "d243b55508edb81c3a2d575cf25cc0d69b9b9c497663ab1b5c441deba0876fba"
+      "sha256": "c16f03107e93c62ff2aac11259504f7bb28941032f93cc2699c0935839bfd381"
     },
     {
       "slug": "mochi-image-publishing-check",
@@ -242,7 +242,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "c286cf7d83e5aeb5253ae934d5bf92c8538c214b95ec03a08ddd508bdbc59eb3"
+      "sha256": "5a777a98065563c610a0672685ae622d10d3bc406a610cee6e7509d270d426cb"
     },
     {
       "slug": "mochi-audio-cleanup-plan",
@@ -250,7 +250,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "78efa18f7ad77f3b45a831b794f8538701df1f8a3cb78bd18b7c889598c76f15"
+      "sha256": "804d1c47da47440f3f8da894c3171e76acd906ea1e7bebebb4deb75fb8daf49a"
     },
     {
       "slug": "mochi-feedback-clusters",
@@ -258,7 +258,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "5e614cc18261b43097da6b2f1b8e2e56f8237eaffc2b9721431211d122487262"
+      "sha256": "c8aa935d1b1a6a17b3354e3ac85e8f541883c78a7d647de6269bc5a3f5374d18"
     },
     {
       "slug": "mochi-utm-campaigns",
@@ -266,7 +266,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "3880fa9a5bfcacd907c6ba33f55706c51ca3bf8003c6f2a10efeb629b5b78572"
+      "sha256": "2752d8a956be4ad967ad76b1c7d20202a939da6bd57ac220fcea6bdaea5f7ec0"
     },
     {
       "slug": "mochi-social-batch-plan",
@@ -274,7 +274,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "9220df7ddd8faea747ccf52b97b8113a253fbdc02990364f4ec736be8ff1e74b"
+      "sha256": "6d998d061561731b5d916986baa8cacab1bb218eb2a46f7e215f64b3168ebd56"
     },
     {
       "slug": "mochi-launch-checklist",
@@ -282,7 +282,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "265fdc47e6e581a3f4a0ee934bdf3001aec068ce21cc3a750fd44f70e2e0a162"
+      "sha256": "28bafb4a2d1a548469aaf76a832d0ef243ee92bfe049993ffb21c511cc4bdf01"
     },
     {
       "slug": "mochi-travel-itinerary",
@@ -290,7 +290,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "4e82943b3fe6c3a39e1616501e745e3df21c73ed2c1a9de9c262370a316a0c7e"
+      "sha256": "ebded39b4eed4a444d7a171a48331165809f5425cc53c3be023dff4ed1636f4d"
     },
     {
       "slug": "mochi-event-rsvp",
@@ -298,7 +298,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "4feec33c2b0a93e40c64a5f3a57a161c08535af2379141a0dcb56050d3bda194"
+      "sha256": "66e811dd0bb927d364177de031dce6f943eb1d61d139d7ff6e4a2b4bea847ca5"
     },
     {
       "slug": "mochi-habit-tracker",
@@ -306,7 +306,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "e9993b65b536037f1a232eeff61ee6bb44243b2f0c5f075cb1e9dde94e91e545"
+      "sha256": "40e1ebbf9bfe1f5566185f15a336db728bb65b5f31eac2cefeafc68df8bce37f"
     },
     {
       "slug": "mochi-purchase-requests",
@@ -314,7 +314,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "5e9fde8b1d28e42cfc1669743e2593d587eb2bf2d3a971b09b69864ce3cc61ad"
+      "sha256": "d267ba499171b8c74ce3605ab80a851b56da08edab1aa97b166400deda6453a8"
     },
     {
       "slug": "mochi-incident-timeline",
@@ -322,7 +322,7 @@
       "testsPassed": true,
       "testCount": 5,
       "zipIntegrity": true,
-      "sha256": "8ec243329f8d9517203f8a4409198d6b8e4c1fa78d1dbaa2fb0a96cf49bb8f36"
+      "sha256": "74cdd39348c43a09bd07cd56e8444db382620656ca358d91d174927f238ea1e4"
     }
   ]
 }

@@ -1,24 +1,33 @@
 # Notion Block Draft Builder
 
-## Choose the Markdown that will become blocks
+## What it helps with
 
-Select the intended UTF-8 document and inspect its structure before conversion. The supported subset is headings one through three, bullet lines and paragraphs. Decide how tables, links, code and inline formatting should be handled before a real upload; this helper does not implement a full Markdown renderer.
+Convert simple local headings, bullet lines and paragraphs into reviewable Notion block JSON before uploading.
 
-## Review the proposed block payload
+## Say it like this
 
-Inspect `notion-blocks.json` and compare it with the source in reading order. Rich text is split into chunks of at most 1900 characters. Check that chunk boundaries preserve content and that headings represent the intended page hierarchy.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-For actual publishing, select the exact Notion page using an authorized connector and respect its current request limits. Read the destination first to avoid appending duplicate content. Keep a record of created block IDs and verify the visible page afterward. Local block generation alone does not prove that Notion accepted the payload or that all source formatting survived.
-
-## Input example
-
-```json
-{
-  "file": "samples/note.md"
-}
+```text
+Prepare a Notion page draft from this note, retaining headings, bullets and paragraphs. Show a preview without uploading.
 ```
 
+## What to provide
+
+Upload or paste the note.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive a content preview and a draft for later import.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Not a full Markdown renderer; tables, code fences, links and formatting need explicit mapping. No Notion API call occurs. For upload, use the intended page and authorized connector, and respect its current batch limits.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

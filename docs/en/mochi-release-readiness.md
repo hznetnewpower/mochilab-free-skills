@@ -1,33 +1,33 @@
 # Release Evidence Gate
 
-## What it does
+## What it helps with
 
 Check a release manifest for valid versions, checksums and recorded passing tests before a human publication decision.
 
-## How to use it
+## Say it like this
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```json
-{
-  "artifacts": [
-    {
-      "name": "demo",
-      "version": "1.0.0",
-      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "testStatus": "passed"
-    }
-  ]
-}
+```text
+Review the attached release package, version, checksum file and test receipts. List missing evidence without publishing.
 ```
 
-## Output and verification
+## What to provide
 
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
+Provide the release artifacts, versions and existing test evidence.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive missing items, inconsistencies and decisions needed before release.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
 
 ## Scope
 
 Manifest fields do not prove a file or test is genuine. Verify files, signatures, installation and public downloads separately. Never equate a submitted marketplace version with public availability.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

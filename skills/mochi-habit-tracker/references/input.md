@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 dates: ISO dates. asOf: ISO cutoff date. windowDays:1..3660 default30. Duplicate dates count once.
 

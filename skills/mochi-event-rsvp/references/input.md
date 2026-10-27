@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 capacity: integer. people: unique id,status(yes/no/maybe/pending), optional positive partySize and meal.
 

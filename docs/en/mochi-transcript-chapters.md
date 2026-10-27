@@ -1,51 +1,33 @@
 # Transcript Chapter Evidence
 
-## Anchor chapter titles in transcript evidence
+## What it helps with
 
-Collect authorized transcript segments with unique IDs and start/end times. Read the actual segment text when drafting titles; this helper receives timing and source references and cannot establish what a speaker said. Keep the transcript provenance with the task notes.
+Validate proposed video chapters against supplied transcript segment IDs and export a timestamped chapter list.
 
-## Review the chapter boundary proposals
+## Say it like this
 
-Each chapter needs a start, a meaningful title and at least one source ID that exists in the segment list. Confirm that proposed boundaries follow the program's actual topic changes rather than dividing duration mechanically. Check timing order against the media before publishing chapter markers.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Inspect `chapters.txt` and compare its final marker with the supplied recording duration. Source-ID validation proves referential consistency only, not summary accuracy. The helper does not fetch videos, obtain transcripts or publish metadata. Deliver the chapter file and evidence mapping, identifying any title or timing that still needs a human listen-through.
-
-## Input example
-
-```json
-{
-  "segments": [
-    {
-      "id": "s1",
-      "start": 0,
-      "end": 60
-    },
-    {
-      "id": "s2",
-      "start": 60,
-      "end": 120
-    }
-  ],
-  "chapters": [
-    {
-      "start": 0,
-      "title": "Opening",
-      "sourceIds": [
-        "s1"
-      ]
-    },
-    {
-      "start": 60,
-      "title": "Example",
-      "sourceIds": [
-        "s2"
-      ]
-    }
-  ]
-}
+```text
+Create concise video chapters from this timestamped transcript. Link each chapter to supporting segments and export a timestamp list.
 ```
 
+## What to provide
+
+Provide a timestamped transcript; missing timing must be supplied or obtained with an available transcription tool.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive chapter titles, start times and transcript evidence.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Use an authorized transcript or the user's file. The model writes titles from actual segment evidence; the helper only checks references and timing. It does not fetch videos or prove that a summary is factually accurate.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

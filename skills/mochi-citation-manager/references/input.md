@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 records: id,title, optional authors list,year,doi. Exact normalized DOI/title deduplication. Exports references.bib.
 

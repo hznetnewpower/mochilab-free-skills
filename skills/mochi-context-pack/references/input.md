@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 maxChars: positive integer. documents: unique id, text, optional integer priority. Exports context.md.
 

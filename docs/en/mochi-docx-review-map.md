@@ -1,24 +1,33 @@
 # DOCX Comments and Revisions Map
 
-## Map the review evidence in a DOCX
+## What it helps with
 
-Use the reviewed document itself, not a PDF export, because revisions and comment anchors live in Word XML parts. Preserve a copy before inspection. The helper reads paragraph positions, comment definitions and insertion/deletion records without changing the review state.
+Map comments, their paragraph anchors and tracked insertions or deletions in a DOCX without accepting changes.
 
-## Follow comments back to paragraphs
+## Say it like this
 
-Match comment identifiers to their definitions and reported paragraph anchors. A missing definition needs investigation in the original document; it is not an empty reviewer comment. Review inserted and deleted text separately so that a quotation does not accidentally present removed wording as current content.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Open Word for modern threaded or resolved-comment semantics and visual inspection. The helper neither accepts nor rejects revisions and does not establish legal meaning or reviewer agreement. Deliver a traceable inventory with paragraph references, explain any missing parts, and leave decisions about applying edits to the authorized document review process.
-
-## Input example
-
-```json
-{
-  "file": "samples/review.docx"
-}
+```text
+Map comments and tracked changes in this Word document to their paragraphs. Do not accept or reject changes.
 ```
 
+## What to provide
+
+Upload the DOCX containing comments and tracked changes.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive a comment-and-revision map with paragraph references.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 This is evidence extraction, not legal review, full Word review-state validation or visual layout QA. It does not accept/reject changes or edit comments. Inspect modern threaded/resolved comments and document appearance in Word separately.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

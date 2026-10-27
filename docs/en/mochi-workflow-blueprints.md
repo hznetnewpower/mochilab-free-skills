@@ -1,43 +1,33 @@
 # Automation Dependency Blueprint
 
-## What it does
+## What it helps with
 
 Validate a workflow dependency graph, detect cycles and separate read-only steps from external mutations.
 
-## How to use it
+## Say it like this
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```json
-{
-  "steps": [
-    {
-      "id": "collect"
-    },
-    {
-      "id": "summarize",
-      "needs": [
-        "collect"
-      ]
-    },
-    {
-      "id": "send",
-      "needs": [
-        "summarize"
-      ],
-      "mutates": true
-    }
-  ]
-}
+```text
+Design a workflow to collect sales sheets, summarize a weekly report and send it to colleagues. Check dependencies without sending anything.
 ```
 
-## Output and verification
+## What to provide
 
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
+Describe the goal, dependencies and intended deliverable.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive a proposed order, dependency problems and steps that change external systems.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
 
 ## Scope
 
 A validated graph is not a running automation. Map each step to available tools, test with fixtures, and create schedules or external actions only when requested. Define retry limits and idempotency before repeated writes.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

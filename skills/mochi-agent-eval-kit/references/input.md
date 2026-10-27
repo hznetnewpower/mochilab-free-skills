@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 cases: unique id, actual string, and at least one of nonempty mustContain/mustNotContain or exact. Returns per-case results.
 

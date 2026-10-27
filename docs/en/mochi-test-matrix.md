@@ -1,37 +1,33 @@
 # Pairwise Test Matrix
 
-## Model the factors before generating cases
+## What it helps with
 
-Use a factor for each independent setting, such as operating system, language or account role. Supply the actual values that the product supports. Exclude invalid combinations only through an explicit review process: this helper accepts discrete independent factors and has no constraint language.
+Generate a bounded greedy pairwise matrix for discrete configuration factors and report coverage without executing tests.
 
-### Coverage means pairs, not all behavior
+## Say it like this
 
-The greedy matrix covers every two-factor value combination. Verify the returned pair-coverage result and compare the generated case count with the full Cartesian count. A small matrix is useful for breadth but does not guarantee the smallest possible suite or cover three-way interactions.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-Add targeted regressions for past incidents and known risky combinations, then assign real assertions to every case. Execute those tests separately and retain their results; generated rows are not passing tests. Keep the Cartesian product within the documented bound and reduce redundant factor values rather than truncating the report silently.
-
-## Input example
-
-```json
-{
-  "factors": {
-    "os": [
-      "linux",
-      "windows"
-    ],
-    "lang": [
-      "en",
-      "zh"
-    ],
-    "role": [
-      "one",
-      "two"
-    ]
-  }
-}
+```text
+Build a pairwise test matrix for Android and HarmonyOS, English and Chinese, and light and dark themes.
 ```
 
+## What to provide
+
+List the configuration factors and possible values for each.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive a configuration matrix, pair coverage and high-risk combinations to add.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 Pairwise coverage is not exhaustive behavior coverage and the greedy result is not guaranteed minimal. Include known high-risk combinations and execute the tests separately.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

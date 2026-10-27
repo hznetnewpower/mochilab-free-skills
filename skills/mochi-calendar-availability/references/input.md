@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 start,end: aware ISO window. minMinutes: positive duration. people: optional busy list of start/end per person. No live calendar queries.
 

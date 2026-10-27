@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 steps: unique id, optional needs list and mutates boolean. Returns a topological execution order.
 

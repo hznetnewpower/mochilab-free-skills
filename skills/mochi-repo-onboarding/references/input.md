@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 files: repository-relative file-name list, obtained from the intended checkout. No repository scanning is performed by the helper.
 

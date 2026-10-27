@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 probeFile: ffprobe JSON. targetLufs:-30..-5 default-16. targetTruePeak:-9..0 default-1. Returns an analysis filter.
 

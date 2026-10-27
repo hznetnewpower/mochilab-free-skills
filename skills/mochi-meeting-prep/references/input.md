@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 title,minutes and agenda required. Each topic has topic, optional minutes and decision. Exports meeting-prep.md.
 

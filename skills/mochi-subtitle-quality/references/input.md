@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 file: UTF-8 SRT or WebVTT. maxCharsPerSecond: optional positive rate. Millisecond timestamp cues are required.
 

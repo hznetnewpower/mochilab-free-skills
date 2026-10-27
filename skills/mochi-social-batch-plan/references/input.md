@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 platformLimits: platform-to-positive-integer map. posts: id,platform,text, optional assets. Counts Unicode code points.
 

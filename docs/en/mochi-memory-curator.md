@@ -1,38 +1,33 @@
 # Provenance Memory Review
 
-## What it does
+## What it helps with
 
 Identify conflicting and expired user-selected facts before proposing changes to an agent memory file.
 
-## How to use it
+## Say it like this
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```json
-{
-  "asOf": "2026-10-27T00:00:00Z",
-  "facts": [
-    {
-      "key": "city",
-      "value": "A",
-      "source": "user note1"
-    },
-    {
-      "key": "city",
-      "value": "B",
-      "source": "user note2"
-    }
-  ]
-}
+```text
+Review these facts for a proposed memory update. Flag conflicts and expired information and show changes before applying them.
 ```
 
-## Output and verification
+## What to provide
 
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
+Provide the facts you want retained, their sources and any expiry dates.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive a review of usable, conflicting and expired facts.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
 
 ## Scope
 
 Only include facts the user asked to retain. No chat sweeping, hooks or silent memory writes. Contradictory sources stay visible rather than being resolved by recency alone.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

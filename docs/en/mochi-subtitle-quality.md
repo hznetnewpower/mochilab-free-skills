@@ -1,25 +1,33 @@
 # Subtitle Timing and Reading Rate
 
-## Check timing text before editing dialogue
+## What it helps with
 
-Use an authorized UTF-8 SRT or WebVTT file with millisecond cue timestamps. Retain the source and choose a reading-rate threshold appropriate to the audience and language. A threshold is an editorial policy, not an automatic accessibility certificate.
+Check selected SRT or simple WebVTT cues for nonpositive durations, overlaps and configurable reading-rate warnings.
 
-### Investigate flagged cues
+## Say it like this
 
-Read the timestamps and displayed text around a warning. A fast cue may need shorter wording or a longer display interval, but timing changes must be checked against the real audio and adjacent cues. Do not fix a rate warning by deleting important meaning or attributing speech to the wrong speaker.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-The helper does not listen to audio, align speech, validate translation or fully support WebVTT regions and positioning. Use an appropriate subtitle editor for those checks. Return cue references and proposed corrections in a separate output; keep the original file intact and state whether synchronization was actually reviewed.
-
-## Input example
-
-```json
-{
-  "file": "samples/subtitles.srt",
-  "maxCharsPerSecond": 20
-}
+```text
+Check these subtitles for overlaps, invalid durations and excessive reading speed. List cue numbers and reasons.
 ```
 
+## What to provide
+
+Upload SRT or simple WebVTT captions and any preferred reading-rate threshold.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive located timing and reading-rate warnings while preserving the original.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
+
+## Scope
+
 A reading-rate warning is an editorial cue, not an accessibility certification. The helper does not listen to audio, synchronize timing or validate translation accuracy. Complex WebVTT positioning and regions need a full parser.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

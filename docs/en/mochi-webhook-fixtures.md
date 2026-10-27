@@ -1,45 +1,33 @@
 # Webhook Fixture Builder
 
-## What it does
+## What it helps with
 
 Deduplicate selected webhook events by event ID and export replay fixtures without sending network requests.
 
-## How to use it
+## Say it like this
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```json
-{
-  "events": [
-    {
-      "id": "one",
-      "payload": {
-        "n": 1
-      }
-    },
-    {
-      "id": "one",
-      "payload": {
-        "n": 1
-      }
-    },
-    {
-      "id": "two",
-      "payload": {
-        "n": 2
-      }
-    }
-  ]
-}
+```text
+Deduplicate these webhook events by event ID and prepare local replay fixtures without sending requests.
 ```
 
-## Output and verification
+## What to provide
 
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
+Supply an event export and identify its event-ID field. Remove secrets and unnecessary personal data before sharing.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive replay fixtures and a list of duplicate IDs.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
 
 ## Scope
 
 Fixture deduplication is not a production idempotency store. Remove secrets and personal payloads before sharing fixtures. Real delivery requires a separately authorized destination and replay strategy.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

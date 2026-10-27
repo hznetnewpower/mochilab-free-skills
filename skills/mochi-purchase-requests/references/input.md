@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 requests: unique id,quantity,unitPrice,currency, optional quoteSource. approvalThresholds: optional currency-to-threshold map.
 

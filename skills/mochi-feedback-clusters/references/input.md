@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 topics: nonempty name-to-keyword-list map. feedback: id,text records. Matching is casefolded substring matching.
 

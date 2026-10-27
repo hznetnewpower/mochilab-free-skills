@@ -1,29 +1,33 @@
 # Cron Timezone Preview
 
-## What it does
+## What it helps with
 
 Preview upcoming five-field cron occurrences with an explicit timezone, including DST transitions.
 
-## How to use it
+## Say it like this
 
-Give the assistant the concrete task and required inputs. This fictional request illustrates the contract; use your selected files and parameters for real work.
+After installation, describe the task in chat, paste the material or upload the relevant files.
 
-```json
-{
-  "expression": "0 9 * * 1-5",
-  "timezone": "UTC",
-  "after": "2026-10-26T08:59:00Z",
-  "count": 2
-}
+```text
+Preview the next five runs for weekdays at 9am in Asia/Shanghai. Do not create a scheduled task.
 ```
 
-## Output and verification
+## What to provide
 
-Creates a JSON report and, when applicable, CSV, Markdown or document artifacts in the current workspace. Inputs remain intact. Five offline tests cover the example, invalid input, actual CLI output, path boundaries and non-overwrite behavior. Live account, browser and visual results require separate verification.
+Describe the frequency and timezone, or paste an existing cron expression.
+
+No fixed request format is needed. The assistant asks a short follow-up when essential information is missing.
+
+## What you receive
+
+Receive the next scheduled times and relevant calendar-rule caveats.
+
+The assistant explains results in plain language, provides actual output files where applicable and separates unresolved details.
 
 ## Scope
 
 This is a preview, not a scheduler. Named months/weekdays, macros and seconds are unsupported. Day-of-month and weekday use POSIX OR semantics when both are restricted. Native schedulers can differ; verify the actual scheduler before activation.
+
 
 The lightweight installer includes the Skills assistant. Connect your Skills account in MochiBot Settings, then send:
 

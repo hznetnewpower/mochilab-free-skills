@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 file: workspace-relative OpenAPI3 JSON. Checks operationId uniqueness, path parameter declarations and response presence.
 

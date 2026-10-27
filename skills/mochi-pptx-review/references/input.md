@@ -1,4 +1,4 @@
-# Input contract
+# Internal input contract for the assistant
 
 file: PPTX. maxCharsPerSlide: optional integer budget, default900. Counts text in slide XML only.
 
